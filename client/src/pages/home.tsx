@@ -169,7 +169,7 @@ export default function Home() {
               Why?
             </h2>
             <div 
-              className="text-lg text-brutal-text leading-relaxed mb-8 space-y-6"
+              className="text-base text-brutal-text leading-relaxed mb-8 space-y-5"
               data-testid="text-why-body"
             >
               <p>
