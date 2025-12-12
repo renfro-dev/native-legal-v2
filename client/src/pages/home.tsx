@@ -173,9 +173,7 @@ export default function Home() {
                 className="text-lg text-brutal-text leading-relaxed mb-8"
                 data-testid="text-why-body"
               >
-                Capturing key context across chat messages, emails, and meeting summaries in your 
-                business is a fundamental building block for successful AI implementation. 
-                Orchestrating that context is the key to business transformation.
+                The unstructured data (context) living within your business is a strategic goldmine. Executive leadership teams have historically relied on middle managers to objectively translate this context into strategic insights, which creates operational friction and delay. The introduction of MCP technology has enabled leaders to capture context across chat messages, emails, meeting summaries, and disparate dashboards. Capturing and storing this context is the foundational layer of successful AI implementation. Orchestrating that context is the key to business transformation.
               </p>
               
               {/* Channel Icons */}
