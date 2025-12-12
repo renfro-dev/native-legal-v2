@@ -1,0 +1,55 @@
+Dark Editorial Brutalist Theme
+Create a modern, sophisticated dark website with an editorial feel and neo-brutalist accents.
+Color Palette:
+•	Background: Near-black (#0a0a0a)
+•	Card/Surface: Dark gray (#111111)
+•	Borders: Subtle gray (#333333)
+•	Body text: Muted gray (#888888)
+•	Secondary text: Light gray (#999999)
+•	Primary accent: Mint green (#98FF98)
+•	Secondary accents: Royal blue (#4169E1), Golden yellow (#FFD700), Hot pink (#FF69B4)
+Typography:
+•	Font: Inter (Google Fonts)
+•	Headlines: Bold weight, tight letter-spacing (tracking-tight), white color
+•	Body: Regular weight, muted gray (#888)
+•	Category labels: Small caps, uppercase, tracking-wider, colored with accent colors
+•	Left-aligned layouts for editorial sophistication (avoid centered hero sections)
+UI Elements:
+•	Minimal border-radius (4px) for a sharp, brutalist feel
+•	1px borders in #333, transitioning to #444 on hover
+•	Cards: Dark background (#111) with subtle borders
+•	Buttons: Solid fills (white or mint) with no border-radius or 4px max
+•	Colored left-border accents on feature cards (2px)
+•	Subtle background glow effects using gradient blurs at 20% opacity
+Layout Principles:
+•	Left-aligned hero and section headers
+•	Max-width containers (max-w-7xl) with generous padding
+•	Generous vertical spacing between sections (py-20 or py-24)
+•	Section dividers using subtle top borders (#222)
+•	Grid layouts for cards (2-3 columns on desktop)
+Interactive States:
+•	Border color lightens on hover (#333 → #444)
+•	Text color transitions to accent color (mint green) on hover
+•	Buttons darken slightly on hover
+•	Smooth transitions (transition-colors)
+Overall Vibe:
+Editorial meets tech startup—serious and professional through the dark palette and left-aligned layouts, but playful through bright accent color pops. Minimal decoration, letting typography and color do the heavy lifting.
+
+
+
+
+Header: Information Architecture, Adoption, and Orchestration Services
+
+Subheader: We use modern tools to create leverage for leadership teams by capturing strategic insights that data pipelines do not capture, and converting them into actionable tasks that drive strategic momentum. 
+
+Bullets or supporting info:
+-	Get bird’s eye view of your business
+-	Detect and address business threats proactively
+-	Empower and coach your teams more effectively
+-	Capture and delegate key tasks
+
+Why?:: 
+
+Capturing key context across chat messages, emails, and meetings in your business is a fundamental building block to successful AI implementation. Orchestrating that context is the key to business transformation. 
+
+
