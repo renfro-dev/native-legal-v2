@@ -158,74 +158,35 @@ export default function Home() {
       {/* Why Section */}
       <section id="why" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4">
-                The Foundation
-              </p>
-              <h2 
-                className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
-                data-testid="text-why-headline"
-              >
-                Why?
-              </h2>
-              <p 
-                className="text-lg text-brutal-text leading-relaxed mb-8"
-                data-testid="text-why-body"
-              >
-                The unstructured data (context) living within your business is a strategic goldmine. Executive leadership teams have historically relied on middle managers to objectively translate this context into strategic insights, which creates operational friction and delay. The introduction of MCP technology has enabled leaders to capture context across chat messages, emails, meeting summaries, and disparate dashboards. Capturing and storing this context is the foundational layer of successful AI implementation. Orchestrating that context is the key to business transformation.
-              </p>
-              
-              {/* Channel Icons */}
-              <div className="flex items-center gap-6">
-                {channels.map((channel, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-center gap-2 text-brutal-text-secondary"
-                    data-testid={`channel-${channel.label.toLowerCase()}`}
-                  >
-                    <channel.icon className="w-5 h-5" />
-                    <span className="text-sm">{channel.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Visual Block */}
-            <div className="relative">
-              <div className="bg-brutal-card border border-brutal-border rounded-sm p-8">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-mint/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                      <MessageSquare className="w-5 h-5 text-mint" />
-                    </div>
-                    <div>
-                      <p className="text-white font-medium mb-1">Context Capture</p>
-                      <p className="text-brutal-text text-sm">Strategic insights from every channel</p>
-                    </div>
-                  </div>
-                  <div className="w-full h-px bg-brutal-border" />
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-royal-blue/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                      <Brain className="w-5 h-5 text-royal-blue" />
-                    </div>
-                    <div>
-                      <p className="text-white font-medium mb-1">AI Processing</p>
-                      <p className="text-brutal-text text-sm">Transform data into intelligence</p>
-                    </div>
-                  </div>
-                  <div className="w-full h-px bg-brutal-border" />
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-golden-yellow/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                      <Zap className="w-5 h-5 text-golden-yellow" />
-                    </div>
-                    <div>
-                      <p className="text-white font-medium mb-1">Task Delegation</p>
-                      <p className="text-brutal-text text-sm">Actionable outcomes with ownership</p>
-                    </div>
-                  </div>
+          <div>
+            <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4">
+              The Foundation
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
+              data-testid="text-why-headline"
+            >
+              Why?
+            </h2>
+            <p 
+              className="text-lg text-brutal-text leading-relaxed mb-8"
+              data-testid="text-why-body"
+            >
+              The unstructured data (context) living within your business is a strategic goldmine. Executive leadership teams have historically relied on middle managers to objectively translate this context into strategic insights, which creates operational friction and delay. The introduction of MCP technology has enabled leaders to capture context across chat messages, emails, meeting summaries, and disparate dashboards. Capturing and storing this context is the foundational layer of successful AI implementation. Orchestrating that context is the key to business transformation.
+            </p>
+            
+            {/* Channel Icons */}
+            <div className="flex items-center gap-6 flex-wrap">
+              {channels.map((channel, index) => (
+                <div 
+                  key={index}
+                  className="flex items-center gap-2 text-brutal-text-secondary"
+                  data-testid={`channel-${channel.label.toLowerCase()}`}
+                >
+                  <channel.icon className="w-5 h-5" />
+                  <span className="text-sm">{channel.label}</span>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
