@@ -113,8 +113,7 @@ export default function Home() {
               data-testid="text-subheader"
             >
               We use modern tools to create leverage for leadership teams by capturing 
-              strategic insights that data pipelines do not capture, and converting them 
-              into actionable tasks that drive strategic momentum.
+              context and insight that drives strategic momentum.
             </p>
 
             {/* Value Props */}
@@ -174,8 +173,8 @@ export default function Home() {
                 className="text-lg text-brutal-text leading-relaxed mb-8"
                 data-testid="text-why-body"
               >
-                Capturing key context across chat messages, emails, and meetings in your 
-                business is a fundamental building block to successful AI implementation. 
+                Capturing key context across chat messages, emails, and meeting summaries in your 
+                business is a fundamental building block for successful AI implementation. 
                 Orchestrating that context is the key to business transformation.
               </p>
               
