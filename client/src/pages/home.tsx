@@ -99,10 +99,12 @@ export default function Home() {
             
             {/* Main Headline */}
             <h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight mb-8"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-8"
               data-testid="text-headline"
             >
-              Information Architecture, Adoption, and Orchestration Services
+              <span className="text-white">Information Architecture and Orchestration</span>
+              <br />
+              <span className="text-brutal-text-secondary">for Leadership Teams</span>
             </h1>
             
             {/* Subheader */}
