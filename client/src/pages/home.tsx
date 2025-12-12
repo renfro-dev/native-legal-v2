@@ -179,10 +179,10 @@ export default function Home() {
                 Historically, executive teams have relied on layers of management to translate this context into insight, introducing friction, delay, and distortion along the way.
               </p>
               <p>
-                Modern Model Context Protocol (MCP) architectures change that. MCP enables organizations to capture and persist context directly from chat, email, meetings, and fragmented systems—turning ephemeral knowledge into a durable, machine-readable asset.
+                Modern Model Context Protocol (MCP) architecture changes that. MCP enables organizations to capture context directly from chat, email, meetings, and fragmented systems—turning ephemeral knowledge into a durable, machine-readable asset.
               </p>
               <p className="text-white font-medium">
-                Capturing context is the foundation of effective AI.
+                Capturing context is the foundation of effective AI implementation.
                 <br />
                 Orchestrating that context is what unlocks real business transformation.
               </p>
