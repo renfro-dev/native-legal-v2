@@ -102,7 +102,7 @@ export default function Home() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-8"
               data-testid="text-headline"
             >
-              <span className="text-white">Information Architecture and Orchestration</span>
+              <span className="text-white whitespace-nowrap">Information Architecture and Orchestration</span>
               <br />
               <span className="text-brutal-text-secondary">for Leadership Teams</span>
             </h1>
