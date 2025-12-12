@@ -168,12 +168,25 @@ export default function Home() {
             >
               Why?
             </h2>
-            <p 
-              className="text-lg text-brutal-text leading-relaxed mb-8"
+            <div 
+              className="text-lg text-brutal-text leading-relaxed mb-8 space-y-6"
               data-testid="text-why-body"
             >
-              The unstructured data (context) living within your business is a strategic goldmine. Executive leadership teams have historically relied on middle managers to objectively translate this context into strategic insights, which creates operational friction and delay. The introduction of MCP technology has enabled leaders to capture context across chat messages, emails, meeting summaries, and disparate dashboards. Capturing and storing this context is the foundational layer of successful AI implementation. Orchestrating that context is the key to business transformation.
-            </p>
+              <p>
+                The unstructured data living inside your business—conversations, decisions, and day-to-day context—is a strategic goldmine.
+              </p>
+              <p>
+                Historically, executive teams have relied on layers of management to translate this context into insight, introducing friction, delay, and distortion along the way.
+              </p>
+              <p>
+                Modern Model Context Protocol (MCP) architectures change that. MCP enables organizations to capture and persist context directly from chat, email, meetings, and fragmented systems—turning ephemeral knowledge into a durable, machine-readable asset.
+              </p>
+              <p className="text-white font-medium">
+                Capturing context is the foundation of effective AI.
+                <br />
+                Orchestrating that context is what unlocks real business transformation.
+              </p>
+            </div>
             
             {/* Channel Icons */}
             <div className="flex items-center gap-6 flex-wrap">
