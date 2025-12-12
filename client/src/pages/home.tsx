@@ -252,11 +252,11 @@ export default function Home() {
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {features.map((feature, index) => {
-              const borderColorClass = 
-                feature.accentColor === "mint" ? "border-l-mint" :
-                feature.accentColor === "royal-blue" ? "border-l-royal-blue" :
-                feature.accentColor === "golden-yellow" ? "border-l-golden-yellow" :
-                "border-l-hot-pink";
+              const borderLeftColor = 
+                feature.accentColor === "mint" ? "#98FF98" :
+                feature.accentColor === "royal-blue" ? "#4169E1" :
+                feature.accentColor === "golden-yellow" ? "#FFD700" :
+                "#FF69B4";
               
               const iconColorClass = 
                 feature.accentColor === "mint" ? "text-mint" :
@@ -273,7 +273,8 @@ export default function Home() {
               return (
                 <div
                   key={index}
-                  className={`bg-brutal-card border border-brutal-border border-l-2 ${borderColorClass} rounded-sm p-6 transition-colors hover:border-brutal-border-hover group`}
+                  className="bg-brutal-card border border-brutal-border rounded-sm p-6 transition-colors hover:border-brutal-border-hover group"
+                  style={{ borderLeftWidth: "2px", borderLeftColor: borderLeftColor }}
                   data-testid={`feature-card-${index}`}
                 >
                   <div className={`w-12 h-12 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
