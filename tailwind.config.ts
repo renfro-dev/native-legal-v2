@@ -6,9 +6,9 @@ export default {
   theme: {
     extend: {
       borderRadius: {
-        lg: ".5625rem", /* 9px */
-        md: ".375rem", /* 6px */
-        sm: ".1875rem", /* 3px */
+        lg: ".25rem", /* 4px - brutalist */
+        md: ".25rem", /* 4px - brutalist */
+        sm: ".125rem", /* 2px - brutalist */
       },
       colors: {
         // Flat / base colors (regular buttons)
@@ -81,11 +81,29 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
+        // Brutalist accent colors
+        mint: "#98FF98",
+        "royal-blue": "#4169E1",
+        "golden-yellow": "#FFD700",
+        "hot-pink": "#FF69B4",
+        // Brutalist gray scale
+        "brutal-bg": "#0a0a0a",
+        "brutal-card": "#111111",
+        "brutal-border": "#333333",
+        "brutal-border-hover": "#444444",
+        "brutal-text": "#888888",
+        "brutal-text-secondary": "#999999",
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        sans: ["Inter", "var(--font-sans)", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+      },
+      letterSpacing: {
+        tighter: "-0.05em",
+        tight: "-0.025em",
+        wider: "0.05em",
+        widest: "0.1em",
       },
       keyframes: {
         "accordion-down": {
