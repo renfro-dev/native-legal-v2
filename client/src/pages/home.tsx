@@ -112,8 +112,13 @@ export default function Home() {
               className="text-lg md:text-xl text-brutal-text leading-relaxed mb-12 max-w-3xl"
               data-testid="text-subheader"
             >
-              We use modern tools to create leverage for leadership teams by capturing 
-              context and insight that drives strategic momentum.
+              The unstructured data (context) living within your business is a strategic goldmine. 
+              Executive leadership teams have historically relied on middle managers to objectively 
+              translate this context into strategic insights, which creates operational friction and delay. 
+              The introduction of MCP technology has enabled leaders to capture context across chat messages, 
+              emails, meeting summaries, and disparate dashboards. Capturing and storing this context is 
+              the foundational layer of successful AI implementation. Orchestrating that context is the 
+              key to business transformation.
             </p>
 
             {/* Value Props */}
