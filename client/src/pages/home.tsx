@@ -176,7 +176,7 @@ export default function Home() {
                 The unstructured data living inside your business—conversations, decisions, and day-to-day context—is a strategic goldmine.
               </p>
               <p>
-                Historically, executive teams have relied on layers of management to translate this context into insight, introducing friction, delay, and distortion along the way.
+                Historically, executive teams have relied on layers of management to translate this context into insight.
               </p>
               <p>
                 Modern Model Context Protocol (MCP) architecture changes that. MCP enables organizations to capture context directly from chat, email, meetings, and fragmented systems—turning ephemeral knowledge into a durable, machine-readable asset.
