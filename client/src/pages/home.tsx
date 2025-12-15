@@ -192,7 +192,7 @@ export default function Home() {
       <section id="problem" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4">
+            <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-problem-label">
               The Problem
             </p>
             <h2 
@@ -228,7 +228,7 @@ export default function Home() {
       <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4">
+            <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
               Our Approach
             </p>
             <h2 
@@ -263,7 +263,7 @@ export default function Home() {
       {/* Who We Serve Section */}
       <section id="serve" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4">
+          <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-serve-label">
             Who We Serve
           </p>
           <h2 
@@ -320,7 +320,7 @@ export default function Home() {
       {/* What We Focus On Section */}
       <section id="focus" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4">
+          <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-focus-label">
             What We Focus On
           </p>
           <h2 
@@ -382,7 +382,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4">
+              <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-context-label">
                 Why Context Matters
               </p>
               <h2 
@@ -402,7 +402,7 @@ export default function Home() {
               <p className="text-white font-medium mb-6">When context is clear and shared:</p>
               <ul className="space-y-4">
                 {contextBenefits.map((benefit, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                  <li key={index} className="flex items-start gap-3" data-testid={`text-context-benefit-${index}`}>
                     <CheckCircle className="w-5 h-5 text-mint flex-shrink-0 mt-0.5" />
                     <span className="text-brutal-text">{benefit}</span>
                   </li>
@@ -425,7 +425,7 @@ export default function Home() {
       <section id="people" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4">
+            <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-people-label">
               People, Not Replacement
             </p>
             <h2 
@@ -440,7 +440,7 @@ export default function Home() {
             <div className="space-y-4 mb-8">
               <p className="text-white font-medium">Our work emphasizes:</p>
               {peopleEmphasis.map((item, index) => (
-                <div key={index} className="flex items-center gap-3">
+                <div key={index} className="flex items-center gap-3" data-testid={`text-people-emphasis-${index}`}>
                   <RefreshCw className="w-4 h-4 text-hot-pink" />
                   <span className="text-brutal-text">{item}</span>
                 </div>
@@ -458,7 +458,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-brutal-card border border-brutal-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
-              <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4">
+              <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
                 Start With Readiness
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
