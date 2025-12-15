@@ -1,44 +1,80 @@
-import { Eye, Shield, Users, CheckSquare, MessageSquare, Mail, Video, Zap, Database, Brain, ArrowRight } from "lucide-react";
+import { Database, Layers, Shield, Map, Users, RefreshCw, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const valueProps = [
-  { icon: Eye, text: "Get bird's eye view of your business" },
-  { icon: Shield, text: "Detect and address business threats proactively" },
-  { icon: Users, text: "Empower and coach your teams more effectively" },
-  { icon: CheckSquare, text: "Capture and delegate key tasks" },
-];
-
-const features = [
+const audiences = [
   {
-    title: "Context Capture",
-    description: "Automatically extract key insights from chat messages, emails, and meetings across your organization.",
-    icon: MessageSquare,
+    title: "AI Agencies & Implementation Partners",
+    tagline: "You deliver the technology. We help ensure your clients are actually ready for it.",
+    description: "We partner with AI agencies to reduce risk, shorten discovery cycles, and increase long-term client success by preparing data, governance, and operational context before deployment.",
+    icon: Building2,
     accentColor: "mint",
   },
   {
-    title: "Strategic Intelligence",
-    description: "Transform scattered information into actionable intelligence that drives decision-making.",
-    icon: Brain,
+    title: "Founder-Led Service Businesses",
+    tagline: "You're scaling expertise, not just operations.",
+    description: "We help founders prepare their organizations for AI in a way that protects trust, empowers teams, and supports sustainable growth—without rushing into automation that creates confusion or resistance.",
+    icon: Briefcase,
     accentColor: "royal-blue",
   },
   {
-    title: "Task Orchestration",
-    description: "Convert insights into delegated tasks with clear ownership and accountability.",
-    icon: Zap,
+    title: "Enterprise Operators & Executive Leaders",
+    tagline: "You're accountable for outcomes, not experiments.",
+    description: "We support leaders responsible for AI success across revenue, operations, and strategy by building the clarity and governance required to scale AI responsibly.",
+    icon: Target,
     accentColor: "golden-yellow",
-  },
-  {
-    title: "Data Pipeline Integration",
-    description: "Capture the strategic context that traditional data pipelines miss.",
-    icon: Database,
-    accentColor: "hot-pink",
   },
 ];
 
-const channels = [
-  { icon: MessageSquare, label: "Chat" },
-  { icon: Mail, label: "Email" },
-  { icon: Video, label: "Meetings" },
+const focusAreas = [
+  {
+    title: "Clean, Trustworthy Data",
+    description: "AI depends on reliable inputs. We identify where data breaks down, conflicts, or lacks ownership—and help teams establish confidence in the information AI will rely on.",
+    icon: Database,
+    accentColor: "mint",
+  },
+  {
+    title: "Modern, Interoperable Tools",
+    description: "AI cannot operate in silos. We assess how systems connect, where friction exists, and how tools can support shared context instead of fragmenting it further.",
+    icon: Layers,
+    accentColor: "royal-blue",
+  },
+  {
+    title: "Context Infrastructure",
+    description: "Decisions, conversations, and workflows are valuable—but often invisible. We help capture and structure this context so AI systems and humans can reason from the same understanding.",
+    icon: Brain,
+    accentColor: "golden-yellow",
+  },
+  {
+    title: "AI Governance & Ethical Safeguards",
+    description: "Trust matters. We help organizations define clear boundaries, accountability, and review processes so AI supports people rather than undermining confidence or control.",
+    icon: Shield,
+    accentColor: "hot-pink",
+  },
+  {
+    title: "Process Mapping & Operational Clarity",
+    description: "Unclear processes create unreliable AI outcomes. We map how work actually happens—not how it's documented—so AI supports real operations.",
+    icon: Map,
+    accentColor: "mint",
+  },
+  {
+    title: "Change Management & Adoption Support",
+    description: "AI readiness is as much cultural as technical. We help leaders prepare teams for new ways of working through clarity, communication, and shared expectations.",
+    icon: Users,
+    accentColor: "royal-blue",
+  },
+];
+
+const contextBenefits = [
+  "AI recommendations are more accurate",
+  "Decisions are easier to audit and explain",
+  "Teams trust outcomes instead of questioning them",
+  "Automation supports judgment instead of replacing it",
+];
+
+const peopleEmphasis = [
+  "Transparency over black boxes",
+  "Governance over shortcuts",
+  "Empowerment over replacement",
 ];
 
 export default function Home() {
@@ -59,23 +95,23 @@ export default function Home() {
                 <Zap className="w-5 h-5 text-brutal-bg" />
               </div>
               <span className="text-white font-semibold tracking-tight" data-testid="text-logo">
-                Orchestrate
+                AI Readiness Accelerator
               </span>
             </div>
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
-                href="#services" 
+                href="#approach" 
                 className="text-brutal-text-secondary text-sm transition-colors hover:text-mint"
-                data-testid="link-services"
+                data-testid="link-approach"
               >
-                Services
+                Our Approach
               </a>
               <a 
-                href="#why" 
+                href="#focus" 
                 className="text-brutal-text-secondary text-sm transition-colors hover:text-mint"
-                data-testid="link-why"
+                data-testid="link-focus"
               >
-                Why Us
+                What We Focus On
               </a>
               <Button 
                 className="bg-white text-brutal-bg font-medium rounded-sm"
@@ -94,43 +130,40 @@ export default function Home() {
           <div className="max-w-4xl">
             {/* Category Label */}
             <p className="text-mint text-xs font-medium uppercase tracking-widest mb-6" data-testid="text-category">
-              Information Architecture
+              AI Readiness
             </p>
             
             {/* Main Headline */}
             <h1 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-8"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-4"
               data-testid="text-headline"
             >
-              <span className="text-white whitespace-nowrap">Information Architecture and Orchestration</span>
-              <br />
-              <span className="text-brutal-text-secondary">for Leadership Teams</span>
+              <span className="text-mint">AI Readiness Accelerator</span>
             </h1>
+            <h2 
+              className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight mb-8"
+              data-testid="text-headline-sub"
+            >
+              <span className="text-white">Prepare Your Organization for AI</span>
+              <span className="text-brutal-text-secondary"> — Before Automation Begins</span>
+            </h2>
             
             {/* Subheader */}
             <p 
-              className="text-lg md:text-xl text-brutal-text leading-relaxed mb-12 max-w-3xl"
+              className="text-lg md:text-xl text-brutal-text leading-relaxed mb-8 max-w-3xl"
               data-testid="text-subheader"
             >
-              We use modern tools to create leverage for leadership teams by capturing 
-              context and insight that drives strategic momentum.
+              AI succeeds when people, data, and decisions are ready for it.
             </p>
 
-            {/* Value Props */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-              {valueProps.map((prop, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center gap-3 group"
-                  data-testid={`value-prop-${index}`}
-                >
-                  <div className="w-2 h-2 bg-mint rounded-full flex-shrink-0" />
-                  <span className="text-brutal-text-secondary group-hover:text-white transition-colors">
-                    {prop.text}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <p 
+              className="text-base text-brutal-text-secondary leading-relaxed mb-12 max-w-3xl"
+              data-testid="text-hero-description"
+            >
+              AI Readiness Accelerator helps organizations prepare for responsible, effective AI implementation by aligning people, data, systems, and context before models or automation are deployed.
+              <br /><br />
+              <span className="text-white font-medium">We focus upstream—where AI outcomes are decided long before technology is introduced.</span>
+            </p>
 
             {/* CTA Buttons */}
             <div className="flex items-center gap-4 flex-wrap">
@@ -139,7 +172,7 @@ export default function Home() {
                 className="bg-mint text-brutal-bg font-semibold rounded-sm px-8"
                 data-testid="button-cta-primary"
               >
-                Start Your Transformation
+                Start With Readiness
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button 
@@ -155,92 +188,170 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Section */}
-      <section id="why" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+      {/* The Problem Section */}
+      <section id="problem" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div>
+          <div className="max-w-3xl">
             <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4">
-              The Foundation
+              The Problem
             </p>
             <h2 
               className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
-              data-testid="text-why-headline"
+              data-testid="text-problem-headline"
             >
-              Why?
+              Most AI initiatives don't fail because of the models.
             </h2>
+            <p className="text-2xl text-brutal-text-secondary font-medium mb-8">
+              They fail because organizations aren't ready for them.
+            </p>
             <div 
-              className="text-base text-brutal-text leading-relaxed mb-8 space-y-5"
-              data-testid="text-why-body"
+              className="text-base text-brutal-text leading-relaxed space-y-5"
+              data-testid="text-problem-body"
             >
               <p>
-                The unstructured data living inside your business—conversations, decisions, and day-to-day context—is a strategic goldmine.
+                Teams rush to deploy tools without shared context. Data is fragmented or unreliable. Decisions live in conversations, inboxes, and undocumented workflows. Governance is an afterthought. Employees are left uncertain about how AI fits into their work—or whether it threatens it.
               </p>
               <p>
-                Historically, executive teams have relied on layers of management to translate this context into insight.
+                The result is stalled pilots, mistrust, underwhelming impact, and growing complexity instead of clarity.
               </p>
-              <p>
-                Modern Model Context Protocol (MCP) architecture changes that. MCP enables organizations to capture context directly from chat, email, meetings, and fragmented systems—turning ephemeral knowledge into a durable, machine-readable asset.
-              </p>
-              <p className="text-white font-medium">
-                Capturing context is the foundation of effective AI implementation.
+              <p className="text-white font-medium text-lg border-l-2 border-mint pl-4">
+                AI doesn't fail due to a lack of capability.
                 <br />
-                Orchestrating that context is what unlocks real business transformation.
+                It fails due to a lack of readiness.
               </p>
-            </div>
-            
-            {/* Channel Icons */}
-            <div className="flex items-center gap-6 flex-wrap">
-              {channels.map((channel, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center gap-2 text-brutal-text-secondary"
-                  data-testid={`channel-${channel.label.toLowerCase()}`}
-                >
-                  <channel.icon className="w-5 h-5" />
-                  <span className="text-sm">{channel.label}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services/Features Grid */}
-      <section id="services" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+      {/* Our Approach Section */}
+      <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4">
-            Our Services
+          <div className="max-w-3xl">
+            <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4">
+              Our Approach
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
+              data-testid="text-approach-headline"
+            >
+              Readiness before automation. Alignment before scale.
+            </h2>
+            <div 
+              className="text-base text-brutal-text leading-relaxed space-y-5"
+              data-testid="text-approach-body"
+            >
+              <p>
+                AI Readiness Accelerator works with leadership teams to prepare the human and operational foundations that AI systems depend on.
+              </p>
+              <p>
+                Our work starts with discovery—understanding how decisions are made, how information flows, and where context breaks down. We then help organizations align data, tools, processes, and governance so AI can operate on trusted, shared understanding.
+              </p>
+              <p>
+                Revenue Operations is often where we begin—not because it's the end goal, but because it's where readiness gaps surface first. From there, we expand across teams and workflows to build durable, organization-wide readiness.
+              </p>
+              <p className="text-white font-medium text-lg">
+                We don't sell tools.
+                <br />
+                We prepare organizations to use them well.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve Section */}
+      <section id="serve" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4">
+            Who We Serve
+          </p>
+          <h2 
+            className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-12"
+            data-testid="text-serve-headline"
+          >
+            Organizations preparing for AI success
+          </h2>
+
+          {/* Audience Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {audiences.map((audience, index) => {
+              const borderLeftColor = 
+                audience.accentColor === "mint" ? "#98FF98" :
+                audience.accentColor === "royal-blue" ? "#4169E1" :
+                "#FFD700";
+              
+              const iconColorClass = 
+                audience.accentColor === "mint" ? "text-mint" :
+                audience.accentColor === "royal-blue" ? "text-royal-blue" :
+                "text-golden-yellow";
+              
+              const bgColorClass = 
+                audience.accentColor === "mint" ? "bg-mint/10" :
+                audience.accentColor === "royal-blue" ? "bg-royal-blue/10" :
+                "bg-golden-yellow/10";
+
+              return (
+                <div
+                  key={index}
+                  className="bg-brutal-card border border-brutal-border rounded-sm p-6 transition-colors hover:border-brutal-border-hover group"
+                  style={{ borderLeftWidth: "2px", borderLeftColor: borderLeftColor }}
+                  data-testid={`audience-card-${index}`}
+                >
+                  <div className={`w-12 h-12 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
+                    <audience.icon className={`w-6 h-6 ${iconColorClass}`} />
+                  </div>
+                  <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-mint transition-colors">
+                    {audience.title}
+                  </h3>
+                  <p className="text-mint text-sm font-medium mb-3">
+                    {audience.tagline}
+                  </p>
+                  <p className="text-brutal-text leading-relaxed text-sm">
+                    {audience.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Focus On Section */}
+      <section id="focus" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4">
+            What We Focus On
           </p>
           <h2 
             className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
-            data-testid="text-services-headline"
+            data-testid="text-focus-headline"
           >
-            Comprehensive Orchestration
+            Building the foundations AI depends on
           </h2>
-          <p className="text-brutal-text text-lg mb-12 max-w-2xl">
-            End-to-end solutions for capturing, processing, and acting on the strategic 
-            context that matters most to your business.
+          <p className="text-brutal-text text-lg mb-12 max-w-2xl" data-testid="text-focus-intro">
+            We address the upstream challenges that determine whether AI implementations succeed or struggle.
           </p>
 
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {features.map((feature, index) => {
+          {/* Focus Areas Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {focusAreas.map((area, index) => {
               const borderLeftColor = 
-                feature.accentColor === "mint" ? "#98FF98" :
-                feature.accentColor === "royal-blue" ? "#4169E1" :
-                feature.accentColor === "golden-yellow" ? "#FFD700" :
+                area.accentColor === "mint" ? "#98FF98" :
+                area.accentColor === "royal-blue" ? "#4169E1" :
+                area.accentColor === "golden-yellow" ? "#FFD700" :
                 "#FF69B4";
               
               const iconColorClass = 
-                feature.accentColor === "mint" ? "text-mint" :
-                feature.accentColor === "royal-blue" ? "text-royal-blue" :
-                feature.accentColor === "golden-yellow" ? "text-golden-yellow" :
+                area.accentColor === "mint" ? "text-mint" :
+                area.accentColor === "royal-blue" ? "text-royal-blue" :
+                area.accentColor === "golden-yellow" ? "text-golden-yellow" :
                 "text-hot-pink";
               
               const bgColorClass = 
-                feature.accentColor === "mint" ? "bg-mint/10" :
-                feature.accentColor === "royal-blue" ? "bg-royal-blue/10" :
-                feature.accentColor === "golden-yellow" ? "bg-golden-yellow/10" :
+                area.accentColor === "mint" ? "bg-mint/10" :
+                area.accentColor === "royal-blue" ? "bg-royal-blue/10" :
+                area.accentColor === "golden-yellow" ? "bg-golden-yellow/10" :
                 "bg-hot-pink/10";
 
               return (
@@ -248,20 +359,96 @@ export default function Home() {
                   key={index}
                   className="bg-brutal-card border border-brutal-border rounded-sm p-6 transition-colors hover:border-brutal-border-hover group"
                   style={{ borderLeftWidth: "2px", borderLeftColor: borderLeftColor }}
-                  data-testid={`feature-card-${index}`}
+                  data-testid={`focus-card-${index}`}
                 >
-                  <div className={`w-12 h-12 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
-                    <feature.icon className={`w-6 h-6 ${iconColorClass}`} />
+                  <div className={`w-10 h-10 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
+                    <area.icon className={`w-5 h-5 ${iconColorClass}`} />
                   </div>
-                  <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-mint transition-colors">
-                    {feature.title}
+                  <h3 className="text-white font-semibold text-base mb-2 group-hover:text-mint transition-colors">
+                    {area.title}
                   </h3>
-                  <p className="text-brutal-text leading-relaxed">
-                    {feature.description}
+                  <p className="text-brutal-text leading-relaxed text-sm">
+                    {area.description}
                   </p>
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Context Matters Section */}
+      <section id="context" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4">
+                Why Context Matters
+              </p>
+              <h2 
+                className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
+                data-testid="text-context-headline"
+              >
+                AI doesn't think. It reasons from what it's given.
+              </h2>
+              <p className="text-lg text-brutal-text-secondary mb-6" data-testid="text-context-sub">
+                Context is the difference between helpful assistance and costly mistakes.
+              </p>
+              <p className="text-base text-brutal-text leading-relaxed" data-testid="text-context-body">
+                Context orchestration means ensuring AI systems operate on the same trusted understanding as the people they support—decisions, definitions, priorities, and constraints included.
+              </p>
+            </div>
+            <div className="bg-brutal-card border border-brutal-border rounded-sm p-8">
+              <p className="text-white font-medium mb-6">When context is clear and shared:</p>
+              <ul className="space-y-4">
+                {contextBenefits.map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-mint flex-shrink-0 mt-0.5" />
+                    <span className="text-brutal-text">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 pt-6 border-t border-brutal-border">
+                <p className="text-brutal-text-secondary text-sm">
+                  Without context, AI scales confusion.
+                </p>
+                <p className="text-white font-medium">
+                  With context, it scales clarity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* People, Not Replacement Section */}
+      <section id="people" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4">
+              People, Not Replacement
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
+              data-testid="text-people-headline"
+            >
+              AI should support people—not sideline them.
+            </h2>
+            <p className="text-base text-brutal-text leading-relaxed mb-8" data-testid="text-people-body">
+              We believe business transformation starts with people. AI should reduce cognitive load, improve decision quality, and create space for human judgment—not remove it.
+            </p>
+            <div className="space-y-4 mb-8">
+              <p className="text-white font-medium">Our work emphasizes:</p>
+              {peopleEmphasis.map((item, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <RefreshCw className="w-4 h-4 text-hot-pink" />
+                  <span className="text-brutal-text">{item}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-white font-medium text-lg border-l-2 border-hot-pink pl-4">
+              AI readiness means building systems that people trust, understand, and choose to use.
+            </p>
           </div>
         </div>
       </section>
@@ -271,15 +458,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-brutal-card border border-brutal-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
-              <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4">
-                Ready to Transform?
+              <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4">
+                Start With Readiness
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
-                Start orchestrating your business intelligence today
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
+                Prepare once. Implement with confidence.
               </h2>
-              <p className="text-brutal-text text-lg mb-8">
-                Join forward-thinking leadership teams who are already leveraging AI-powered 
-                context capture and orchestration.
+              <p className="text-brutal-text text-lg mb-4" data-testid="text-cta-body">
+                If you're exploring AI—or struggling to move from pilots to impact—we can help you understand what's actually required for success.
+              </p>
+              <p className="text-brutal-text-secondary mb-8" data-testid="text-cta-sub">
+                Start with a readiness assessment or discovery conversation.
+                <br />
+                <span className="text-white">No pressure. No tool-selling. Just clarity.</span>
               </p>
               <div className="flex items-center gap-4 flex-wrap">
                 <Button 
@@ -287,7 +478,7 @@ export default function Home() {
                   className="bg-mint text-brutal-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-final"
                 >
-                  Schedule a Consultation
+                  Let's Prepare Your Organization
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>
@@ -305,11 +496,11 @@ export default function Home() {
                 <Zap className="w-5 h-5 text-brutal-bg" />
               </div>
               <span className="text-white font-semibold tracking-tight">
-                Orchestrate
+                AI Readiness Accelerator
               </span>
             </div>
             <p className="text-brutal-text text-sm" data-testid="text-copyright">
-              Information Architecture, Adoption, and Orchestration Services
+              Prepare Your Organization for AI — Responsibly
             </p>
           </div>
         </div>
