@@ -133,8 +133,8 @@ export default function Home() {
               <div className="w-8 h-8 bg-mint rounded-sm flex items-center justify-center">
                 <Zap className="w-5 h-5 text-brutal-bg" />
               </div>
-              <span className="text-white font-semibold tracking-tight" data-testid="text-logo">
-                AI Readiness Accelerator
+              <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }} data-testid="text-logo">
+                harp
               </span>
             </div>
             <nav className="flex items-center gap-6 flex-wrap">
@@ -606,8 +606,8 @@ export default function Home() {
               <div className="w-8 h-8 bg-mint rounded-sm flex items-center justify-center">
                 <Zap className="w-5 h-5 text-brutal-bg" />
               </div>
-              <span className="text-white font-semibold tracking-tight">
-                AI Readiness Accelerator
+              <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }}>
+                harp
               </span>
             </div>
             <p className="text-brutal-text text-sm" data-testid="text-copyright">
