@@ -169,22 +169,16 @@ export default function Home() {
           <div className="max-w-4xl">
             {/* Category Label */}
             <p className="text-mint text-xs font-medium uppercase tracking-widest mb-6" data-testid="text-category">
-              AI Readiness
+              AI Readiness Accelerator
             </p>
             
             {/* Main Headline */}
             <h1 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-4"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-8"
               data-testid="text-headline"
             >
-              <span className="text-mint">AI Readiness Accelerator</span>
-            </h1>
-            <h2 
-              className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight mb-8"
-              data-testid="text-headline-sub"
-            >
               <span className="text-white">Most AI implementations fail to produce ROI</span>
-            </h2>
+            </h1>
             
             {/* Subheader */}
             <p 
