@@ -500,50 +500,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Context Matters Section */}
-      <section id="context" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-context-label">
-                Why Context Matters
-              </p>
-              <h2 
-                className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
-                data-testid="text-context-headline"
-              >
-                AI doesn't think. It reasons from what it's given.
-              </h2>
-              <p className="text-lg text-brutal-text-secondary mb-6" data-testid="text-context-sub">
-                Context is the difference between helpful assistance and costly mistakes.
-              </p>
-              <p className="text-base text-brutal-text leading-relaxed" data-testid="text-context-body">
-                Context orchestration means ensuring AI systems operate on the same trusted understanding as the people they support—decisions, definitions, priorities, and constraints included.
-              </p>
-            </div>
-            <div className="bg-brutal-card border border-brutal-border rounded-sm p-8">
-              <p className="text-white font-medium mb-6">When context is clear and shared:</p>
-              <ul className="space-y-4">
-                {contextBenefits.map((benefit, index) => (
-                  <li key={index} className="flex items-start gap-3" data-testid={`text-context-benefit-${index}`}>
-                    <CheckCircle className="w-5 h-5 text-mint flex-shrink-0 mt-0.5" />
-                    <span className="text-brutal-text">{benefit}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8 pt-6 border-t border-brutal-border">
-                <p className="text-brutal-text-secondary text-sm">
-                  Without context, AI scales confusion.
-                </p>
-                <p className="text-white font-medium">
-                  With context, it scales clarity.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* People, Not Replacement Section */}
       <section id="people" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
