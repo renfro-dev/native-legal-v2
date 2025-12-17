@@ -129,9 +129,12 @@ export default function Home() {
       <header className="relative z-10 border-b border-brutal-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }} data-testid="text-logo">
-              harp
-            </span>
+            <img 
+              src="/attached_assets/Generated_Image_December_17,_2025_-_3_44PM_1766015056718.jpeg" 
+              alt="harp" 
+              className="h-10"
+              data-testid="img-logo"
+            />
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
                 href="#approach" 
@@ -597,9 +600,11 @@ export default function Home() {
       <footer className="relative z-10 border-t border-brutal-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }}>
-              harp
-            </span>
+            <img 
+              src="/attached_assets/Generated_Image_December_17,_2025_-_3_44PM_1766015056718.jpeg" 
+              alt="harp" 
+              className="h-10"
+            />
             <p className="text-brutal-text text-sm" data-testid="text-copyright">
               Prepare Your Organization for AI — Responsibly
             </p>
