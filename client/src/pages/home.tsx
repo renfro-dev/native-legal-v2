@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Database, Layers, Shield, Map, Users, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target, Settings, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import harpLogo from "@assets/Generated_Image_December_17,_2025_-_3_44PM_1766015056718.jpeg";
+import harpLogo from "@assets/harp-logo.png";
 
 type PillarKey = "data" | "people" | "systems";
 
