@@ -129,14 +129,9 @@ export default function Home() {
       <header className="relative z-10 border-b border-brutal-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-mint rounded-sm flex items-center justify-center">
-                <Zap className="w-5 h-5 text-brutal-bg" />
-              </div>
-              <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }} data-testid="text-logo">
-                harp
-              </span>
-            </div>
+            <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }} data-testid="text-logo">
+              harp
+            </span>
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
                 href="#approach" 
@@ -602,14 +597,9 @@ export default function Home() {
       <footer className="relative z-10 border-t border-brutal-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-mint rounded-sm flex items-center justify-center">
-                <Zap className="w-5 h-5 text-brutal-bg" />
-              </div>
-              <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }}>
-                harp
-              </span>
-            </div>
+            <span className="text-white text-2xl tracking-tight" style={{ fontFamily: 'Pacifico, cursive' }}>
+              harp
+            </span>
             <p className="text-brutal-text text-sm" data-testid="text-copyright">
               Prepare Your Organization for AI — Responsibly
             </p>
