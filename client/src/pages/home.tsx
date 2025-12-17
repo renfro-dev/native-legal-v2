@@ -144,7 +144,7 @@ export default function Home() {
               className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight mb-8"
               data-testid="text-headline-sub"
             >
-              <span className="text-white">Most AI projects fail to produce ROI</span>
+              <span className="text-white">Most AI implementations fail to produce ROI</span>
             </h2>
             
             {/* Subheader */}
@@ -152,7 +152,7 @@ export default function Home() {
               className="text-lg md:text-xl text-brutal-text leading-relaxed mb-8 max-w-3xl"
               data-testid="text-subheader"
             >
-              AI succeeds when people, data, and decisions are ready for it.
+              AI succeeds when your people, systems, and data are prepared for it.
             </p>
 
             <p 
