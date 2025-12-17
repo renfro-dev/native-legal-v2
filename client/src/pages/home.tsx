@@ -144,8 +144,7 @@ export default function Home() {
               className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight mb-8"
               data-testid="text-headline-sub"
             >
-              <span className="text-white">Prepare Your Organization for AI</span>
-              <span className="text-brutal-text-secondary"> — Before Automation Begins</span>
+              <span className="text-white">Most AI projects fail to produce ROI</span>
             </h2>
             
             {/* Subheader */}
