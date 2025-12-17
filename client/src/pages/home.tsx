@@ -197,7 +197,7 @@ export default function Home() {
                 className="text-base text-brutal-text-secondary leading-relaxed mb-10 max-w-xl"
                 data-testid="text-hero-description"
               >
-                We help organizations prepare for responsible, effective AI implementation by aligning people, data, systems, and context before models or automation are deployed.
+                We focus upstream—where AI outcomes are decided long before technology is introduced.
               </p>
 
               {/* CTA Buttons */}
@@ -254,7 +254,7 @@ export default function Home() {
           {/* Bottom quote */}
           <div className="mt-16 pt-8 border-t border-brutal-border/30">
             <p className="text-white font-medium text-lg max-w-2xl">
-              We focus upstream—where AI outcomes are decided long before technology is introduced.
+              We help organizations prepare for responsible, effective AI implementation by aligning people, data, systems, and context before models or automation are deployed.
             </p>
           </div>
         </div>
