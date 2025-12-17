@@ -164,53 +164,98 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 py-20 lg:py-28">
+      <section className="relative z-10 py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl">
-            {/* Main Headline */}
-            <h1 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6"
-              data-testid="text-headline"
-            >
-              <span className="text-white">Most AI implementations fail to produce ROI</span>
-            </h1>
-            
-            {/* Subheader */}
-            <p 
-              className="text-lg md:text-xl text-brutal-text leading-relaxed mb-6 max-w-3xl"
-              data-testid="text-subheader"
-            >
-              AI succeeds when your people, systems, and data are prepared for it.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Content */}
+            <div className="max-w-2xl">
+              {/* Accent Line */}
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-1 bg-mint rounded-full" />
+                <span className="text-mint text-sm font-medium uppercase tracking-widest">AI Readiness</span>
+              </div>
 
-            <p 
-              className="text-base text-brutal-text-secondary leading-relaxed mb-12 max-w-3xl"
-              data-testid="text-hero-description"
-            >
-              We help organizations prepare for responsible, effective AI implementation by aligning people, data, systems, and context before models or automation are deployed.
-              <br /><br />
-              <span className="text-white font-medium">We focus upstream—where AI outcomes are decided long before technology is introduced.</span>
-            </p>
+              {/* Main Headline */}
+              <h1 
+                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8"
+                data-testid="text-headline"
+              >
+                <span className="text-white">Most AI implementations </span>
+                <span className="text-mint">fail</span>
+                <span className="text-white"> to produce ROI</span>
+              </h1>
+              
+              {/* Subheader */}
+              <p 
+                className="text-xl md:text-2xl text-brutal-text leading-relaxed mb-6 font-medium"
+                data-testid="text-subheader"
+              >
+                AI succeeds when your people, systems, and data are prepared for it.
+              </p>
 
-            {/* CTA Buttons */}
-            <div className="flex items-center gap-4 flex-wrap">
-              <Button 
-                size="lg"
-                className="bg-mint text-brutal-bg font-semibold rounded-sm px-8"
-                data-testid="button-cta-primary"
+              <p 
+                className="text-base text-brutal-text-secondary leading-relaxed mb-10 max-w-xl"
+                data-testid="text-hero-description"
               >
-                Start With Readiness
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-brutal-border text-white rounded-sm px-8 hover:border-brutal-border-hover hover:bg-transparent"
-                data-testid="button-cta-secondary"
-              >
-                Learn More
-              </Button>
+                We help organizations prepare for responsible, effective AI implementation by aligning people, data, systems, and context before models or automation are deployed.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex items-center gap-4 flex-wrap">
+                <Button 
+                  size="lg"
+                  className="bg-mint text-brutal-bg font-semibold rounded-sm px-8"
+                  data-testid="button-cta-primary"
+                >
+                  Start With Readiness
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-brutal-border text-white rounded-sm"
+                  data-testid="button-cta-secondary"
+                >
+                  Learn More
+                </Button>
+              </div>
             </div>
+
+            {/* Right Visual Element */}
+            <div className="hidden lg:flex justify-center items-center">
+              <div className="relative">
+                {/* Abstract visual representation of three pillars */}
+                <div className="flex gap-6">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="w-24 h-32 border-2 border-mint/30 rounded-sm flex items-end justify-center pb-4 bg-mint/5">
+                      <Database className="w-8 h-8 text-mint" />
+                    </div>
+                    <span className="text-mint text-xs font-medium uppercase tracking-wider">Data</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-4 -mt-8">
+                    <div className="w-24 h-40 border-2 border-royal-blue/30 rounded-sm flex items-end justify-center pb-4 bg-royal-blue/5">
+                      <Users className="w-8 h-8 text-royal-blue" />
+                    </div>
+                    <span className="text-royal-blue text-xs font-medium uppercase tracking-wider">People</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-4 -mt-4">
+                    <div className="w-24 h-36 border-2 border-golden-yellow/30 rounded-sm flex items-end justify-center pb-4 bg-golden-yellow/5">
+                      <Settings className="w-8 h-8 text-golden-yellow" />
+                    </div>
+                    <span className="text-golden-yellow text-xs font-medium uppercase tracking-wider">Systems</span>
+                  </div>
+                </div>
+                {/* Connecting lines */}
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-brutal-border to-transparent" />
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom quote */}
+          <div className="mt-16 pt-8 border-t border-brutal-border/30">
+            <p className="text-white font-medium text-lg max-w-2xl">
+              We focus upstream—where AI outcomes are decided long before technology is introduced.
+            </p>
           </div>
         </div>
       </section>
