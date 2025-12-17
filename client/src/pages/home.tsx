@@ -373,9 +373,6 @@ export default function Home() {
               <p>
                 Our work starts with discovery—understanding how decisions are made, how information flows, and where context breaks down. We then help organizations align data, tools, processes, and governance so AI can operate on trusted, shared understanding.
               </p>
-              <p>
-                Revenue Operations is often where we begin—not because it's the end goal, but because it's where readiness gaps surface first. From there, we expand across teams and workflows to build durable, organization-wide readiness.
-              </p>
               <p className="text-white font-medium text-lg">
                 We don't sell tools.
                 <br />
