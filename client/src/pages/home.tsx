@@ -388,6 +388,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What We Focus On Section */}
+      <section id="focus" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-focus-label">
+            What We Focus On
+          </p>
+          <h2 
+            className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
+            data-testid="text-focus-headline"
+          >
+            Building the foundations AI depends on
+          </h2>
+          <p className="text-brutal-text text-lg mb-12 max-w-2xl" data-testid="text-focus-intro">
+            We address the upstream challenges that determine whether AI implementations succeed or struggle.
+          </p>
+
+          {/* Focus Areas Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {focusAreas.map((area, index) => {
+              const borderLeftColor = 
+                area.accentColor === "mint" ? "#98FF98" :
+                area.accentColor === "royal-blue" ? "#4169E1" :
+                area.accentColor === "golden-yellow" ? "#FFD700" :
+                "#FF69B4";
+              
+              const iconColorClass = 
+                area.accentColor === "mint" ? "text-mint" :
+                area.accentColor === "royal-blue" ? "text-royal-blue" :
+                area.accentColor === "golden-yellow" ? "text-golden-yellow" :
+                "text-hot-pink";
+              
+              const bgColorClass = 
+                area.accentColor === "mint" ? "bg-mint/10" :
+                area.accentColor === "royal-blue" ? "bg-royal-blue/10" :
+                area.accentColor === "golden-yellow" ? "bg-golden-yellow/10" :
+                "bg-hot-pink/10";
+
+              return (
+                <div
+                  key={index}
+                  className="bg-brutal-card border border-brutal-border rounded-sm p-6 transition-colors hover:border-brutal-border-hover group"
+                  style={{ borderLeftWidth: "2px", borderLeftColor: borderLeftColor }}
+                  data-testid={`focus-card-${index}`}
+                >
+                  <div className={`w-10 h-10 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
+                    <area.icon className={`w-5 h-5 ${iconColorClass}`} />
+                  </div>
+                  <h3 className="text-white font-semibold text-base mb-2 group-hover:text-mint transition-colors">
+                    {area.title}
+                  </h3>
+                  <p className="text-brutal-text leading-relaxed text-sm">
+                    {area.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Our Approach Section */}
       <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -467,66 +527,6 @@ export default function Home() {
                   </p>
                   <p className="text-brutal-text leading-relaxed text-sm">
                     {audience.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* What We Focus On Section */}
-      <section id="focus" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-focus-label">
-            What We Focus On
-          </p>
-          <h2 
-            className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
-            data-testid="text-focus-headline"
-          >
-            Building the foundations AI depends on
-          </h2>
-          <p className="text-brutal-text text-lg mb-12 max-w-2xl" data-testid="text-focus-intro">
-            We address the upstream challenges that determine whether AI implementations succeed or struggle.
-          </p>
-
-          {/* Focus Areas Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {focusAreas.map((area, index) => {
-              const borderLeftColor = 
-                area.accentColor === "mint" ? "#98FF98" :
-                area.accentColor === "royal-blue" ? "#4169E1" :
-                area.accentColor === "golden-yellow" ? "#FFD700" :
-                "#FF69B4";
-              
-              const iconColorClass = 
-                area.accentColor === "mint" ? "text-mint" :
-                area.accentColor === "royal-blue" ? "text-royal-blue" :
-                area.accentColor === "golden-yellow" ? "text-golden-yellow" :
-                "text-hot-pink";
-              
-              const bgColorClass = 
-                area.accentColor === "mint" ? "bg-mint/10" :
-                area.accentColor === "royal-blue" ? "bg-royal-blue/10" :
-                area.accentColor === "golden-yellow" ? "bg-golden-yellow/10" :
-                "bg-hot-pink/10";
-
-              return (
-                <div
-                  key={index}
-                  className="bg-brutal-card border border-brutal-border rounded-sm p-6 transition-colors hover:border-brutal-border-hover group"
-                  style={{ borderLeftWidth: "2px", borderLeftColor: borderLeftColor }}
-                  data-testid={`focus-card-${index}`}
-                >
-                  <div className={`w-10 h-10 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
-                    <area.icon className={`w-5 h-5 ${iconColorClass}`} />
-                  </div>
-                  <h3 className="text-white font-semibold text-base mb-2 group-hover:text-mint transition-colors">
-                    {area.title}
-                  </h3>
-                  <p className="text-brutal-text leading-relaxed text-sm">
-                    {area.description}
                   </p>
                 </div>
               );
