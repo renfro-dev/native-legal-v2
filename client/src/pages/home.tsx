@@ -399,15 +399,12 @@ export default function Home() {
               className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
               data-testid="text-approach-headline"
             >
-              Readiness before automation. Alignment before scale.
+              Alignment before scale.
             </h2>
             <div 
               className="text-base text-brutal-text leading-relaxed space-y-5"
               data-testid="text-approach-body"
             >
-              <p>
-                AI Readiness Accelerator works with leadership teams to prepare the human and operational foundations that AI systems depend on.
-              </p>
               <p>
                 Our work starts with discovery—understanding how decisions are made, how information flows, and where context breaks down. We then help organizations align data, tools, processes, and governance so AI can operate on trusted, shared understanding.
               </p>
