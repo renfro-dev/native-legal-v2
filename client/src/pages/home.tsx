@@ -1,5 +1,41 @@
-import { Database, Layers, Shield, Map, Users, RefreshCw, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target } from "lucide-react";
+import { useState } from "react";
+import { Database, Layers, Shield, Map, Users, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+type PillarKey = "data" | "people" | "systems";
+
+const servicePillars: Record<PillarKey, { title: string; icon: typeof Database; services: { name: string; description: string }[] }> = {
+  data: {
+    title: "Data",
+    icon: Database,
+    services: [
+      { name: "CRM", description: "Optimize your customer relationship management for AI-ready operations" },
+      { name: "Reporting", description: "Build reliable, consistent reporting foundations that AI can leverage" },
+      { name: "Context", description: "Capture and structure the context that gives data meaning" },
+      { name: "Data Hygiene", description: "Clean, deduplicate, and validate data for trustworthy AI inputs" },
+    ],
+  },
+  people: {
+    title: "People",
+    icon: Users,
+    services: [
+      { name: "Governance Strategy", description: "Define clear boundaries, accountability, and decision frameworks" },
+      { name: "Stakeholder Alignment", description: "Ensure all parties share understanding and expectations" },
+      { name: "Communication Strategy", description: "Build clarity around AI initiatives across your organization" },
+      { name: "Change Management", description: "Prepare teams for new ways of working with AI" },
+    ],
+  },
+  systems: {
+    title: "Systems",
+    icon: Settings,
+    services: [
+      { name: "Context Infrastructure", description: "Build the foundational systems that capture and share context" },
+      { name: "Process Mapping", description: "Document how work actually happens—not how it's written down" },
+      { name: "Vendor Selection", description: "Evaluate and choose the right tools for your specific needs" },
+      { name: "ROI Framework", description: "Establish clear metrics and expectations for AI investments" },
+    ],
+  },
+};
 
 const audiences = [
   {
@@ -78,6 +114,9 @@ const peopleEmphasis = [
 ];
 
 export default function Home() {
+  const [activePillar, setActivePillar] = useState<PillarKey>("data");
+  const currentPillar = servicePillars[activePillar];
+
   return (
     <div className="min-h-screen bg-brutal-bg">
       {/* Subtle background glow */}
@@ -183,6 +222,66 @@ export default function Home() {
                 Learn More
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Three Pillars */}
+      <section id="services" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
+              Our Services
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
+              data-testid="text-services-headline"
+            >
+              Three Pillars of AI Readiness
+            </h2>
+            <p className="text-brutal-text-secondary text-lg max-w-2xl mx-auto">
+              We prepare your organization across the dimensions that determine AI success.
+            </p>
+          </div>
+
+          {/* Toggle Tabs */}
+          <div className="flex justify-center gap-2 mb-12" data-testid="tabs-pillars">
+            {(Object.keys(servicePillars) as PillarKey[]).map((key) => {
+              const pillar = servicePillars[key];
+              const IconComponent = pillar.icon;
+              const isActive = activePillar === key;
+              return (
+                <Button
+                  key={key}
+                  variant="outline"
+                  size="lg"
+                  className={`rounded-sm font-medium toggle-elevate ${
+                    isActive 
+                      ? "toggle-elevated bg-mint text-brutal-bg border-mint" 
+                      : "border-brutal-border text-brutal-text-secondary"
+                  }`}
+                  onClick={() => setActivePillar(key)}
+                  data-testid={`tab-${key}`}
+                >
+                  <IconComponent className="w-4 h-4 mr-2" />
+                  {pillar.title}
+                </Button>
+              );
+            })}
+          </div>
+
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" data-testid="grid-services">
+            {currentPillar.services.map((service, index) => (
+              <div 
+                key={service.name}
+                className="p-6 border border-brutal-border rounded-sm bg-brutal-bg/50 hover-elevate transition-all"
+                data-testid={`card-service-${index}`}
+              >
+                <h3 className="text-lg font-semibold text-white mb-2">{service.name}</h3>
+                <p className="text-brutal-text-secondary text-sm leading-relaxed">{service.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
