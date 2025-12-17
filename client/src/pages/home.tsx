@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Database, Layers, Shield, Map, Users, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target, Settings } from "lucide-react";
+import { Database, Layers, Shield, Map, Users, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target, Settings, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type PillarKey = "data" | "people" | "systems";
