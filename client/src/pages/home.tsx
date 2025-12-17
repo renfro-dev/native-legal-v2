@@ -314,6 +314,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* People, Not Replacement Section - Prominent */}
+      <section id="people" className="relative z-10 py-24 lg:py-32 border-t border-brutal-border/50 bg-gradient-to-b from-brutal-bg to-brutal-card/20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-people-label">
+                People, Not Replacement
+              </p>
+              <h2 
+                className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6 leading-tight"
+                data-testid="text-people-headline"
+              >
+                AI should support people—<span className="text-hot-pink">not sideline them.</span>
+              </h2>
+              <p className="text-lg text-brutal-text leading-relaxed mb-8" data-testid="text-people-body">
+                We believe business transformation starts with people. AI should reduce cognitive load, improve decision quality, and create space for human judgment—not remove it.
+              </p>
+              <p className="text-white font-medium text-xl border-l-4 border-hot-pink pl-6 py-2">
+                AI readiness means building systems that people trust, understand, and choose to use.
+              </p>
+            </div>
+            <div className="bg-brutal-card border border-brutal-border rounded-sm p-8">
+              <p className="text-white font-semibold text-lg mb-6">Our work emphasizes:</p>
+              <div className="space-y-5">
+                {peopleEmphasis.map((item, index) => (
+                  <div key={index} className="flex items-center gap-4" data-testid={`text-people-emphasis-${index}`}>
+                    <div className="w-10 h-10 bg-hot-pink/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                      <RefreshCw className="w-5 h-5 text-hot-pink" />
+                    </div>
+                    <span className="text-white text-lg font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The Problem Section */}
       <section id="problem" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -496,38 +534,6 @@ export default function Home() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* People, Not Replacement Section */}
-      <section id="people" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-people-label">
-              People, Not Replacement
-            </p>
-            <h2 
-              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
-              data-testid="text-people-headline"
-            >
-              AI should support people—not sideline them.
-            </h2>
-            <p className="text-base text-brutal-text leading-relaxed mb-8" data-testid="text-people-body">
-              We believe business transformation starts with people. AI should reduce cognitive load, improve decision quality, and create space for human judgment—not remove it.
-            </p>
-            <div className="space-y-4 mb-8">
-              <p className="text-white font-medium">Our work emphasizes:</p>
-              {peopleEmphasis.map((item, index) => (
-                <div key={index} className="flex items-center gap-3" data-testid={`text-people-emphasis-${index}`}>
-                  <RefreshCw className="w-4 h-4 text-hot-pink" />
-                  <span className="text-brutal-text">{item}</span>
-                </div>
-              ))}
-            </div>
-            <p className="text-white font-medium text-lg border-l-2 border-hot-pink pl-4">
-              AI readiness means building systems that people trust, understand, and choose to use.
-            </p>
           </div>
         </div>
       </section>
