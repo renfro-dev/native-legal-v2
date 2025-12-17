@@ -451,28 +451,57 @@ export default function Home() {
       {/* Our Approach Section */}
       <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
-              Our Approach
-            </p>
-            <h2 
-              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
-              data-testid="text-approach-headline"
-            >
-              Alignment before scale.
-            </h2>
-            <div 
-              className="text-base text-brutal-text leading-relaxed space-y-5"
-              data-testid="text-approach-body"
-            >
-              <p>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
+                Our Approach
+              </p>
+              <h2 
+                className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
+                data-testid="text-approach-headline"
+              >
+                Alignment before scale.
+              </h2>
+              <p 
+                className="text-lg text-brutal-text leading-relaxed mb-8"
+                data-testid="text-approach-body"
+              >
                 Our work starts with discovery—understanding how decisions are made, how information flows, and where context breaks down. We then help organizations align data, tools, processes, and governance so AI can operate on trusted, shared understanding.
               </p>
-              <p className="text-white font-medium text-lg">
+              <p className="text-white font-medium text-xl border-l-4 border-golden-yellow pl-6 py-2">
                 We don't sell tools.
                 <br />
                 We prepare organizations to use them well.
               </p>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-brutal-card border border-brutal-border rounded-sm p-6 flex items-start gap-4">
+                <div className="w-12 h-12 bg-golden-yellow/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                  <span className="text-golden-yellow font-bold text-xl">1</span>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-1">Discovery</h3>
+                  <p className="text-brutal-text text-sm">Map how decisions are made, where information lives, and what context is missing.</p>
+                </div>
+              </div>
+              <div className="bg-brutal-card border border-brutal-border rounded-sm p-6 flex items-start gap-4">
+                <div className="w-12 h-12 bg-golden-yellow/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                  <span className="text-golden-yellow font-bold text-xl">2</span>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-1">Alignment</h3>
+                  <p className="text-brutal-text text-sm">Unify data, tools, processes, and governance around shared understanding.</p>
+                </div>
+              </div>
+              <div className="bg-brutal-card border border-brutal-border rounded-sm p-6 flex items-start gap-4">
+                <div className="w-12 h-12 bg-golden-yellow/10 rounded-sm flex items-center justify-center flex-shrink-0">
+                  <span className="text-golden-yellow font-bold text-xl">3</span>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-1">Readiness</h3>
+                  <p className="text-brutal-text text-sm">Prepare your organization so AI implementations can succeed from day one.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
