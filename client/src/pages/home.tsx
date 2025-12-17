@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Database, Layers, Shield, Map, Users, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target, Settings, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import harpLogo from "@assets/Generated_Image_December_17,_2025_-_3_44PM_1766015056718.jpeg";
 
 type PillarKey = "data" | "people" | "systems";
 
@@ -130,7 +131,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <img 
-              src="/attached_assets/Generated_Image_December_17,_2025_-_3_44PM_1766015056718.jpeg" 
+              src={harpLogo} 
               alt="harp" 
               className="h-10"
               data-testid="img-logo"
@@ -601,7 +602,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <img 
-              src="/attached_assets/Generated_Image_December_17,_2025_-_3_44PM_1766015056718.jpeg" 
+              src={harpLogo} 
               alt="harp" 
               className="h-10"
             />
