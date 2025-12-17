@@ -167,14 +167,9 @@ export default function Home() {
       <section className="relative z-10 py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-4xl">
-            {/* Category Label */}
-            <p className="text-mint text-xs font-medium uppercase tracking-widest mb-6" data-testid="text-category">
-              AI Readiness Accelerator
-            </p>
-            
             {/* Main Headline */}
             <h1 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-8"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6"
               data-testid="text-headline"
             >
               <span className="text-white">Most AI implementations fail to produce ROI</span>
@@ -182,7 +177,7 @@ export default function Home() {
             
             {/* Subheader */}
             <p 
-              className="text-lg md:text-xl text-brutal-text leading-relaxed mb-8 max-w-3xl"
+              className="text-lg md:text-xl text-brutal-text leading-relaxed mb-6 max-w-3xl"
               data-testid="text-subheader"
             >
               AI succeeds when your people, systems, and data are prepared for it.
@@ -192,7 +187,7 @@ export default function Home() {
               className="text-base text-brutal-text-secondary leading-relaxed mb-12 max-w-3xl"
               data-testid="text-hero-description"
             >
-              AI Readiness Accelerator helps organizations prepare for responsible, effective AI implementation by aligning people, data, systems, and context before models or automation are deployed.
+              We help organizations prepare for responsible, effective AI implementation by aligning people, data, systems, and context before models or automation are deployed.
               <br /><br />
               <span className="text-white font-medium">We focus upstream—where AI outcomes are decided long before technology is introduced.</span>
             </p>
