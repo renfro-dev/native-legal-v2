@@ -115,7 +115,7 @@ const peopleEmphasis = [
 ];
 
 export default function Home() {
-  const [activePillar, setActivePillar] = useState<PillarKey>("data");
+  const [activePillar, setActivePillar] = useState<PillarKey>("people");
   const currentPillar = servicePillars[activePillar];
 
   return (
