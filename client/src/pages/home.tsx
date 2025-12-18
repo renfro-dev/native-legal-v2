@@ -171,7 +171,7 @@ export default function Home() {
               {/* Accent Line */}
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-1 bg-mint rounded-full" />
-                <span className="text-mint text-sm font-medium uppercase tracking-widest">AI Readiness</span>
+                <span className="text-mint text-sm font-medium uppercase tracking-widest">AI Readiness Accelerator</span>
               </div>
 
               {/* Main Headline */}
