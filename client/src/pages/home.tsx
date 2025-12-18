@@ -133,7 +133,7 @@ export default function Home() {
             <img 
               src={harpLogo} 
               alt="harp" 
-              className="h-10"
+              className="h-20"
               data-testid="img-logo"
             />
             <nav className="flex items-center gap-6 flex-wrap">
@@ -604,7 +604,7 @@ export default function Home() {
             <img 
               src={harpLogo} 
               alt="harp" 
-              className="h-10"
+              className="h-20"
             />
             <p className="text-brutal-text text-sm" data-testid="text-copyright">
               Prepare Your Organization for AI — Responsibly
