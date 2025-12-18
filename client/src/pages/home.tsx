@@ -606,9 +606,12 @@ export default function Home() {
               alt="harp" 
               className="h-20"
             />
-            <p className="text-brutal-text text-sm" data-testid="text-copyright">
-              Prepare Your Organization for AI — Responsibly
-            </p>
+            <div className="flex items-center gap-6 flex-wrap">
+              <a href="/privacy" className="text-brutal-text-secondary text-sm transition-colors hover:text-mint">Privacy Policy</a>
+              <p className="text-brutal-text-secondary text-sm" data-testid="text-copyright">
+                © 2025 Harp and Quill LLC. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
