@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Database, Users, ArrowRight, Zap, Scale, Clock, FileText, UserPlus, Search, BarChart3, Heart, Eye, UserCheck } from "lucide-react";
+import { Database, Users, ArrowRight, Zap, Scale, Clock, FileText, UserPlus, Search, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import harpLogo from "@assets/harp-logo.png";
 
@@ -76,23 +76,6 @@ const caseStudies = [
   },
 ];
 
-const missionPrinciples = [
-  {
-    title: "Accessibility",
-    description: "Advocate for an inclusive legal system.",
-    icon: Heart,
-  },
-  {
-    title: "Objectivity",
-    description: "Recommend tech stack without bias or incentive.",
-    icon: Eye,
-  },
-  {
-    title: "Humanity",
-    description: "AI can never replace human touch.",
-    icon: UserCheck,
-  },
-];
 
 
 export default function Home() {
@@ -305,43 +288,6 @@ export default function Home() {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section id="mission" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-mission-label">
-              Our Mission
-            </p>
-            <h2 
-              className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-4 max-w-3xl mx-auto"
-              data-testid="text-mission-headline"
-            >
-              Our mission is to empower and lead small to medium size law firms through the AI era with these core principles.
-            </h2>
-          </div>
-
-          {/* Mission Principles */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto" data-testid="grid-mission">
-            {missionPrinciples.map((principle, index) => {
-              const IconComponent = principle.icon;
-              return (
-                <div 
-                  key={principle.title}
-                  className="text-center p-6 border border-futura-border rounded-sm bg-futura-card"
-                  data-testid={`card-mission-${index}`}
-                >
-                  <div className="w-12 h-12 bg-futura-border rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{principle.title}</h3>
-                  <p className="text-futura-text-secondary text-sm">{principle.description}</p>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>
