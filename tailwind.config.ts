@@ -6,9 +6,9 @@ export default {
   theme: {
     extend: {
       borderRadius: {
-        lg: ".25rem", /* 4px - brutalist */
-        md: ".25rem", /* 4px - brutalist */
-        sm: ".125rem", /* 2px - brutalist */
+        lg: ".5rem", /* 8px - refined */
+        md: ".375rem", /* 6px - refined */
+        sm: ".25rem", /* 4px - refined */
       },
       colors: {
         // Flat / base colors (regular buttons)
@@ -81,18 +81,18 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
-        // Brutalist accent colors
-        mint: "#98FF98",
-        "royal-blue": "#4169E1",
-        "golden-yellow": "#FFD700",
-        "hot-pink": "#FF69B4",
-        // Brutalist gray scale
-        "brutal-bg": "#0a0a0a",
-        "brutal-card": "#111111",
-        "brutal-border": "#333333",
-        "brutal-border-hover": "#444444",
-        "brutal-text": "#888888",
-        "brutal-text-secondary": "#999999",
+        // Warm accent colors
+        amber: "#f59e0b",
+        copper: "#d97706",
+        gold: "#eab308",
+        bronze: "#92400e",
+        // Futuristic warm gray scale
+        "futura-bg": "#0a0a0a",
+        "futura-card": "#141414",
+        "futura-border": "#2a2520",
+        "futura-border-hover": "#3a3530",
+        "futura-text": "#a39e99",
+        "futura-text-secondary": "#787470",
       },
       fontFamily: {
         sans: ["Inter", "var(--font-sans)", "sans-serif"],
