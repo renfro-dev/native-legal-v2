@@ -169,27 +169,27 @@ export default function Home() {
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
                 href="#services" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-amber"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-services"
               >
                 Service Areas
               </a>
               <a 
                 href="#approach" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-amber"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-approach"
               >
                 Our Approach
               </a>
               <a 
                 href="#case-studies" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-amber"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-case-studies"
               >
                 Case Studies
               </a>
               <Button 
-                className="bg-white text-futura-bg font-medium rounded-sm"
+                className="bg-parchment text-futura-bg font-medium rounded-sm"
                 data-testid="button-contact"
               >
                 Get Started
@@ -207,18 +207,16 @@ export default function Home() {
             <div className="max-w-2xl">
               {/* Accent Line */}
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-1 bg-amber rounded-full" />
-                <span className="text-amber text-sm font-medium uppercase tracking-widest">Family Law Technology</span>
+                <div className="w-12 h-1 bg-parchment rounded-full" />
+                <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Family Law Technology</span>
               </div>
 
               {/* Main Headline */}
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white"
                 data-testid="text-headline"
               >
-                <span className="text-white">Modern tools for </span>
-                <span className="text-amber">family law</span>
-                <span className="text-white"> firms</span>
+                Modern tools for family law firms
               </h1>
               
               <p 
@@ -233,7 +231,7 @@ export default function Home() {
               <div className="flex items-center gap-4 flex-wrap">
                 <Button 
                   size="lg"
-                  className="bg-amber text-futura-bg font-semibold rounded-sm px-8"
+                  className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-primary"
                 >
                   Get Started
@@ -256,22 +254,22 @@ export default function Home() {
                 {/* Abstract visual representation - scales of justice theme */}
                 <div className="flex gap-6">
                   <div className="flex flex-col items-center gap-4">
-                    <div className="w-24 h-32 border-2 border-amber/30 rounded-sm flex items-end justify-center pb-4 bg-amber/5">
-                      <Scale className="w-8 h-8 text-amber" />
+                    <div className="w-24 h-32 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
+                      <Scale className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-amber text-xs font-medium uppercase tracking-wider">Systems</span>
+                    <span className="text-futura-text text-xs font-medium uppercase tracking-wider">Systems</span>
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-8">
-                    <div className="w-24 h-40 border-2 border-copper/30 rounded-sm flex items-end justify-center pb-4 bg-copper/5">
-                      <Users className="w-8 h-8 text-copper" />
+                    <div className="w-24 h-40 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
+                      <Users className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-copper text-xs font-medium uppercase tracking-wider">People</span>
+                    <span className="text-futura-text text-xs font-medium uppercase tracking-wider">People</span>
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-4">
-                    <div className="w-24 h-36 border-2 border-gold/30 rounded-sm flex items-end justify-center pb-4 bg-gold/5">
-                      <Database className="w-8 h-8 text-gold" />
+                    <div className="w-24 h-36 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
+                      <Database className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-gold text-xs font-medium uppercase tracking-wider">Data</span>
+                    <span className="text-futura-text text-xs font-medium uppercase tracking-wider">Data</span>
                   </div>
                 </div>
                 {/* Connecting lines */}
@@ -286,15 +284,14 @@ export default function Home() {
       <section id="services" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-amber text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-service-areas-label">
+            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-service-areas-label">
               Service Areas
             </p>
             <h2 
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4"
               data-testid="text-service-areas-headline"
             >
-              <span className="text-futura-text-secondary">Legal Support Should </span>
-              <span className="text-amber">Never Sleep</span>
+              Legal Support Should Never Sleep
             </h2>
             <p className="text-futura-text-secondary text-lg max-w-2xl mx-auto">
               We partner with law firms that want to focus on what they do best. We do the rest.
@@ -311,10 +308,10 @@ export default function Home() {
                   className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group"
                   data-testid={`card-service-area-${index}`}
                 >
-                  <div className="w-12 h-12 bg-amber/10 rounded-sm flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-amber" />
+                  <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                    <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-amber transition-colors">{service.title}</h3>
+                  <h3 className="text-lg font-semibold text-white mb-2">{service.title}</h3>
                   <p className="text-futura-text-secondary text-sm leading-relaxed">{service.description}</p>
                 </div>
               );
@@ -327,7 +324,7 @@ export default function Home() {
       <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-gold text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
+            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
               Our Approach
             </p>
             <h2 
@@ -346,8 +343,8 @@ export default function Home() {
                 className="text-center p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all"
                 data-testid={`card-step-${index}`}
               >
-                <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-gold font-bold text-xl">{step.number}</span>
+                <div className="w-12 h-12 bg-futura-border rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">{step.number}</span>
                 </div>
                 <h3 className="text-sm font-semibold text-white">{step.title}</h3>
               </div>
@@ -360,7 +357,7 @@ export default function Home() {
       <section id="case-studies" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50 bg-gradient-to-b from-futura-bg to-futura-card/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-copper text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
+            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
               Case Studies
             </p>
             <h2 
@@ -376,31 +373,23 @@ export default function Home() {
 
           {/* Case Studies Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-case-studies">
-            {caseStudies.map((study, index) => {
-              const textColorClass = 
-                study.accentColor === "amber" ? "text-amber" :
-                study.accentColor === "copper" ? "text-copper" :
-                study.accentColor === "gold" ? "text-gold" :
-                "text-bronze";
-
-              return (
-                <div
-                  key={index}
-                  className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
-                  data-testid={`card-case-study-${index}`}
-                >
-                  <p className={`text-xs font-medium uppercase tracking-widest mb-3 ${textColorClass}`}>
-                    {study.category}
-                  </p>
-                  <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-amber transition-colors">
-                    {study.title}
-                  </h3>
-                  <p className="text-futura-text-secondary text-sm leading-relaxed">
-                    {study.description}
-                  </p>
-                </div>
-              );
-            })}
+            {caseStudies.map((study, index) => (
+              <div
+                key={index}
+                className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+                data-testid={`card-case-study-${index}`}
+              >
+                <p className="text-xs font-medium uppercase tracking-widest mb-3 text-futura-text">
+                  {study.category}
+                </p>
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  {study.title}
+                </h3>
+                <p className="text-futura-text-secondary text-sm leading-relaxed">
+                  {study.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -409,7 +398,7 @@ export default function Home() {
       <section id="mission" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-bronze text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-mission-label">
+            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-mission-label">
               Our Mission
             </p>
             <h2 
@@ -430,8 +419,8 @@ export default function Home() {
                   className="text-center p-6 border border-futura-border rounded-sm bg-futura-card"
                   data-testid={`card-mission-${index}`}
                 >
-                  <div className="w-12 h-12 bg-copper/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-6 h-6 text-bronze" />
+                  <div className="w-12 h-12 bg-futura-border rounded-full flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{principle.title}</h3>
                   <p className="text-futura-text-secondary text-sm">{principle.description}</p>
@@ -446,7 +435,7 @@ export default function Home() {
       <section id="pillars" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-amber text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-pillars-label">
+            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-pillars-label">
               Our Services
             </p>
             <h2 
@@ -473,7 +462,7 @@ export default function Home() {
                   size="lg"
                   className={`rounded-sm font-medium toggle-elevate ${
                     isActive 
-                      ? "toggle-elevated bg-amber text-futura-bg border-amber" 
+                      ? "toggle-elevated bg-parchment text-futura-bg border-parchment" 
                       : "border-futura-border text-futura-text-secondary"
                   }`}
                   onClick={() => setActivePillar(key)}
@@ -507,19 +496,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-bronze text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-people-label">
+              <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-people-label">
                 People, Not Replacement
               </p>
               <h2 
                 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6 leading-tight"
                 data-testid="text-people-headline"
               >
-                AI should support people—<span className="text-bronze">not sideline them.</span>
+                AI should support people—not sideline them.
               </h2>
               <p className="text-lg text-futura-text leading-relaxed mb-8" data-testid="text-people-body">
                 We believe business transformation starts with people. AI should reduce cognitive load, improve decision quality, and create space for human judgment—not remove it.
               </p>
-              <p className="text-white font-medium text-xl border-l-4 border-copper pl-6 py-2">
+              <p className="text-white font-medium text-xl border-l-4 border-parchment pl-6 py-2">
                 AI readiness means building systems that people trust, understand, and choose to use.
               </p>
             </div>
@@ -528,8 +517,8 @@ export default function Home() {
               <div className="space-y-5">
                 {peopleEmphasis.map((item, index) => (
                   <div key={index} className="flex items-center gap-4" data-testid={`text-people-emphasis-${index}`}>
-                    <div className="w-10 h-10 bg-copper/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                      <RefreshCw className="w-5 h-5 text-bronze" />
+                    <div className="w-10 h-10 bg-futura-border rounded-sm flex items-center justify-center flex-shrink-0">
+                      <RefreshCw className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-white text-lg font-medium">{item}</span>
                   </div>
@@ -545,7 +534,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-futura-card border border-futura-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
-              <p className="text-amber text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
+              <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
                 Get Started
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
@@ -562,7 +551,7 @@ export default function Home() {
               <div className="flex items-center gap-4 flex-wrap">
                 <Button 
                   size="lg"
-                  className="bg-amber text-futura-bg font-semibold rounded-sm px-8"
+                  className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-final"
                 >
                   Schedule Your Evaluation
@@ -584,7 +573,7 @@ export default function Home() {
               className="h-20"
             />
             <div className="flex items-center gap-6 flex-wrap">
-              <a href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-amber">Privacy Policy</a>
+              <a href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</a>
               <p className="text-futura-text-secondary text-sm" data-testid="text-copyright">
                 © 2025 Harp and Quill LLC. All rights reserved.
               </p>

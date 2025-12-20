@@ -86,6 +86,7 @@ export default {
         copper: "hsl(var(--copper) / <alpha-value>)",
         gold: "hsl(var(--gold) / <alpha-value>)",
         bronze: "hsl(var(--bronze) / <alpha-value>)",
+        parchment: "hsl(var(--parchment) / <alpha-value>)",
         // Futuristic warm gray scale (using CSS variables)
         "futura-bg": "hsl(var(--futura-bg) / <alpha-value>)",
         "futura-card": "hsl(var(--futura-card) / <alpha-value>)",
