@@ -1,19 +1,19 @@
 import { useState } from "react";
-import { Database, Layers, Shield, Map, Users, Brain, ArrowRight, Zap, CheckCircle, Building2, Briefcase, Target, Settings, RefreshCw } from "lucide-react";
+import { Database, Users, ArrowRight, Zap, Settings, RefreshCw, Scale, Clock, FileText, UserPlus, Search, BarChart3, Heart, Eye, UserCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import harpLogo from "@assets/harp-logo.png";
 
 type PillarKey = "data" | "people" | "systems";
 
 const servicePillars: Record<PillarKey, { title: string; icon: typeof Database; services: { name: string; description: string }[] }> = {
-  data: {
-    title: "Data",
-    icon: Database,
+  systems: {
+    title: "Systems",
+    icon: Settings,
     services: [
-      { name: "CRM", description: "Optimize your customer relationship management for AI-ready operations" },
-      { name: "Reporting", description: "Build reliable, consistent reporting foundations that AI can leverage" },
-      { name: "Context", description: "Capture and structure the context that gives data meaning" },
-      { name: "Data Hygiene", description: "Clean, deduplicate, and validate data for trustworthy AI inputs" },
+      { name: "Context Infrastructure", description: "Build the foundational systems that capture and share context" },
+      { name: "Process Mapping", description: "Document how work actually happens—not how it's written down" },
+      { name: "Vendor Selection", description: "Evaluate and choose the right tools for your specific needs" },
+      { name: "ROI Framework", description: "Establish clear metrics and expectations for AI investments" },
     ],
   },
   people: {
@@ -26,87 +26,117 @@ const servicePillars: Record<PillarKey, { title: string; icon: typeof Database; 
       { name: "Change Management", description: "Prepare teams for new ways of working with AI" },
     ],
   },
-  systems: {
-    title: "Systems",
-    icon: Settings,
+  data: {
+    title: "Data",
+    icon: Database,
     services: [
-      { name: "Context Infrastructure", description: "Build the foundational systems that capture and share context" },
-      { name: "Process Mapping", description: "Document how work actually happens—not how it's written down" },
-      { name: "Vendor Selection", description: "Evaluate and choose the right tools for your specific needs" },
-      { name: "ROI Framework", description: "Establish clear metrics and expectations for AI investments" },
+      { name: "CRM", description: "Optimize your customer relationship management for AI-ready operations" },
+      { name: "Reporting", description: "Build reliable, consistent reporting foundations that AI can leverage" },
+      { name: "Context", description: "Capture and structure the context that gives data meaning" },
+      { name: "Data Hygiene", description: "Clean, deduplicate, and validate data for trustworthy AI inputs" },
     ],
   },
 };
 
-const audiences = [
+const serviceAreas = [
   {
-    title: "AI Agencies & Implementation Partners",
-    tagline: "You deliver the technology. We help ensure your clients are actually ready for it.",
-    description: "We partner with AI agencies to reduce risk, shorten discovery cycles, and increase long-term client success by preparing data, governance, and operational context before deployment.",
-    icon: Building2,
-    accentColor: "mint",
+    title: "Automate Conflict Checks",
+    description: "Increase your speed to lead.",
+    icon: Zap,
   },
   {
-    title: "Founder-Led Service Businesses",
-    tagline: "You're scaling expertise, not just operations.",
-    description: "We help founders prepare their organizations for AI in a way that protects trust, empowers teams, and supports sustainable growth—without rushing into automation that creates confusion or resistance.",
-    icon: Briefcase,
-    accentColor: "royal-blue",
+    title: "Reimagine Intake",
+    description: "Convert new clients 24/7, 365.",
+    icon: Clock,
   },
   {
-    title: "Enterprise Operators & Executive Leaders",
-    tagline: "You're accountable for outcomes, not experiments.",
-    description: "We support leaders responsible for AI success across revenue, operations, and strategy by building the clarity and governance required to scale AI responsibly.",
-    icon: Target,
-    accentColor: "golden-yellow",
+    title: "Streamline Billing",
+    description: "Automate proactive client comms.",
+    icon: FileText,
+  },
+  {
+    title: "Rethink Recruiting",
+    description: "Put your recruiting on auto-pilot.",
+    icon: UserPlus,
+  },
+  {
+    title: "Future-proof SEO",
+    description: "Unlock Local and LLM Search.",
+    icon: Search,
+  },
+  {
+    title: "Measure Results",
+    description: "Understand how spend translates to revenue.",
+    icon: BarChart3,
   },
 ];
 
-const focusAreas = [
+const approachSteps = [
+  { number: 1, title: "Systems Evaluation" },
+  { number: 2, title: "Needs Assessment" },
+  { number: 3, title: "Vendor Selection" },
+  { number: 4, title: "Integration" },
+  { number: 5, title: "Training" },
+  { number: 6, title: "Optimization" },
+];
+
+const caseStudies = [
   {
-    title: "Clean, Trustworthy Data",
-    description: "AI depends on reliable inputs. We identify where data breaks down, conflicts, or lacks ownership—and help teams establish confidence in the information AI will rely on.",
-    icon: Database,
+    category: "Divorce Practice",
+    title: "Document Review Time Cut by 60%",
+    description: "A 12-attorney family law practice automated their financial disclosure intake and document review process.",
     accentColor: "mint",
   },
   {
-    title: "Modern, Interoperable Tools",
-    description: "AI cannot operate in silos. We assess how systems connect, where friction exists, and how tools can support shared context instead of fragmenting it further.",
-    icon: Layers,
+    category: "Custody Specialist",
+    title: "Parenting Plan Generation in Minutes",
+    description: "Solo practitioner reduced parenting plan drafting from 3 hours to 20 minutes with AI-assisted templates.",
     accentColor: "royal-blue",
   },
   {
-    title: "Context Infrastructure",
-    description: "Decisions, conversations, and workflows are valuable—but often invisible. We help capture and structure this context so AI systems and humans can reason from the same understanding.",
-    icon: Brain,
+    category: "High-Asset Divorce",
+    title: "Asset Division Analysis 10x Faster",
+    description: "Mid-size firm uses AI to analyze complex asset portfolios and model equitable distribution scenarios.",
     accentColor: "golden-yellow",
   },
   {
-    title: "AI Governance & Ethical Safeguards",
-    description: "Trust matters. We help organizations define clear boundaries, accountability, and review processes so AI supports people rather than undermining confidence or control.",
-    icon: Shield,
+    category: "Child Support",
+    title: "Support Calculations Fully Automated",
+    description: "Practice eliminated manual worksheet errors with AI-powered state guideline calculations and updates.",
     accentColor: "hot-pink",
   },
   {
-    title: "Process Mapping & Operational Clarity",
-    description: "Unclear processes create unreliable AI outcomes. We map how work actually happens—not how it's documented—so AI supports real operations.",
-    icon: Map,
+    category: "Mediation Practice",
+    title: "Client Intake Fully Automated",
+    description: "Family mediator eliminated 15 hours of weekly administrative work with AI-powered intake and scheduling.",
     accentColor: "mint",
   },
   {
-    title: "Change Management & Adoption Support",
-    description: "AI readiness is as much cultural as technical. We help leaders prepare teams for new ways of working through clarity, communication, and shared expectations.",
-    icon: Users,
+    category: "General Family Law",
+    title: "24/7 Client Communication",
+    description: "AI assistant handles after-hours client queries about case status, improving satisfaction scores by 45%.",
     accentColor: "royal-blue",
   },
 ];
 
-const contextBenefits = [
-  "AI recommendations are more accurate",
-  "Decisions are easier to audit and explain",
-  "Teams trust outcomes instead of questioning them",
-  "Automation supports judgment instead of replacing it",
+const missionPrinciples = [
+  {
+    title: "Accessibility",
+    description: "Advocate for an inclusive legal system.",
+    icon: Heart,
+  },
+  {
+    title: "Objectivity",
+    description: "Recommend tech stack without bias or incentive.",
+    icon: Eye,
+  },
+  {
+    title: "Humanity",
+    description: "AI can never replace human touch.",
+    icon: UserCheck,
+  },
 ];
+
 
 const peopleEmphasis = [
   "Transparency over black boxes",
@@ -138,6 +168,13 @@ export default function Home() {
             />
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
+                href="#services" 
+                className="text-brutal-text-secondary text-sm transition-colors hover:text-mint"
+                data-testid="link-services"
+              >
+                Service Areas
+              </a>
+              <a 
                 href="#approach" 
                 className="text-brutal-text-secondary text-sm transition-colors hover:text-mint"
                 data-testid="link-approach"
@@ -145,11 +182,11 @@ export default function Home() {
                 Our Approach
               </a>
               <a 
-                href="#focus" 
+                href="#case-studies" 
                 className="text-brutal-text-secondary text-sm transition-colors hover:text-mint"
-                data-testid="link-focus"
+                data-testid="link-case-studies"
               >
-                What We Focus On
+                Case Studies
               </a>
               <Button 
                 className="bg-white text-brutal-bg font-medium rounded-sm"
@@ -171,7 +208,7 @@ export default function Home() {
               {/* Accent Line */}
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-1 bg-mint rounded-full" />
-                <span className="text-mint text-sm font-medium uppercase tracking-widest">AI Readiness Accelerator</span>
+                <span className="text-mint text-sm font-medium uppercase tracking-widest">Family Law Technology</span>
               </div>
 
               {/* Main Headline */}
@@ -179,9 +216,9 @@ export default function Home() {
                 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8"
                 data-testid="text-headline"
               >
-                <span className="text-white">Most AI implementations </span>
-                <span className="text-mint">fail</span>
-                <span className="text-white"> to produce ROI</span>
+                <span className="text-white">Modern tools for </span>
+                <span className="text-mint">family law</span>
+                <span className="text-white"> firms</span>
               </h1>
               
               {/* Subheader */}
@@ -189,15 +226,15 @@ export default function Home() {
                 className="text-xl md:text-2xl text-brutal-text leading-relaxed mb-6 font-medium"
                 data-testid="text-subheader"
               >
-                AI succeeds when your people, systems, and data are prepared for it.
+                Stop paying premiums for archaic software and predatory service providers.
               </p>
 
               <p 
                 className="text-base leading-relaxed mb-10 max-w-xl"
                 data-testid="text-hero-description"
               >
-                <span className="text-white font-semibold italic">We focus upstream</span>
-                <span className="text-brutal-text-secondary">—where AI outcomes are decided long before technology is introduced.</span>
+                <span className="text-brutal-text-secondary">Future-proof your business with thoughtful change management. Evolve your practice with </span>
+                <span className="text-white font-semibold">modern tools, powerful data, and intelligent automation.</span>
               </p>
 
               {/* CTA Buttons */}
@@ -207,7 +244,7 @@ export default function Home() {
                   className="bg-mint text-brutal-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-primary"
                 >
-                  Start With Readiness
+                  Get Started
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
                 <Button 
@@ -224,13 +261,13 @@ export default function Home() {
             {/* Right Visual Element */}
             <div className="hidden lg:flex justify-center items-center">
               <div className="relative">
-                {/* Abstract visual representation of three pillars */}
+                {/* Abstract visual representation - scales of justice theme */}
                 <div className="flex gap-6">
                   <div className="flex flex-col items-center gap-4">
                     <div className="w-24 h-32 border-2 border-mint/30 rounded-sm flex items-end justify-center pb-4 bg-mint/5">
-                      <Database className="w-8 h-8 text-mint" />
+                      <Scale className="w-8 h-8 text-mint" />
                     </div>
-                    <span className="text-mint text-xs font-medium uppercase tracking-wider">Data</span>
+                    <span className="text-mint text-xs font-medium uppercase tracking-wider">Systems</span>
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-8">
                     <div className="w-24 h-40 border-2 border-royal-blue/30 rounded-sm flex items-end justify-center pb-4 bg-royal-blue/5">
@@ -240,9 +277,9 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-4">
                     <div className="w-24 h-36 border-2 border-golden-yellow/30 rounded-sm flex items-end justify-center pb-4 bg-golden-yellow/5">
-                      <Settings className="w-8 h-8 text-golden-yellow" />
+                      <Database className="w-8 h-8 text-golden-yellow" />
                     </div>
-                    <span className="text-golden-yellow text-xs font-medium uppercase tracking-wider">Systems</span>
+                    <span className="text-golden-yellow text-xs font-medium uppercase tracking-wider">Data</span>
                   </div>
                 </div>
                 {/* Connecting lines */}
@@ -253,16 +290,176 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section - Three Pillars */}
+      {/* Service Areas Section */}
       <section id="services" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-service-areas-label">
+              Service Areas
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4"
+              data-testid="text-service-areas-headline"
+            >
+              <span className="text-brutal-text-secondary">Legal Support Should </span>
+              <span className="text-mint">Never Sleep</span>
+            </h2>
+            <p className="text-brutal-text-secondary text-lg max-w-2xl mx-auto">
+              We partner with law firms that want to focus on what they do best. We do the rest.
+            </p>
+          </div>
+
+          {/* Service Areas Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-service-areas">
+            {serviceAreas.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <div 
+                  key={service.title}
+                  className="p-6 border border-brutal-border rounded-sm bg-brutal-card hover-elevate transition-all group"
+                  data-testid={`card-service-area-${index}`}
+                >
+                  <div className="w-12 h-12 bg-mint/10 rounded-sm flex items-center justify-center mb-4">
+                    <IconComponent className="w-6 h-6 text-mint" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-mint transition-colors">{service.title}</h3>
+                  <p className="text-brutal-text-secondary text-sm leading-relaxed">{service.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Approach Section - 6 Steps */}
+      <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
+            <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
+              Our Approach
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
+              data-testid="text-approach-headline"
+            >
+              Six steps to AI-Native practice transformation.
+            </h2>
+          </div>
+
+          {/* Steps Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" data-testid="grid-approach-steps">
+            {approachSteps.map((step, index) => (
+              <div 
+                key={step.number}
+                className="text-center p-6 border border-brutal-border rounded-sm bg-brutal-card hover-elevate transition-all"
+                data-testid={`card-step-${index}`}
+              >
+                <div className="w-12 h-12 bg-golden-yellow/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-golden-yellow font-bold text-xl">{step.number}</span>
+                </div>
+                <h3 className="text-sm font-semibold text-white">{step.title}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section id="case-studies" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50 bg-gradient-to-b from-brutal-bg to-brutal-card/20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
+              Case Studies
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
+              data-testid="text-case-studies-headline"
+            >
+              Real results from real firms.
+            </h2>
+            <p className="text-brutal-text-secondary text-lg max-w-2xl mx-auto">
+              See how family law firms are transforming their practice with AI-native tools.
+            </p>
+          </div>
+
+          {/* Case Studies Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-case-studies">
+            {caseStudies.map((study, index) => {
+              const textColorClass = 
+                study.accentColor === "mint" ? "text-mint" :
+                study.accentColor === "royal-blue" ? "text-royal-blue" :
+                study.accentColor === "golden-yellow" ? "text-golden-yellow" :
+                "text-hot-pink";
+
+              return (
+                <div
+                  key={index}
+                  className="bg-brutal-card border border-brutal-border rounded-sm p-6 hover-elevate transition-all group"
+                  data-testid={`card-case-study-${index}`}
+                >
+                  <p className={`text-xs font-medium uppercase tracking-widest mb-3 ${textColorClass}`}>
+                    {study.category}
+                  </p>
+                  <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-mint transition-colors">
+                    {study.title}
+                  </h3>
+                  <p className="text-brutal-text-secondary text-sm leading-relaxed">
+                    {study.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section id="mission" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-mission-label">
+              Our Mission
+            </p>
+            <h2 
+              className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-4 max-w-3xl mx-auto"
+              data-testid="text-mission-headline"
+            >
+              Our mission is to empower and lead small to medium size law firms through the AI era with these core principles.
+            </h2>
+          </div>
+
+          {/* Mission Principles */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto" data-testid="grid-mission">
+            {missionPrinciples.map((principle, index) => {
+              const IconComponent = principle.icon;
+              return (
+                <div 
+                  key={principle.title}
+                  className="text-center p-6 border border-brutal-border rounded-sm bg-brutal-card"
+                  data-testid={`card-mission-${index}`}
+                >
+                  <div className="w-12 h-12 bg-hot-pink/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-6 h-6 text-hot-pink" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2">{principle.title}</h3>
+                  <p className="text-brutal-text-secondary text-sm">{principle.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services - Three Pillars */}
+      <section id="pillars" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-pillars-label">
               Our Services
             </p>
             <h2 
               className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
-              data-testid="text-services-headline"
+              data-testid="text-pillars-headline"
             >
               Three Pillars of AI Readiness
             </h2>
@@ -298,12 +495,12 @@ export default function Home() {
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" data-testid="grid-services">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" data-testid="grid-pillar-services">
             {currentPillar.services.map((service, index) => (
               <div 
                 key={service.name}
                 className="p-6 border border-brutal-border rounded-sm bg-brutal-bg/50 hover-elevate transition-all"
-                data-testid={`card-service-${index}`}
+                data-testid={`card-pillar-service-${index}`}
               >
                 <h3 className="text-lg font-semibold text-white mb-2">{service.name}</h3>
                 <p className="text-brutal-text-secondary text-sm leading-relaxed">{service.description}</p>
@@ -313,7 +510,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* People, Not Replacement Section - Prominent */}
+      {/* People, Not Replacement Section */}
       <section id="people" className="relative z-10 py-24 lg:py-32 border-t border-brutal-border/50 bg-gradient-to-b from-brutal-bg to-brutal-card/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -351,236 +548,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Problem Section */}
-      <section id="problem" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-royal-blue text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-problem-label">
-              The Problem
-            </p>
-            <h2 
-              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
-              data-testid="text-problem-headline"
-            >
-              Most AI initiatives don't fail because of the models.
-            </h2>
-            <p className="text-2xl text-brutal-text-secondary font-medium mb-8">
-              They fail because organizations aren't ready for them.
-            </p>
-            <div 
-              className="text-base text-brutal-text leading-relaxed space-y-5"
-              data-testid="text-problem-body"
-            >
-              <p>
-                Teams rush to deploy tools without shared context. Data is fragmented or unreliable. Decisions live in conversations, inboxes, and undocumented workflows. Governance is an afterthought. Employees are left uncertain about how AI fits into their work—or whether it threatens it.
-              </p>
-              <p>
-                The result is stalled pilots, mistrust, underwhelming impact, and growing complexity instead of clarity.
-              </p>
-              <p className="text-white font-medium text-lg border-l-2 border-mint pl-4">
-                AI doesn't fail due to a lack of capability.
-                <br />
-                It fails due to a lack of readiness.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What We Focus On Section */}
-      <section id="focus" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-focus-label">
-            What We Focus On
-          </p>
-          <h2 
-            className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
-            data-testid="text-focus-headline"
-          >
-            Building the foundations AI depends on
-          </h2>
-          <p className="text-brutal-text text-lg mb-12 max-w-2xl" data-testid="text-focus-intro">
-            We address the upstream challenges that determine whether AI implementations succeed or struggle.
-          </p>
-
-          {/* Focus Areas Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {focusAreas.map((area, index) => {
-              const borderLeftColor = 
-                area.accentColor === "mint" ? "#98FF98" :
-                area.accentColor === "royal-blue" ? "#4169E1" :
-                area.accentColor === "golden-yellow" ? "#FFD700" :
-                "#FF69B4";
-              
-              const iconColorClass = 
-                area.accentColor === "mint" ? "text-mint" :
-                area.accentColor === "royal-blue" ? "text-royal-blue" :
-                area.accentColor === "golden-yellow" ? "text-golden-yellow" :
-                "text-hot-pink";
-              
-              const bgColorClass = 
-                area.accentColor === "mint" ? "bg-mint/10" :
-                area.accentColor === "royal-blue" ? "bg-royal-blue/10" :
-                area.accentColor === "golden-yellow" ? "bg-golden-yellow/10" :
-                "bg-hot-pink/10";
-
-              return (
-                <div
-                  key={index}
-                  className="bg-brutal-card border border-brutal-border rounded-sm p-6 transition-colors hover:border-brutal-border-hover group"
-                  style={{ borderLeftWidth: "2px", borderLeftColor: borderLeftColor }}
-                  data-testid={`focus-card-${index}`}
-                >
-                  <div className={`w-10 h-10 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
-                    <area.icon className={`w-5 h-5 ${iconColorClass}`} />
-                  </div>
-                  <h3 className="text-white font-semibold text-base mb-2 group-hover:text-mint transition-colors">
-                    {area.title}
-                  </h3>
-                  <p className="text-brutal-text leading-relaxed text-sm">
-                    {area.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach Section */}
-      <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <p className="text-golden-yellow text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
-                Our Approach
-              </p>
-              <h2 
-                className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
-                data-testid="text-approach-headline"
-              >
-                Alignment before scale.
-              </h2>
-              <p 
-                className="text-lg text-brutal-text leading-relaxed mb-8"
-                data-testid="text-approach-body"
-              >
-                Our work starts with discovery—understanding how decisions are made, how information flows, and where context breaks down. We then help organizations align data, tools, processes, and governance so AI can operate on trusted, shared understanding.
-              </p>
-              <p className="text-white font-medium text-xl border-l-4 border-golden-yellow pl-6 py-2">
-                We don't sell tools.
-                <br />
-                We prepare organizations to use them well.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <div className="bg-brutal-card border border-brutal-border rounded-sm p-6 flex items-start gap-4">
-                <div className="w-12 h-12 bg-golden-yellow/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                  <span className="text-golden-yellow font-bold text-xl">1</span>
-                </div>
-                <div>
-                  <h3 className="text-white font-semibold text-lg mb-1">Discovery</h3>
-                  <p className="text-brutal-text text-sm">Map how decisions are made, where information lives, and what context is missing.</p>
-                </div>
-              </div>
-              <div className="bg-brutal-card border border-brutal-border rounded-sm p-6 flex items-start gap-4">
-                <div className="w-12 h-12 bg-golden-yellow/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                  <span className="text-golden-yellow font-bold text-xl">2</span>
-                </div>
-                <div>
-                  <h3 className="text-white font-semibold text-lg mb-1">Alignment</h3>
-                  <p className="text-brutal-text text-sm">Unify data, tools, processes, and governance around shared understanding.</p>
-                </div>
-              </div>
-              <div className="bg-brutal-card border border-brutal-border rounded-sm p-6 flex items-start gap-4">
-                <div className="w-12 h-12 bg-golden-yellow/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                  <span className="text-golden-yellow font-bold text-xl">3</span>
-                </div>
-                <div>
-                  <h3 className="text-white font-semibold text-lg mb-1">Readiness</h3>
-                  <p className="text-brutal-text text-sm">Prepare your organization so AI implementations can succeed from day one.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Who We Serve Section */}
-      <section id="serve" className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-hot-pink text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-serve-label">
-            Who We Serve
-          </p>
-          <h2 
-            className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-12"
-            data-testid="text-serve-headline"
-          >
-            Organizations preparing for AI success
-          </h2>
-
-          {/* Audience Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {audiences.map((audience, index) => {
-              const borderLeftColor = 
-                audience.accentColor === "mint" ? "#98FF98" :
-                audience.accentColor === "royal-blue" ? "#4169E1" :
-                "#FFD700";
-              
-              const iconColorClass = 
-                audience.accentColor === "mint" ? "text-mint" :
-                audience.accentColor === "royal-blue" ? "text-royal-blue" :
-                "text-golden-yellow";
-              
-              const bgColorClass = 
-                audience.accentColor === "mint" ? "bg-mint/10" :
-                audience.accentColor === "royal-blue" ? "bg-royal-blue/10" :
-                "bg-golden-yellow/10";
-
-              return (
-                <div
-                  key={index}
-                  className="bg-brutal-card border border-brutal-border rounded-sm p-6 transition-colors hover:border-brutal-border-hover group"
-                  style={{ borderLeftWidth: "2px", borderLeftColor: borderLeftColor }}
-                  data-testid={`audience-card-${index}`}
-                >
-                  <div className={`w-12 h-12 ${bgColorClass} rounded-sm flex items-center justify-center mb-4`}>
-                    <audience.icon className={`w-6 h-6 ${iconColorClass}`} />
-                  </div>
-                  <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-mint transition-colors">
-                    {audience.title}
-                  </h3>
-                  <p className="text-mint text-sm font-medium mb-3">
-                    {audience.tagline}
-                  </p>
-                  <p className="text-brutal-text leading-relaxed text-sm">
-                    {audience.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="relative z-10 py-20 lg:py-24 border-t border-brutal-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-brutal-card border border-brutal-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
               <p className="text-mint text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
-                Start With Readiness
+                Get Started
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
-                Prepare once. Implement with confidence.
+                Ready to modernize your practice?
               </h2>
               <p className="text-brutal-text text-lg mb-4" data-testid="text-cta-body">
-                If you're exploring AI—or struggling to move from pilots to impact—we can help you understand what's actually required for success.
+                Let us help you evaluate your current systems and build a roadmap to AI-native operations.
               </p>
               <p className="text-brutal-text-secondary mb-8" data-testid="text-cta-sub">
-                Start with a readiness assessment or discovery conversation.
+                Start with a free systems evaluation.
                 <br />
-                <span className="text-white">No pressure. No tool-selling. Just clarity.</span>
+                <span className="text-white">No pressure. No bias. Just clarity.</span>
               </p>
               <div className="flex items-center gap-4 flex-wrap">
                 <Button 
@@ -588,7 +573,7 @@ export default function Home() {
                   className="bg-mint text-brutal-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-final"
                 >
-                  Let's Prepare Your Organization
+                  Schedule Your Evaluation
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>
