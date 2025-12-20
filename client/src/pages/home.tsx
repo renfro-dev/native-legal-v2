@@ -1,14 +1,9 @@
 import { Link } from "wouter";
-import { Database, Users, ArrowRight, Zap, Scale, Clock, FileText, UserPlus, Search, BarChart3 } from "lucide-react";
+import { Database, Users, ArrowRight, Scale, Clock, FileText, UserPlus, Search, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import harpLogo from "@assets/harp-logo.png";
 
 const serviceAreas = [
-  {
-    title: "Automate Conflict Checks",
-    description: "Increase your speed to lead.",
-    icon: Zap,
-  },
   {
     title: "Reimagine Intake",
     description: "Convert new clients 24/7, 365.",
@@ -106,19 +101,19 @@ export default function Home() {
                 Service Areas
               </a>
               <Link 
+                href="/custom-software" 
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                data-testid="link-custom-software"
+              >
+                Custom Software
+              </Link>
+              <Link 
                 href="/ai-readiness" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-ai-readiness"
               >
                 AI Readiness
               </Link>
-              <a 
-                href="#case-studies" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
-                data-testid="link-case-studies"
-              >
-                Case Studies
-              </a>
               <Button 
                 className="bg-parchment text-futura-bg font-medium rounded-sm"
                 data-testid="button-contact"

@@ -85,18 +85,18 @@ export default function AIReadiness() {
                 Service Areas
               </Link>
               <Link 
+                href="/custom-software" 
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                data-testid="link-custom-software"
+              >
+                Custom Software
+              </Link>
+              <Link 
                 href="/ai-readiness" 
                 className="text-white text-sm transition-colors"
                 data-testid="link-ai-readiness"
               >
                 AI Readiness
-              </Link>
-              <Link 
-                href="/#case-studies" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
-                data-testid="link-case-studies"
-              >
-                Case Studies
               </Link>
               <Button 
                 className="bg-parchment text-futura-bg font-medium rounded-sm"
