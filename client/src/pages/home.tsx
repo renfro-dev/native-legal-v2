@@ -221,14 +221,6 @@ export default function Home() {
                 <span className="text-white"> firms</span>
               </h1>
               
-              {/* Subheader */}
-              <p 
-                className="text-xl md:text-2xl text-futura-text leading-relaxed mb-6 font-medium"
-                data-testid="text-subheader"
-              >
-                Stop paying premiums for archaic software and predatory service providers.
-              </p>
-
               <p 
                 className="text-base leading-relaxed mb-10 max-w-xl"
                 data-testid="text-hero-description"
