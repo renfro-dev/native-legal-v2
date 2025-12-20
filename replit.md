@@ -13,18 +13,20 @@ Preferred communication style: Simple, everyday language.
 ### Frontend Architecture
 - **Framework**: React 18 with TypeScript
 - **Routing**: Wouter (lightweight React router)
-- **Styling**: Tailwind CSS with a custom dark editorial brutalist theme
+- **Styling**: Tailwind CSS with a minimal futuristic dark theme (warm accents)
 - **UI Components**: shadcn/ui component library (New York style) built on Radix UI primitives
 - **State Management**: TanStack React Query for server state
 - **Build Tool**: Vite with custom Replit plugins for development
 
 ### Design System
-The application follows a "Dark Editorial Brutalist" design approach:
-- Near-black background (#0a0a0a) with dark gray cards (#111111)
-- Mint green primary accent (#98FF98) with secondary accents in royal blue, golden yellow, and hot pink
-- Inter font family throughout
-- Minimal border-radius (4px max) for sharp brutalist feel
-- Left-aligned layouts for editorial sophistication
+The application follows a "Minimal Futuristic" design approach:
+- Near-black background (#0a0a0a) with dark gray cards (#141414)
+- Warm accent colors: amber (#f59e0b), copper (#d97706), gold (#eab308), bronze (#92400e)
+- Inter font family throughout with refined typography
+- Refined border-radius (8px lg, 6px md) for elegant feel
+- Left-aligned layouts with generous whitespace
+- Subtle micro-animations (fadeInUp) for refined interactions
+- High-end, sophisticated aesthetic with warm metallics
 
 ### Backend Architecture
 - **Framework**: Express.js with TypeScript
