@@ -81,18 +81,18 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
-        // Warm accent colors
-        amber: "#f59e0b",
-        copper: "#d97706",
-        gold: "#eab308",
-        bronze: "#92400e",
-        // Futuristic warm gray scale
-        "futura-bg": "#0a0a0a",
-        "futura-card": "#141414",
-        "futura-border": "#2a2520",
-        "futura-border-hover": "#3a3530",
-        "futura-text": "#a39e99",
-        "futura-text-secondary": "#787470",
+        // Warm accent colors (using CSS variables for consistency)
+        amber: "hsl(var(--amber) / <alpha-value>)",
+        copper: "hsl(var(--copper) / <alpha-value>)",
+        gold: "hsl(var(--gold) / <alpha-value>)",
+        bronze: "hsl(var(--bronze) / <alpha-value>)",
+        // Futuristic warm gray scale (using CSS variables)
+        "futura-bg": "hsl(var(--futura-bg) / <alpha-value>)",
+        "futura-card": "hsl(var(--futura-card) / <alpha-value>)",
+        "futura-border": "hsl(var(--futura-border) / <alpha-value>)",
+        "futura-border-hover": "hsl(var(--futura-border-hover) / <alpha-value>)",
+        "futura-text": "hsl(var(--futura-text) / <alpha-value>)",
+        "futura-text-secondary": "hsl(var(--futura-text-secondary) / <alpha-value>)",
       },
       fontFamily: {
         sans: ["Inter", "var(--font-sans)", "sans-serif"],

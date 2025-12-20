@@ -64,6 +64,14 @@
   --gold: 45 93% 47%;
   --bronze: 28 80% 35%;
 
+  /* Futuristic warm gray scale */
+  --futura-bg: 0 0% 4%;
+  --futura-card: 0 0% 8%;
+  --futura-border: 25 10% 15%;
+  --futura-border-hover: 25 10% 20%;
+  --futura-text: 30 5% 63%;
+  --futura-text-secondary: 25 5% 46%;
+
   /* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
@@ -148,6 +156,14 @@
   --copper: 33 80% 45%;
   --gold: 45 93% 47%;
   --bronze: 28 80% 35%;
+
+  /* Futuristic warm gray scale */
+  --futura-bg: 0 0% 4%;
+  --futura-card: 0 0% 8%;
+  --futura-border: 25 10% 15%;
+  --futura-border-hover: 25 10% 20%;
+  --futura-text: 30 5% 63%;
+  --futura-text-secondary: 25 5% 46%;
 
   /* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
