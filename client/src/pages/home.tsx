@@ -136,8 +136,8 @@ export default function Home() {
                 className="text-base leading-relaxed mb-10 max-w-xl"
                 data-testid="text-hero-description"
               >
-                <span className="text-futura-text-secondary">Evolve your practice with </span>
-                <span className="text-white font-semibold">powerful data and intelligent automation.</span>
+                <span className="text-futura-text-secondary">Future-proof your business with thoughtful change management. Evolve your practice with </span>
+                <span className="text-white font-semibold">modern tools, powerful data, and intelligent automation.</span>
               </p>
 
               {/* CTA Buttons */}
