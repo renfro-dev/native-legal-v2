@@ -107,12 +107,6 @@ export default function Home() {
               >
                 AI Readiness
               </Link>
-              <Button 
-                className="bg-parchment text-futura-bg font-medium rounded-sm"
-                data-testid="button-contact"
-              >
-                Get Started
-              </Button>
             </nav>
           </div>
         </div>
