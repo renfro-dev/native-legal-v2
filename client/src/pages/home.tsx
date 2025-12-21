@@ -84,10 +84,7 @@ export default function Home() {
       {/* Header */}
       <header className="relative z-10 border-b border-futura-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between gap-4 flex-wrap">
-            <Link href="/" className="text-white font-bold text-xl tracking-tight" data-testid="link-logo">
-              Harp & Quill
-            </Link>
+          <div className="flex items-center justify-end gap-6 flex-wrap">
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
                 href="#services" 
