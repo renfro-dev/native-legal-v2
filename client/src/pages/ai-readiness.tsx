@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Database, Users, ArrowRight, Settings, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import harpLogo from "@assets/harp-logo.png";
 
 type PillarKey = "data" | "people" | "systems";
 
@@ -68,13 +67,8 @@ export default function AIReadiness() {
       <header className="relative z-10 border-b border-futura-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            <Link href="/">
-              <img 
-                src={harpLogo} 
-                alt="harp" 
-                className="h-20 cursor-pointer"
-                data-testid="img-logo"
-              />
+            <Link href="/" className="text-white font-bold text-xl tracking-tight" data-testid="link-logo">
+              Harp & Quill
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
@@ -114,7 +108,7 @@ export default function AIReadiness() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-1 bg-parchment rounded-full" />
-              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">AI Readiness</span>
+              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Harp & Quill</span>
             </div>
 
             <h1 
@@ -295,12 +289,8 @@ export default function AIReadiness() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/">
-              <img 
-                src={harpLogo} 
-                alt="harp" 
-                className="h-20 cursor-pointer"
-              />
+            <Link href="/" className="text-white font-bold text-xl tracking-tight">
+              Harp & Quill
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
               <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>

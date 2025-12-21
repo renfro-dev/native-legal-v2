@@ -1,7 +1,6 @@
 import { Link } from "wouter";
 import { Database, Users, ArrowRight, Scale, Clock, FileText, UserPlus, Search, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import harpLogo from "@assets/harp-logo.png";
 
 const serviceAreas = [
   {
@@ -86,12 +85,9 @@ export default function Home() {
       <header className="relative z-10 border-b border-futura-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            <img 
-              src={harpLogo} 
-              alt="harp" 
-              className="h-20"
-              data-testid="img-logo"
-            />
+            <Link href="/" className="text-white font-bold text-xl tracking-tight" data-testid="link-logo">
+              Harp & Quill
+            </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
                 href="#services" 
@@ -134,7 +130,7 @@ export default function Home() {
               {/* Accent Line */}
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-1 bg-parchment rounded-full" />
-                <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Family Law Technology</span>
+                <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Harp & Quill</span>
               </div>
 
               {/* Main Headline */}
@@ -291,11 +287,9 @@ export default function Home() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <img 
-              src={harpLogo} 
-              alt="harp" 
-              className="h-20"
-            />
+            <Link href="/" className="text-white font-bold text-xl tracking-tight">
+              Harp & Quill
+            </Link>
             <div className="flex items-center gap-6 flex-wrap">
               <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>
               <p className="text-futura-text-secondary text-sm" data-testid="text-copyright">
