@@ -64,6 +64,13 @@ export default function CustomSoftware() {
                 Service Areas
               </Link>
               <Link 
+                href="/executive-assistants" 
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                data-testid="link-executive-assistants"
+              >
+                Executive Assistants
+              </Link>
+              <Link 
                 href="/custom-software" 
                 className="text-white text-sm transition-colors"
                 data-testid="link-custom-software"

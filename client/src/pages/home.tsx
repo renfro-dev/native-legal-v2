@@ -94,6 +94,13 @@ export default function Home() {
                 Service Areas
               </a>
               <Link 
+                href="/executive-assistants" 
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                data-testid="link-executive-assistants"
+              >
+                Executive Assistants
+              </Link>
+              <Link 
                 href="/custom-software" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-custom-software"
