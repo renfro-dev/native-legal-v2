@@ -86,11 +86,12 @@ export default function Home() {
 
               {/* Main Headline */}
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white text-left"
                 style={{ fontFamily: 'var(--font-karl)' }}
                 data-testid="text-headline"
               >
-                modErn Tools For laW fIrms
+                modErn Tools<br />
+                <span className="bg-parchment/20 px-2 py-1 text-parchment">For laW fIrms</span>
               </h1>
               
               <p 
@@ -159,7 +160,7 @@ export default function Home() {
       ======================================== */}
       <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-left mb-16">
             <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
               What We Do
             </p>
@@ -167,7 +168,8 @@ export default function Home() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
               data-testid="text-services-headline"
             >
-              Scale Revenues, Not Overhead
+              Scale Revenues<br />
+              <span className="bg-parchment/20 px-2 py-1 text-parchment">Not Overhead</span>
             </h2>
           </div>
 
@@ -248,7 +250,7 @@ export default function Home() {
       ======================================== */}
       <section id="case-studies" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50 bg-gradient-to-b from-futura-bg to-futura-card/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-left mb-12">
             <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
               Case Studies
             </p>
@@ -256,9 +258,10 @@ export default function Home() {
               className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
               data-testid="text-case-studies-headline"
             >
-              Real results from real firms.
+              Real results<br />
+              <span className="bg-parchment/20 px-2 py-1 text-parchment">from real firms</span>
             </h2>
-            <p className="text-futura-text-secondary text-lg max-w-2xl mx-auto">
+            <p className="text-futura-text-secondary text-lg max-w-2xl">
               See how family law firms are transforming their practice with AI-native tools.
             </p>
           </div>
