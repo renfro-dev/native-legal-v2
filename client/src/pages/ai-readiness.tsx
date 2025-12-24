@@ -72,7 +72,7 @@ export default function AIReadiness() {
               className="text-white text-xl italic font-light tracking-wide"
               data-testid="link-logo"
             >
-              Harp & Quill
+              Native Legal
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
@@ -120,7 +120,7 @@ export default function AIReadiness() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-1 bg-parchment rounded-full" />
-              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Harp & Quill</span>
+              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Native Legal</span>
             </div>
 
             <h1 
@@ -302,12 +302,12 @@ export default function AIReadiness() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <Link href="/" className="text-white font-bold text-xl tracking-tight">
-              Harp & Quill
+              Native Legal
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
               <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>
               <p className="text-futura-text-secondary text-sm" data-testid="text-copyright">
-                © 2025 Harp and Quill LLC. All rights reserved.
+                © 2025 Native Legal LLC. All rights reserved.
               </p>
             </div>
           </div>

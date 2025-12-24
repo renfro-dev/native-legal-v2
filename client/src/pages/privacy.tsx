@@ -20,7 +20,7 @@ export default function Privacy() {
           <section>
             <h2 className="text-2xl font-semibold text-brutal-text mb-4">Introduction</h2>
             <p>
-              Harp and Quill LLC ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+              Native Legal LLC ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
             </p>
           </section>
 
@@ -112,8 +112,8 @@ export default function Privacy() {
               If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact us at:
             </p>
             <div className="mt-4">
-              <p><strong>Harp and Quill LLC</strong></p>
-              <p>Email: privacy@harpandquill.com</p>
+              <p><strong>Native Legal LLC</strong></p>
+              <p>Email: privacy@nativelegal.io</p>
             </div>
           </section>
         </div>

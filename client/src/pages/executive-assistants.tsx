@@ -62,7 +62,7 @@ export default function ExecutiveAssistants() {
               className="text-white text-xl italic font-light tracking-wide"
               data-testid="link-logo"
             >
-              Harp & Quill
+              Native Legal
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
@@ -110,7 +110,7 @@ export default function ExecutiveAssistants() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-1 bg-parchment rounded-full" />
-              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Harp & Quill</span>
+              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Native Legal</span>
             </div>
 
             <h1 
@@ -243,7 +243,7 @@ export default function ExecutiveAssistants() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-2">
-              <span className="text-white font-semibold text-lg">Harp & Quill</span>
+              <span className="text-white font-semibold text-lg">Native Legal</span>
             </div>
             <div className="flex items-center gap-6 flex-wrap">
               <Link 
@@ -254,7 +254,7 @@ export default function ExecutiveAssistants() {
                 Privacy Policy
               </Link>
               <span className="text-futura-text-secondary text-sm">
-                info@harpandquill.io
+                info@nativelegal.io
               </span>
             </div>
           </div>
