@@ -179,20 +179,19 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Primary Services - 2x2 grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8" data-testid="grid-services-showcase">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-services-showcase">
             {/* Service 1: Legal Admin & RevOps */}
             <Link 
               href="/legal-admin-revops"
-              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              className="p-6 rounded-sm bg-parchment hover-elevate transition-all group block"
               data-testid="card-service-showcase-0"
             >
-              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-futura-bg rounded-sm flex items-center justify-center mb-4">
                 <Briefcase className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Revenue Operations</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Unify sales, marketing, service strategy with a modern CRM</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+              <h3 className="text-lg font-semibold text-futura-bg mb-2">Revenue Operations</h3>
+              <p className="text-futura-bg/70 text-sm leading-relaxed">Unify sales, marketing, service strategy with a modern CRM</p>
+              <div className="mt-4 flex items-center text-futura-bg text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
@@ -201,15 +200,15 @@ export default function Home() {
             {/* Service 2: Executive Assistants */}
             <Link 
               href="/executive-assistants"
-              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              className="p-6 rounded-sm bg-parchment hover-elevate transition-all group block"
               data-testid="card-service-showcase-1"
             >
-              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-futura-bg rounded-sm flex items-center justify-center mb-4">
                 <UserCog className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Strategic Initiatives</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Drive strategic initiatives forward without losing focus</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+              <h3 className="text-lg font-semibold text-futura-bg mb-2">Strategic Initiatives</h3>
+              <p className="text-futura-bg/70 text-sm leading-relaxed">Drive strategic initiatives forward without losing focus</p>
+              <div className="mt-4 flex items-center text-futura-bg text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
@@ -218,15 +217,15 @@ export default function Home() {
             {/* Service 3: Custom Software */}
             <Link 
               href="/custom-software"
-              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              className="p-6 rounded-sm bg-parchment hover-elevate transition-all group block"
               data-testid="card-service-showcase-2"
             >
-              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-futura-bg rounded-sm flex items-center justify-center mb-4">
                 <Code className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Custom Software</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">We build software for your practice that you own outright</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+              <h3 className="text-lg font-semibold text-futura-bg mb-2">Custom Software</h3>
+              <p className="text-futura-bg/70 text-sm leading-relaxed">We build software for your practice that you own outright</p>
+              <div className="mt-4 flex items-center text-futura-bg text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
@@ -235,46 +234,42 @@ export default function Home() {
             {/* Service 4: AI Readiness */}
             <Link 
               href="/ai-readiness"
-              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              className="p-6 rounded-sm bg-parchment hover-elevate transition-all group block"
               data-testid="card-service-showcase-3"
             >
-              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-futura-bg rounded-sm flex items-center justify-center mb-4">
                 <Sparkles className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">AI Readiness</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Secure your competitive edge with strong foundations</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+              <h3 className="text-lg font-semibold text-futura-bg mb-2">AI Readiness</h3>
+              <p className="text-futura-bg/70 text-sm leading-relaxed">Secure your competitive edge with strong foundations</p>
+              <div className="mt-4 flex items-center text-futura-bg text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
-          </div>
 
-          {/* Acquisition Accelerators - secondary row */}
-          <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4">Acquisition Accelerators</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-testid="grid-acquisition-services">
             {/* Service 5: Future-proof SEO */}
             <div 
-              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              className="p-6 rounded-sm bg-parchment hover-elevate transition-all group block"
               data-testid="card-service-showcase-4"
             >
-              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-futura-bg rounded-sm flex items-center justify-center mb-4">
                 <Search className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Future-proof SEO</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Unlock Local and LLM Search</p>
+              <h3 className="text-lg font-semibold text-futura-bg mb-2">Future-proof SEO</h3>
+              <p className="text-futura-bg/70 text-sm leading-relaxed">Unlock Local and LLM Search</p>
             </div>
 
             {/* Service 6: Paid Ads */}
             <div 
-              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              className="p-6 rounded-sm bg-parchment hover-elevate transition-all group block"
               data-testid="card-service-showcase-5"
             >
-              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-futura-bg rounded-sm flex items-center justify-center mb-4">
                 <Target className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Paid Ads</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Deploy and measure your spend strategically</p>
+              <h3 className="text-lg font-semibold text-futura-bg mb-2">Paid Ads</h3>
+              <p className="text-futura-bg/70 text-sm leading-relaxed">Deploy and measure your spend strategically</p>
             </div>
           </div>
         </div>
