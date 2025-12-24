@@ -61,9 +61,9 @@ const caseStudies = [
     accentColor: "amber",
   },
   {
-    category: "AI Readiness",
-    title: "Prepare your firm for the AI era",
-    description: "We help family law firms build the foundation for successful AI adoption—focusing on systems, people, and data to ensure you're ready for transformation.",
+    category: "Recruiting",
+    title: "Transform your recruiting department",
+    description: "Leverage deep industry expertise and the right tools to help you make right hires for an AI-forward future",
     accentColor: "copper",
   },
 ];
