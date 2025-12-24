@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
 
 // Customize the logo text here (adjust capitalization as needed)
-const LOGO_TEXT = "Native Legal";
+const LOGO_TEXT = "NaTiVE lEgal";
 
 export default function Home() {
   return (
@@ -167,7 +167,7 @@ export default function Home() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
               data-testid="text-services-headline"
             >
-              Four ways we help your firm thrive
+              Scale Revenues, Not Overhead
             </h2>
           </div>
 
@@ -182,7 +182,7 @@ export default function Home() {
                 <Briefcase className="w-6 h-6 text-parchment" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Revenue Operations</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Unify sales, marketing, service, and recruiting strategy.</p>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Unify sales, marketing, service strategy with a modern CRM</p>
               <div className="mt-4 flex items-center text-parchment text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -198,8 +198,8 @@ export default function Home() {
               <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
                 <UserCog className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Executive Assistants</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">AI-powered context capture and orchestration</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Strategic Initiatives</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Drive strategic initiatives forward without losing focus</p>
               <div className="mt-4 flex items-center text-parchment text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -216,7 +216,7 @@ export default function Home() {
                 <Code className="w-6 h-6 text-parchment" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Custom Software</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Tools built for your practice that you own outright</p>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">We build software for your practice that you own outright</p>
               <div className="mt-4 flex items-center text-parchment text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -233,7 +233,7 @@ export default function Home() {
                 <Sparkles className="w-6 h-6 text-parchment" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">AI Readiness</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Prepare your firm for the AI era</p>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Secure your competitive edge with strong foundations</p>
               <div className="mt-4 flex items-center text-parchment text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
