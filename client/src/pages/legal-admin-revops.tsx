@@ -50,11 +50,18 @@ export default function LegalAdminOps() {
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
-                href="/legal-admin-ops" 
-                className="text-white text-sm transition-colors"
-                data-testid="link-legal-admin-ops"
+                href="/" 
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                data-testid="link-home"
               >
-                Legal Admin & Ops
+                Home
+              </Link>
+              <Link 
+                href="/legal-admin-revops" 
+                className="text-white text-sm transition-colors"
+                data-testid="link-legal-admin-revops"
+              >
+                Legal Admin & RevOps
               </Link>
               <Link 
                 href="/executive-assistants" 

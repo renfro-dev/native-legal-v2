@@ -1,6 +1,33 @@
 import { Link } from "wouter";
-import { Database, Users, ArrowRight, Scale } from "lucide-react";
+import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const serviceShowcase = [
+  {
+    title: "Legal Admin & RevOps",
+    description: "Scale operations without compromising your margin",
+    href: "/legal-admin-revops",
+    icon: Briefcase,
+  },
+  {
+    title: "Executive Assistants",
+    description: "AI-powered context capture and orchestration",
+    href: "/executive-assistants",
+    icon: UserCog,
+  },
+  {
+    title: "Custom Software",
+    description: "Tools built for your practice that you own outright",
+    href: "/custom-software",
+    icon: Code,
+  },
+  {
+    title: "AI Readiness",
+    description: "Prepare your firm for the AI era",
+    href: "/ai-readiness",
+    icon: Sparkles,
+  },
+];
 
 const caseStudies = [
   {
@@ -65,11 +92,18 @@ export default function Home() {
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
-                href="/legal-admin-ops" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
-                data-testid="link-legal-admin-ops"
+                href="/" 
+                className="text-white text-sm transition-colors"
+                data-testid="link-home"
               >
-                Legal Admin & Ops
+                Home
+              </Link>
+              <Link 
+                href="/legal-admin-revops" 
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                data-testid="link-legal-admin-revops"
+              >
+                Legal Admin & RevOps
               </Link>
               <Link 
                 href="/executive-assistants" 
@@ -174,6 +208,47 @@ export default function Home() {
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-futura-border to-transparent" />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Showcase Section */}
+      <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
+              What We Do
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
+              data-testid="text-services-headline"
+            >
+              Four ways we help your firm thrive
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-testid="grid-services-showcase">
+            {serviceShowcase.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <Link 
+                  key={service.title}
+                  href={service.href}
+                  className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+                  data-testid={`card-service-showcase-${index}`}
+                >
+                  <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                    <IconComponent className="w-6 h-6 text-parchment" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2">{service.title}</h3>
+                  <p className="text-futura-text-secondary text-sm leading-relaxed">{service.description}</p>
+                  <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+                    Learn more
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
