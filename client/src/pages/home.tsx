@@ -93,13 +93,23 @@ export default function Home() {
                 modErn Tools For laW fIrms
               </h1>
               
-              <p 
-                className="text-base leading-relaxed mb-10 max-w-xl"
+              <ul 
+                className="text-base leading-relaxed mb-10 max-w-xl space-y-3"
                 data-testid="text-hero-description"
               >
-                <span className="text-futura-text-secondary">Future-proof your business with thoughtful change management. Evolve your practice with </span>
-                <span className="text-white font-semibold">powerful data and intelligent automation.</span>
-              </p>
+                <li className="flex items-start gap-3">
+                  <span className="text-parchment mt-1.5 text-xs">●</span>
+                  <span className="text-futura-text-secondary">Future-proof your business with thoughtful change management.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-parchment mt-1.5 text-xs">●</span>
+                  <span className="text-futura-text-secondary">Evolve your practice with <span className="text-white font-semibold">powerful data and intelligent automation.</span></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-parchment mt-1.5 text-xs">●</span>
+                  <span className="text-futura-text-secondary">Scale operations without compromising your margin.</span>
+                </li>
+              </ul>
 
               {/* CTA Buttons */}
               <div className="flex items-center gap-4 flex-wrap">
