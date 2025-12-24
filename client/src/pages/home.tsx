@@ -51,19 +51,19 @@ const caseStudies = [
   {
     category: "Software Development",
     title: "Automated Prenuptial Agreements",
-    description: "Built a custom tool that allows consumers to draft their own prenuptial agreements, providing attorneys with lower cost leads with intake already completed.",
+    description: "Built a custom tool that allows consumers to draft their own prenuptial agreements, providing attorneys with lower cost leads with intake already completed",
     accentColor: "bronze",
   },
   {
     category: "Simplify Document Collection",
     title: "Scale your paralegal team",
-    description: "Remove the back and forth in collecting documents to do your job.",
+    description: "Make document collection an afterthought so your paralegals can spend their time on value generating activities",
     accentColor: "amber",
   },
   {
-    category: "Automate Time Tracking",
-    title: "Collect on your billable hours",
-    description: "We make it easy to capture all billable time",
+    category: "AI Readiness",
+    title: "Prepare your firm for the AI era",
+    description: "We help family law firms build the foundation for successful AI adoption—focusing on systems, people, and data to ensure you're ready for transformation.",
     accentColor: "copper",
   },
 ];
