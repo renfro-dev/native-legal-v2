@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles } from "lucide-react";
+import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles, Search, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
 
@@ -179,7 +179,8 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-testid="grid-services-showcase">
+          {/* Primary Services - 2x2 grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8" data-testid="grid-services-showcase">
             {/* Service 1: Legal Admin & RevOps */}
             <Link 
               href="/legal-admin-revops"
@@ -247,6 +248,34 @@ export default function Home() {
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
+          </div>
+
+          {/* Acquisition Accelerators - secondary row */}
+          <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4">Acquisition Accelerators</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-testid="grid-acquisition-services">
+            {/* Service 5: Future-proof SEO */}
+            <div 
+              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              data-testid="card-service-showcase-4"
+            >
+              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                <Search className="w-6 h-6 text-parchment" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Future-proof SEO</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Unlock Local and LLM Search</p>
+            </div>
+
+            {/* Service 6: Paid Ads */}
+            <div 
+              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              data-testid="card-service-showcase-5"
+            >
+              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-parchment" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Paid Ads</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Deploy and measure your spend strategically</p>
+            </div>
           </div>
         </div>
       </section>
