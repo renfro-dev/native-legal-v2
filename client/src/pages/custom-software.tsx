@@ -54,7 +54,14 @@ export default function CustomSoftware() {
 
       <header className="relative z-10 border-b border-futura-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-end gap-6 flex-wrap">
+          <div className="flex items-center justify-between gap-6 flex-wrap">
+            <Link 
+              href="/" 
+              className="text-white text-xl italic font-light tracking-wide"
+              data-testid="link-logo"
+            >
+              Harp & Quill
+            </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
                 href="/legal-admin-ops" 
