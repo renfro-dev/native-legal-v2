@@ -407,6 +407,24 @@ export default function Home() {
       </section>
 
       {/* ========================================
+          CALL TO ACTION
+      ======================================== */}
+      <section className="relative z-10 py-24" data-testid="section-cta">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to future-proof your firm?
+          </h2>
+          <p className="text-futura-text-secondary text-lg mb-8 max-w-2xl mx-auto">
+            Let's talk about how we can help you build the operational foundations that AI depends on.
+          </p>
+          <Button size="lg" className="bg-parchment text-futura-bg font-semibold" data-testid="button-cta-contact">
+            Schedule a Conversation
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Button>
+        </div>
+      </section>
+
+      {/* ========================================
           FOOTER
       ======================================== */}
       <footer className="relative z-10 border-t border-futura-border py-12">
