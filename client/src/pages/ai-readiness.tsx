@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Database, Users, ArrowRight, Settings, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AnimatedLogo from "@/components/animated-logo";
 
 type PillarKey = "data" | "people" | "systems";
 
@@ -69,10 +70,11 @@ export default function AIReadiness() {
           <div className="flex items-center justify-between gap-6 flex-wrap">
             <Link 
               href="/" 
-              className="text-white text-xl italic font-light tracking-wide"
+              className="flex items-center gap-2"
               data-testid="link-logo"
             >
-              Native Legal
+              <AnimatedLogo size="sm" />
+              <span className="text-white text-xl font-light tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
