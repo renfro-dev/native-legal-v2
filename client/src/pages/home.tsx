@@ -151,6 +151,7 @@ export default function Home() {
               {/* Main Headline */}
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white"
+                style={{ fontFamily: 'var(--font-karl)' }}
                 data-testid="text-headline"
               >
                 Modern tools for family law firms
