@@ -264,6 +264,19 @@ export default function Home() {
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Growth Marketing</h3>
               <p className="text-futura-bg/80 text-lg leading-relaxed">Future-proof your growth with a cost effective local and LLM search strategy. Pay for ads when you need to buy momentum.</p>
             </div>
+
+            {/* Service 6: Recruiting */}
+            <div 
+              className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block -rotate-1 hover:rotate-0"
+              style={{ fontFamily: 'Caveat, cursive' }}
+              data-testid="card-service-showcase-5"
+            >
+              <div className="w-10 h-10 bg-futura-bg/10 rounded-full flex items-center justify-center mb-3">
+                <Users className="w-5 h-5 text-futura-bg" />
+              </div>
+              <h3 className="text-2xl font-semibold text-futura-bg mb-2">Recruiting</h3>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Put your recruiting on auto-pilot and start growing where you need it most.</p>
+            </div>
           </div>
         </div>
       </section>
