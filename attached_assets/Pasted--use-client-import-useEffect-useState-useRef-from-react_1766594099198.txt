@@ -1,0 +1,124 @@
+'use client'
+
+import { useEffect, useState, useRef } from 'react'
+
+const UNIFIED_PATH = "M 15 48 L 15 12 M 15 12 L 45 48 M 45 48 L 15 48"
+
+interface AnimatedLogoProps {
+  size?: 'sm' | 'md' | 'lg'
+}
+
+export default function AnimatedLogo({ size = 'md' }: AnimatedLogoProps) {
+  const [progress, setProgress] = useState(0)
+  const animationRef = useRef<number | null>(null)
+
+  const sizeClasses = {
+    sm: 'w-8 h-8',
+    md: 'w-10 h-10',
+    lg: 'w-12 h-12'
+  }
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    
+    if (prefersReducedMotion) {
+      setProgress(1.0)
+      return
+    }
+    
+    const startTime = Date.now()
+    const duration = 4000
+    
+    const animate = () => {
+      const elapsed = Date.now() - startTime
+      const cycle = (elapsed % duration) / duration
+      
+      setProgress(cycle)
+      animationRef.current = requestAnimationFrame(animate)
+    }
+    
+    animationRef.current = requestAnimationFrame(animate)
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current)
+      }
+    }
+  }, [])
+
+  const totalLength = 112.86
+  const leftVerticalLength = 36
+  const diagonalLength = 46.86
+  const bottomHorizontalLength = 30
+  const firstTwoSegments = leftVerticalLength + diagonalLength
+  
+  let drawProgress = 0
+  let showLight = true
+  let lightPosition = { x: 15, y: 48 }
+  
+  if (progress < 0.7) {
+    const phase1Progress = progress / 0.7
+    const bp1 = leftVerticalLength / firstTwoSegments
+    
+    if (phase1Progress < bp1) {
+      const segmentProgress = phase1Progress / bp1
+      drawProgress = (leftVerticalLength * segmentProgress) / totalLength
+      lightPosition = { x: 15, y: 48 - (36 * segmentProgress) }
+    } else {
+      const segmentProgress = (phase1Progress - bp1) / (1.0 - bp1)
+      drawProgress = (leftVerticalLength + diagonalLength * segmentProgress) / totalLength
+      lightPosition = { x: 15 + (30 * segmentProgress), y: 12 + (36 * segmentProgress) }
+    }
+  }
+  else if (progress < 0.75) {
+    drawProgress = firstTwoSegments / totalLength
+    showLight = false
+  }
+  else {
+    const lProgress = (progress - 0.75) / 0.25
+    drawProgress = (firstTwoSegments + bottomHorizontalLength * lProgress) / totalLength
+    lightPosition = { x: 45 - (30 * lProgress), y: 48 }
+    showLight = true
+  }
+
+  const pathRef = useRef<SVGPathElement>(null)
+  const [pathLength, setPathLength] = useState(0)
+
+  useEffect(() => {
+    if (pathRef.current) {
+      setPathLength(pathRef.current.getTotalLength())
+    }
+  }, [])
+
+  const strokeDashoffset = pathLength * (1 - drawProgress)
+
+  return (
+    <div className={`relative ${sizeClasses[size]} flex items-center justify-center`}>
+      <svg
+        viewBox="0 0 60 60"
+        className="w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        {/* Drawn path (the trail) - black stroke for neo-brutalist style */}
+        <path
+          ref={pathRef}
+          d={UNIFIED_PATH}
+          stroke="#1a1a1a"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+          strokeDasharray={pathLength}
+          strokeDashoffset={strokeDashoffset}
+        />
+        
+        {/* Drawing light (small black triangle that moves along path) */}
+        {showLight && drawProgress > 0.01 && (
+          <polygon
+            points={`${lightPosition.x},${lightPosition.y - 4} ${lightPosition.x + 3.5},${lightPosition.y + 2} ${lightPosition.x - 3.5},${lightPosition.y + 2}`}
+            fill="#1a1a1a"
+          />
+        )}
+      </svg>
+    </div>
+  )
+}
