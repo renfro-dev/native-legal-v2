@@ -91,7 +91,10 @@ export default function Home() {
                 data-testid="text-headline"
               >
                 modErn Tools<br />
-                <span className="bg-parchment/20 px-2 py-1 text-parchment">For laW fIrms</span>
+                <span className="relative inline-block text-parchment">
+                  <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+                  <span className="relative">For laW fIrms</span>
+                </span>
               </h1>
               
               <p 
@@ -169,7 +172,10 @@ export default function Home() {
               data-testid="text-services-headline"
             >
               Scale Revenues<br />
-              <span className="bg-parchment/20 px-2 py-1 text-parchment">Not Overhead</span>
+              <span className="relative inline-block text-parchment">
+                <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+                <span className="relative">Not Overhead</span>
+              </span>
             </h2>
           </div>
 
@@ -259,7 +265,10 @@ export default function Home() {
               data-testid="text-case-studies-headline"
             >
               Real results<br />
-              <span className="bg-parchment/20 px-2 py-1 text-parchment">from real firms</span>
+              <span className="relative inline-block text-parchment">
+                <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+                <span className="relative">from real firms</span>
+              </span>
             </h2>
             <p className="text-futura-text-secondary text-lg max-w-2xl">
               See how family law firms are transforming their practice with AI-native tools.
