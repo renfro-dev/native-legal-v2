@@ -204,7 +204,7 @@ export default function Home() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4"
               data-testid="text-service-areas-headline"
             >
-              Legal Support Should Never Sleep
+              Scale Legal Admin and Operations Without Compromising Your Margin
             </h2>
             <p className="text-futura-text-secondary text-lg max-w-2xl mx-auto">
               We partner with law firms that want to focus on what they do best. We do the rest.
