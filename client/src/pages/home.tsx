@@ -18,7 +18,7 @@ export default function Home() {
       {/* ========================================
           HEADER
       ======================================== */}
-      <header className="relative z-10 border-b border-futura-border">
+      <header className="relative z-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between gap-6 flex-wrap">
             <Link 
@@ -161,7 +161,7 @@ export default function Home() {
       {/* ========================================
           SERVICES SHOWCASE SECTION
       ======================================== */}
-      <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
+      <section className="relative z-10 py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-left mb-16">
             <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
@@ -284,7 +284,7 @@ export default function Home() {
       {/* ========================================
           CASE STUDIES SECTION
       ======================================== */}
-      <section id="case-studies" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50 bg-gradient-to-b from-futura-bg to-futura-card/20">
+      <section id="case-studies" className="relative z-10 py-20 lg:py-24 bg-gradient-to-b from-futura-bg to-futura-card/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-left mb-12">
             <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
@@ -427,7 +427,7 @@ export default function Home() {
       {/* ========================================
           FOOTER
       ======================================== */}
-      <footer className="relative z-10 border-t border-futura-border py-12">
+      <footer className="relative z-10 py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <Link href="/" className="flex items-center gap-2" data-testid="link-footer-logo">
