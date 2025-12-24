@@ -70,21 +70,21 @@ export default function AIReadiness() {
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
                 href="/#services" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-foreground"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-services"
               >
                 Service Areas
               </Link>
               <Link 
                 href="/custom-software" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-foreground"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-custom-software"
               >
                 Custom Software
               </Link>
               <Link 
                 href="/ai-readiness" 
-                className="text-foreground text-sm transition-colors"
+                className="text-white text-sm transition-colors"
                 data-testid="link-ai-readiness"
               >
                 AI Readiness
@@ -103,7 +103,7 @@ export default function AIReadiness() {
             </div>
 
             <h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-foreground"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white"
               data-testid="text-headline"
             >
               Prepare your firm for the AI era
@@ -126,7 +126,7 @@ export default function AIReadiness() {
               Our Services
             </p>
             <h2 
-              className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-4"
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
               data-testid="text-pillars-headline"
             >
               Three Pillars of AI Readiness
@@ -148,7 +148,7 @@ export default function AIReadiness() {
                   size="lg"
                   className={`rounded-sm font-medium toggle-elevate ${
                     isActive 
-                      ? "toggle-elevated bg-primary text-primary-foreground border-parchment" 
+                      ? "toggle-elevated bg-parchment text-futura-bg border-parchment" 
                       : "border-futura-border text-futura-text-secondary"
                   }`}
                   onClick={() => setActivePillar(key)}
@@ -168,7 +168,7 @@ export default function AIReadiness() {
                 className="p-6 border border-futura-border rounded-sm bg-futura-bg/50 hover-elevate transition-all"
                 data-testid={`card-pillar-service-${index}`}
               >
-                <h3 className="text-lg font-semibold text-foreground mb-2">{service.name}</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">{service.name}</h3>
                 <p className="text-futura-text-secondary text-sm leading-relaxed">{service.description}</p>
               </div>
             ))}
@@ -183,7 +183,7 @@ export default function AIReadiness() {
               Our Approach
             </p>
             <h2 
-              className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-4"
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
               data-testid="text-approach-headline"
             >
               Six steps to AI-Native practice transformation.
@@ -198,9 +198,9 @@ export default function AIReadiness() {
                 data-testid={`card-step-${index}`}
               >
                 <div className="w-12 h-12 bg-futura-border rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-foreground font-bold text-xl">{step.number}</span>
+                  <span className="text-white font-bold text-xl">{step.number}</span>
                 </div>
-                <h3 className="text-sm font-semibold text-foreground">{step.title}</h3>
+                <h3 className="text-sm font-semibold text-white">{step.title}</h3>
               </div>
             ))}
           </div>
@@ -215,7 +215,7 @@ export default function AIReadiness() {
                 People, Not Replacement
               </p>
               <h2 
-                className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-6 leading-tight"
+                className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6 leading-tight"
                 data-testid="text-people-headline"
               >
                 AI should support people—not sideline them.
@@ -223,19 +223,19 @@ export default function AIReadiness() {
               <p className="text-lg text-futura-text leading-relaxed mb-8" data-testid="text-people-body">
                 We believe business transformation starts with people. AI should reduce cognitive load, improve decision quality, and create space for human judgment—not remove it.
               </p>
-              <p className="text-foreground font-medium text-xl border-l-4 border-parchment pl-6 py-2">
+              <p className="text-white font-medium text-xl border-l-4 border-parchment pl-6 py-2">
                 AI readiness means building systems that people trust, understand, and choose to use.
               </p>
             </div>
             <div className="bg-futura-card border border-futura-border rounded-sm p-8">
-              <p className="text-foreground font-semibold text-lg mb-6">Our work emphasizes:</p>
+              <p className="text-white font-semibold text-lg mb-6">Our work emphasizes:</p>
               <div className="space-y-5">
                 {peopleEmphasis.map((item, index) => (
                   <div key={index} className="flex items-center gap-4" data-testid={`text-people-emphasis-${index}`}>
                     <div className="w-10 h-10 bg-futura-border rounded-sm flex items-center justify-center flex-shrink-0">
-                      <RefreshCw className="w-5 h-5 text-foreground" />
+                      <RefreshCw className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-foreground text-lg font-medium">{item}</span>
+                    <span className="text-white text-lg font-medium">{item}</span>
                   </div>
                 ))}
               </div>
@@ -251,7 +251,7 @@ export default function AIReadiness() {
               <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
                 Get Started
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-4" data-testid="text-cta-headline">
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
                 Ready to assess your AI readiness?
               </h2>
               <p className="text-futura-text text-lg mb-4" data-testid="text-cta-body">
@@ -260,12 +260,12 @@ export default function AIReadiness() {
               <p className="text-futura-text-secondary mb-8" data-testid="text-cta-sub">
                 Start with a free systems evaluation.
                 <br />
-                <span className="text-foreground">No pressure. No bias. Just clarity.</span>
+                <span className="text-white">No pressure. No bias. Just clarity.</span>
               </p>
               <div className="flex items-center gap-4 flex-wrap">
                 <Button 
                   size="lg"
-                  className="bg-primary text-primary-foreground font-semibold rounded-sm px-8"
+                  className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-final"
                 >
                   Schedule Your Evaluation
@@ -280,11 +280,11 @@ export default function AIReadiness() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/" className="text-foreground font-bold text-xl tracking-tight">
+            <Link href="/" className="text-white font-bold text-xl tracking-tight">
               Harp & Quill
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
-              <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-foreground">Privacy Policy</Link>
+              <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>
               <p className="text-futura-text-secondary text-sm" data-testid="text-copyright">
                 © 2025 Harp and Quill LLC. All rights reserved.
               </p>
