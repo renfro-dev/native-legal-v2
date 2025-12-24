@@ -42,7 +42,7 @@ export default function Home() {
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-legal-admin-revops"
               >
-                Legal Admin & RevOps
+                Legal Admin & Intake
               </Link>
               <Link 
                 href="/executive-assistants" 
@@ -81,7 +81,7 @@ export default function Home() {
               {/* Accent Line */}
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-1 bg-parchment rounded-full" />
-                <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Native Legal</span>
+                <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Revenue Optimization & AI Readiness</span>
               </div>
 
               {/* Main Headline */}
@@ -90,7 +90,7 @@ export default function Home() {
                 style={{ fontFamily: 'var(--font-karl)' }}
                 data-testid="text-headline"
               >
-                Modern tools for family law firms
+                modErn Tools For laW fIrms
               </h1>
               
               <p 
@@ -181,8 +181,8 @@ export default function Home() {
               <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
                 <Briefcase className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Legal Admin & RevOps</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Scale operations without compromising your margin</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Revenue Operations</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Unify sales, marketing, service, and recruiting strategy.</p>
               <div className="mt-4 flex items-center text-parchment text-sm font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
