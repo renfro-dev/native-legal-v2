@@ -143,7 +143,7 @@ export default function AIReadiness() {
       <section id="pillars" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-pillars-label">
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-pillars-label">
               Our Services
             </p>
             <h2 
@@ -200,7 +200,7 @@ export default function AIReadiness() {
       <section id="approach" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-approach-label">
               Our Approach
             </p>
             <h2 
@@ -219,7 +219,7 @@ export default function AIReadiness() {
                 data-testid={`card-step-${index}`}
               >
                 <div className="w-12 h-12 bg-futura-border rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">{step.number}</span>
+                  <span className="text-parchment font-bold text-xl">{step.number}</span>
                 </div>
                 <h3 className="text-sm font-semibold text-white">{step.title}</h3>
               </div>

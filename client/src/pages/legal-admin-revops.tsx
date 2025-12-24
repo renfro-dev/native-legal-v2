@@ -125,7 +125,7 @@ export default function LegalAdminOps() {
       <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-service-areas-label">
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-service-areas-label">
               Service Areas
             </p>
             <h2 
@@ -146,7 +146,7 @@ export default function LegalAdminOps() {
                   data-testid={`card-service-area-${index}`}
                 >
                   <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-white" />
+                    <IconComponent className="w-6 h-6 text-parchment" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{service.title}</h3>
                   <p className="text-futura-text-secondary text-sm leading-relaxed">{service.description}</p>

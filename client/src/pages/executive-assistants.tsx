@@ -168,7 +168,7 @@ export default function ExecutiveAssistants() {
       <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4">Our Philosophy</p>
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4">Our Philosophy</p>
             <h2 
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
               data-testid="text-philosophy-headline"
@@ -185,7 +185,7 @@ export default function ExecutiveAssistants() {
       <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4">Who We Serve</p>
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4">Who We Serve</p>
             <h2 
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4"
               data-testid="text-audience-headline"

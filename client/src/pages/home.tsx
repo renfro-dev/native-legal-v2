@@ -187,19 +187,19 @@ export default function Home() {
                 <div className="flex gap-6">
                   <div className="flex flex-col items-center gap-4">
                     <div className="w-24 h-32 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
-                      <Scale className="w-8 h-8 text-white" />
+                      <Scale className="w-8 h-8 text-parchment" />
                     </div>
                     <span className="text-futura-text text-xs font-medium uppercase tracking-wider">Systems</span>
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-8">
                     <div className="w-24 h-40 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
-                      <Users className="w-8 h-8 text-white" />
+                      <Users className="w-8 h-8 text-parchment" />
                     </div>
                     <span className="text-futura-text text-xs font-medium uppercase tracking-wider">People</span>
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-4">
                     <div className="w-24 h-36 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
-                      <Database className="w-8 h-8 text-white" />
+                      <Database className="w-8 h-8 text-parchment" />
                     </div>
                     <span className="text-futura-text text-xs font-medium uppercase tracking-wider">Data</span>
                   </div>
@@ -216,7 +216,7 @@ export default function Home() {
       <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
               What We Do
             </p>
             <h2 
@@ -257,7 +257,7 @@ export default function Home() {
       <section id="case-studies" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50 bg-gradient-to-b from-futura-bg to-futura-card/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
               Case Studies
             </p>
             <h2 
@@ -279,7 +279,7 @@ export default function Home() {
                 className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
                 data-testid={`card-case-study-${index}`}
               >
-                <p className="text-xs font-medium uppercase tracking-widest mb-3 text-futura-text">
+                <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
                   {study.category}
                 </p>
                 <h3 className="text-lg font-semibold text-white mb-3">

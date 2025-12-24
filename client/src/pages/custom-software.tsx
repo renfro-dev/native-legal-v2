@@ -140,7 +140,7 @@ export default function CustomSoftware() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="w-16 h-16 bg-futura-border rounded-sm flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8 text-white" />
+                  <service.icon className="w-8 h-8 text-parchment" />
                 </div>
                 <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid={`text-${service.id}-label`}>
                   {service.tagline}
@@ -184,7 +184,7 @@ export default function CustomSoftware() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-futura-card border border-futura-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
-              <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
+              <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
                 Get Started
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
