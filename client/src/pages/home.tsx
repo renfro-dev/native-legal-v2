@@ -430,8 +430,9 @@ export default function Home() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/" className="text-white font-bold text-xl tracking-tight">
-              Native Legal
+            <Link href="/" className="flex items-center gap-2" data-testid="link-footer-logo">
+              <AnimatedLogo size="sm" />
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>{LOGO_TEXT}</span>
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
               <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>
