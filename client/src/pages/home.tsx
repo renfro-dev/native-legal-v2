@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
 
 // Customize the logo text here (adjust capitalization as needed)
-const LOGO_TEXT = "Native Legal";
+const LOGO_TEXT = "NaTive Legal";
 
 const serviceShowcase = [
   {
@@ -137,7 +137,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 py-24 lg:py-32">
+      <section className="relative z-10 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Content */}
@@ -154,7 +154,7 @@ export default function Home() {
                 style={{ fontFamily: 'var(--font-karl)' }}
                 data-testid="text-headline"
               >
-                Modern tools for family law firms
+                Modern Tools foF laW Firms
               </h1>
               
               <p 
@@ -219,18 +219,12 @@ export default function Home() {
       </section>
 
       {/* Services Showcase Section */}
-      <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
+      <section className="relative z-10 py-12 lg:py-16 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-services-label">
-              What We Do
+          <div className="text-center mb-10">
+            <p className="text-parchment text-sm font-medium tracking-widest" data-testid="text-services-label">
+              Prepare your firm for the future
             </p>
-            <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
-              data-testid="text-services-headline"
-            >
-              Four ways we help your firm thrive
-            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-testid="grid-services-showcase">
