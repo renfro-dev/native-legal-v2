@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* KarlCanva Font */
+@font-face {
+  font-family: 'KarlCanva';
+  src: url('/fonts/KarlCanva-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KarlCanva';
+  src: url('/fonts/KarlCanva-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KarlCanva';
+  src: url('/fonts/KarlCanva-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* MINIMAL FUTURISTIC THEME - Elegant dark with warm accents */
 :root {
   --button-outline: rgba(255,255,255, .10);
@@ -46,6 +71,7 @@
   --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
+  --font-karl: 'KarlCanva', sans-serif;
   --radius: .5rem;
   --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.3);
   --shadow-xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.4);
