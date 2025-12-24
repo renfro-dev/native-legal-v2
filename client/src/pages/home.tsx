@@ -6,74 +6,6 @@ import AnimatedLogo from "@/components/animated-logo";
 // Customize the logo text here (adjust capitalization as needed)
 const LOGO_TEXT = "Native Legal";
 
-const serviceShowcase = [
-  {
-    title: "Legal Admin & RevOps",
-    description: "Scale operations without compromising your margin",
-    href: "/legal-admin-revops",
-    icon: Briefcase,
-  },
-  {
-    title: "Executive Assistants",
-    description: "AI-powered context capture and orchestration",
-    href: "/executive-assistants",
-    icon: UserCog,
-  },
-  {
-    title: "Custom Software",
-    description: "Tools built for your practice that you own outright",
-    href: "/custom-software",
-    icon: Code,
-  },
-  {
-    title: "AI Readiness",
-    description: "Prepare your firm for the AI era",
-    href: "/ai-readiness",
-    icon: Sparkles,
-  },
-];
-
-const caseStudies = [
-  {
-    category: "Streamline Intake",
-    title: "Improved lead converion by 42%",
-    description: "Built a custom CRM that automates conflict checks, client communications, streamlines admin tasks, simplifies retainer agreements, and gives full visibility into business health",
-    accentColor: "amber",
-  },
-  {
-    category: "Rapid Prototyping",
-    title: "Rethink resource guides",
-    description: "A family law firm with four offices and over 100 staff transformed a 40+ slide powerpoint into one interactive asset",
-    accentColor: "copper",
-  },
-  {
-    category: "Reporting Dashboards",
-    title: "A birds eye view of your business",
-    description: "Eliminated manual data entry and created business intelligence to enable strategic decision making and resource allocation",
-    accentColor: "gold",
-  },
-  {
-    category: "Software Development",
-    title: "Automated Prenuptial Agreements",
-    description: "Built a custom tool that allows consumers to draft their own prenuptial agreements, providing attorneys with lower cost leads with intake already completed",
-    accentColor: "bronze",
-  },
-  {
-    category: "Simplify Document Collection",
-    title: "Scale your paralegal team",
-    description: "Make document collection an afterthought so your paralegals can spend their time on value generating activities",
-    accentColor: "amber",
-  },
-  {
-    category: "Recruiting",
-    title: "Transform your recruiting department",
-    description: "Leverage deep industry expertise and the right tools to help you make right hires for an AI-forward future",
-    accentColor: "copper",
-  },
-];
-
-
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-futura-bg">
@@ -83,7 +15,9 @@ export default function Home() {
         <div className="absolute bottom-40 right-20 w-80 h-80 rounded-full glow-copper opacity-15" />
       </div>
 
-      {/* Header */}
+      {/* ========================================
+          HEADER
+      ======================================== */}
       <header className="relative z-10 border-b border-futura-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between gap-6 flex-wrap">
@@ -136,7 +70,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* ========================================
+          HERO SECTION
+      ======================================== */}
       <section className="relative z-10 py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -218,7 +154,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Showcase Section */}
+      {/* ========================================
+          SERVICES SHOWCASE SECTION
+      ======================================== */}
       <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -234,32 +172,80 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-testid="grid-services-showcase">
-            {serviceShowcase.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <Link 
-                  key={service.title}
-                  href={service.href}
-                  className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
-                  data-testid={`card-service-showcase-${index}`}
-                >
-                  <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-parchment" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{service.title}</h3>
-                  <p className="text-futura-text-secondary text-sm leading-relaxed">{service.description}</p>
-                  <div className="mt-4 flex items-center text-parchment text-sm font-medium">
-                    Learn more
-                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </Link>
-              );
-            })}
+            {/* Service 1: Legal Admin & RevOps */}
+            <Link 
+              href="/legal-admin-revops"
+              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              data-testid="card-service-showcase-0"
+            >
+              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                <Briefcase className="w-6 h-6 text-parchment" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Legal Admin & RevOps</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Scale operations without compromising your margin</p>
+              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+                Learn more
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            {/* Service 2: Executive Assistants */}
+            <Link 
+              href="/executive-assistants"
+              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              data-testid="card-service-showcase-1"
+            >
+              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                <UserCog className="w-6 h-6 text-parchment" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Executive Assistants</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">AI-powered context capture and orchestration</p>
+              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+                Learn more
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            {/* Service 3: Custom Software */}
+            <Link 
+              href="/custom-software"
+              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              data-testid="card-service-showcase-2"
+            >
+              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                <Code className="w-6 h-6 text-parchment" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Custom Software</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Tools built for your practice that you own outright</p>
+              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+                Learn more
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            {/* Service 4: AI Readiness */}
+            <Link 
+              href="/ai-readiness"
+              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              data-testid="card-service-showcase-3"
+            >
+              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                <Sparkles className="w-6 h-6 text-parchment" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">AI Readiness</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Prepare your firm for the AI era</p>
+              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
+                Learn more
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Case Studies Section */}
+      {/* ========================================
+          CASE STUDIES SECTION
+      ======================================== */}
       <section id="case-studies" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50 bg-gradient-to-b from-futura-bg to-futura-card/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -279,28 +265,108 @@ export default function Home() {
 
           {/* Case Studies Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-case-studies">
-            {caseStudies.map((study, index) => (
-              <div
-                key={index}
-                className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
-                data-testid={`card-case-study-${index}`}
-              >
-                <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                  {study.category}
-                </p>
-                <h3 className="text-lg font-semibold text-white mb-3">
-                  {study.title}
-                </h3>
-                <p className="text-futura-text-secondary text-sm leading-relaxed">
-                  {study.description}
-                </p>
-              </div>
-            ))}
+            {/* Case Study 1 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-0"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Streamline Intake
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Improved lead converion by 42%
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                Built a custom CRM that automates conflict checks, client communications, streamlines admin tasks, simplifies retainer agreements, and gives full visibility into business health
+              </p>
+            </div>
+
+            {/* Case Study 2 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-1"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Rapid Prototyping
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Rethink resource guides
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                A family law firm with four offices and over 100 staff transformed a 40+ slide powerpoint into one interactive asset
+              </p>
+            </div>
+
+            {/* Case Study 3 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-2"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Reporting Dashboards
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                A birds eye view of your business
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                Eliminated manual data entry and created business intelligence to enable strategic decision making and resource allocation
+              </p>
+            </div>
+
+            {/* Case Study 4 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-3"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Software Development
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Automated Prenuptial Agreements
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                Built a custom tool that allows consumers to draft their own prenuptial agreements, providing attorneys with lower cost leads with intake already completed
+              </p>
+            </div>
+
+            {/* Case Study 5 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-4"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Simplify Document Collection
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Scale your paralegal team
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                Make document collection an afterthought so your paralegals can spend their time on value generating activities
+              </p>
+            </div>
+
+            {/* Case Study 6 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-5"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Recruiting
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Transform your recruiting department
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                Leverage deep industry expertise and the right tools to help you make right hires for an AI-forward future
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* ========================================
+          FOOTER
+      ======================================== */}
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
