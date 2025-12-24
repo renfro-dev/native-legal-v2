@@ -3,6 +3,9 @@ import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles 
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
 
+// Customize the logo text here (adjust capitalization as needed)
+const LOGO_TEXT = "Native Legal";
+
 const serviceShowcase = [
   {
     title: "Legal Admin & RevOps",
@@ -90,7 +93,7 @@ export default function Home() {
               data-testid="link-logo"
             >
               <AnimatedLogo size="sm" />
-              <span className="text-white text-xl font-light tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>{LOGO_TEXT}</span>
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 

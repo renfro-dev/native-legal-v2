@@ -62,7 +62,7 @@ export default function CustomSoftware() {
               data-testid="link-logo"
             >
               <AnimatedLogo size="sm" />
-              <span className="text-white text-xl font-light tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
