@@ -58,21 +58,21 @@ export default function CustomSoftware() {
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
                 href="/#services" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-foreground"
                 data-testid="link-services"
               >
                 Service Areas
               </Link>
               <Link 
                 href="/custom-software" 
-                className="text-white text-sm transition-colors"
+                className="text-foreground text-sm transition-colors"
                 data-testid="link-custom-software"
               >
                 Custom Software
               </Link>
               <Link 
                 href="/ai-readiness" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-foreground"
                 data-testid="link-ai-readiness"
               >
                 AI Readiness
@@ -91,7 +91,7 @@ export default function CustomSoftware() {
             </div>
 
             <h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-foreground"
               data-testid="text-headline"
             >
               Software built for your practice
@@ -119,13 +119,13 @@ export default function CustomSoftware() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="w-16 h-16 bg-futura-border rounded-sm flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8 text-white" />
+                  <service.icon className="w-8 h-8 text-foreground" />
                 </div>
                 <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid={`text-${service.id}-label`}>
                   {service.tagline}
                 </p>
                 <h2 
-                  className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
+                  className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6"
                   data-testid={`text-${service.id}-headline`}
                 >
                   {service.title}
@@ -134,7 +134,7 @@ export default function CustomSoftware() {
                   {service.description}
                 </p>
                 <Button 
-                  className="bg-parchment text-futura-bg font-semibold rounded-sm"
+                  className="bg-primary text-primary-foreground font-semibold rounded-sm"
                   data-testid={`button-${service.id}-cta`}
                 >
                   Learn More
@@ -142,7 +142,7 @@ export default function CustomSoftware() {
                 </Button>
               </div>
               <div className={`bg-futura-card border border-futura-border rounded-sm p-8 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                <p className="text-white font-semibold text-lg mb-6">Key Benefits</p>
+                <p className="text-foreground font-semibold text-lg mb-6">Key Benefits</p>
                 <div className="space-y-4">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-start gap-4" data-testid={`text-${service.id}-feature-${featureIndex}`}>
@@ -166,7 +166,7 @@ export default function CustomSoftware() {
               <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
                 Get Started
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-4" data-testid="text-cta-headline">
                 Ready to build something custom?
               </h2>
               <p className="text-futura-text text-lg mb-8" data-testid="text-cta-body">
@@ -175,7 +175,7 @@ export default function CustomSoftware() {
               <div className="flex items-center gap-4 flex-wrap">
                 <Button 
                   size="lg"
-                  className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
+                  className="bg-primary text-primary-foreground font-semibold rounded-sm px-8"
                   data-testid="button-cta-final"
                 >
                   Schedule a Consultation
@@ -190,11 +190,11 @@ export default function CustomSoftware() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/" className="text-white font-bold text-xl tracking-tight">
+            <Link href="/" className="text-foreground font-bold text-xl tracking-tight">
               Harp & Quill
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
-              <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>
+              <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-foreground">Privacy Policy</Link>
               <p className="text-futura-text-secondary text-sm" data-testid="text-copyright">
                 © 2025 Harp and Quill LLC. All rights reserved.
               </p>

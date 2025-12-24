@@ -88,21 +88,21 @@ export default function Home() {
             <nav className="flex items-center gap-6 flex-wrap">
               <a 
                 href="#services" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-foreground"
                 data-testid="link-services"
               >
                 Service Areas
               </a>
               <Link 
                 href="/custom-software" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-foreground"
                 data-testid="link-custom-software"
               >
                 Custom Software
               </Link>
               <Link 
                 href="/ai-readiness" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                className="text-futura-text-secondary text-sm transition-colors hover:text-foreground"
                 data-testid="link-ai-readiness"
               >
                 AI Readiness
@@ -126,7 +126,7 @@ export default function Home() {
 
               {/* Main Headline */}
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-foreground"
                 data-testid="text-headline"
               >
                 Modern tools for family law firms
@@ -137,14 +137,14 @@ export default function Home() {
                 data-testid="text-hero-description"
               >
                 <span className="text-futura-text-secondary">Future-proof your business with thoughtful change management. Evolve your practice with </span>
-                <span className="text-white font-semibold">powerful data and intelligent automation.</span>
+                <span className="text-foreground font-semibold">powerful data and intelligent automation.</span>
               </p>
 
               {/* CTA Buttons */}
               <div className="flex items-center gap-4 flex-wrap">
                 <Button 
                   size="lg"
-                  className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
+                  className="bg-primary text-primary-foreground font-semibold rounded-sm px-8"
                   data-testid="button-cta-primary"
                 >
                   Get Started
@@ -153,7 +153,7 @@ export default function Home() {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-futura-border text-white rounded-sm"
+                  className="border-futura-border text-foreground rounded-sm"
                   data-testid="button-cta-secondary"
                 >
                   Learn More
@@ -168,19 +168,19 @@ export default function Home() {
                 <div className="flex gap-6">
                   <div className="flex flex-col items-center gap-4">
                     <div className="w-24 h-32 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
-                      <Scale className="w-8 h-8 text-white" />
+                      <Scale className="w-8 h-8 text-foreground" />
                     </div>
                     <span className="text-futura-text text-xs font-medium uppercase tracking-wider">Systems</span>
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-8">
                     <div className="w-24 h-40 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
-                      <Users className="w-8 h-8 text-white" />
+                      <Users className="w-8 h-8 text-foreground" />
                     </div>
                     <span className="text-futura-text text-xs font-medium uppercase tracking-wider">People</span>
                   </div>
                   <div className="flex flex-col items-center gap-4 -mt-4">
                     <div className="w-24 h-36 border-2 border-futura-border rounded-sm flex items-end justify-center pb-4 bg-futura-card">
-                      <Database className="w-8 h-8 text-white" />
+                      <Database className="w-8 h-8 text-foreground" />
                     </div>
                     <span className="text-futura-text text-xs font-medium uppercase tracking-wider">Data</span>
                   </div>
@@ -201,7 +201,7 @@ export default function Home() {
               Service Areas
             </p>
             <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight mb-4"
               data-testid="text-service-areas-headline"
             >
               Scale Legal Admin and Operations Without Compromising Your Margin
@@ -222,9 +222,9 @@ export default function Home() {
                   data-testid={`card-service-area-${index}`}
                 >
                   <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-white" />
+                    <IconComponent className="w-6 h-6 text-foreground" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{service.title}</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{service.title}</h3>
                   <p className="text-futura-text-secondary text-sm leading-relaxed">{service.description}</p>
                 </div>
               );
@@ -241,7 +241,7 @@ export default function Home() {
               Case Studies
             </p>
             <h2 
-              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
+              className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-4"
               data-testid="text-case-studies-headline"
             >
               Real results from real firms.
@@ -262,7 +262,7 @@ export default function Home() {
                 <p className="text-xs font-medium uppercase tracking-widest mb-3 text-futura-text">
                   {study.category}
                 </p>
-                <h3 className="text-lg font-semibold text-white mb-3">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   {study.title}
                 </h3>
                 <p className="text-futura-text-secondary text-sm leading-relaxed">
@@ -278,11 +278,11 @@ export default function Home() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/" className="text-white font-bold text-xl tracking-tight">
+            <Link href="/" className="text-foreground font-bold text-xl tracking-tight">
               Harp & Quill
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
-              <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>
+              <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-foreground">Privacy Policy</Link>
               <p className="text-futura-text-secondary text-sm" data-testid="text-copyright">
                 © 2025 Harp and Quill LLC. All rights reserved.
               </p>
