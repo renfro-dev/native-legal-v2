@@ -38,20 +38,6 @@ export default function Home() {
                 Home
               </Link>
               <Link 
-                href="/legal-admin-revops" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
-                data-testid="link-legal-admin-revops"
-              >
-                Legal Admin & Intake
-              </Link>
-              <Link 
-                href="/executive-assistants" 
-                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
-                data-testid="link-executive-assistants"
-              >
-                Executive Assistants
-              </Link>
-              <Link 
                 href="/custom-software" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-custom-software"
@@ -180,9 +166,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-services-showcase">
-            {/* Service 1: Legal Admin & RevOps */}
-            <Link 
-              href="/legal-admin-revops"
+            {/* Service 1: Revenue Operations */}
+            <div 
               className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block rotate-1 hover:rotate-0"
               style={{ fontFamily: 'Caveat, cursive' }}
               data-testid="card-service-showcase-0"
@@ -192,15 +177,10 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Revenue Operations</h3>
               <p className="text-futura-bg/80 text-lg leading-relaxed">Evolve your intake and service strategy with a modern CRM that understands and streamlines your business.</p>
-              <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
-                Learn more
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
+            </div>
 
-            {/* Service 2: Executive Assistants */}
-            <Link 
-              href="/executive-assistants"
+            {/* Service 2: Strategic Initiatives */}
+            <div 
               className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block -rotate-1 hover:rotate-0"
               style={{ fontFamily: 'Caveat, cursive' }}
               data-testid="card-service-showcase-1"
@@ -210,11 +190,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Strategic Initiatives</h3>
               <p className="text-futura-bg/80 text-lg leading-relaxed">Drive strategic initiatives forward without losing focus. We own discovery with minimal business intervention.</p>
-              <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
-                Learn more
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
+            </div>
 
             {/* Service 3: Custom Software */}
             <Link 
@@ -227,7 +203,7 @@ export default function Home() {
                 <Code className="w-5 h-5 text-futura-bg" />
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Custom Software</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Bring your IP to life with our inexpensive rapid prototyping. Build software for your practice that you own outright.</p>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Bring your IP and ideas to life with our rapid prototyping. Build software for your practice that you own outright.</p>
               <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />

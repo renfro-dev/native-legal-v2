@@ -6,8 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import CustomSoftware from "@/pages/custom-software";
 import AIReadiness from "@/pages/ai-readiness";
-import ExecutiveAssistants from "@/pages/executive-assistants";
-import LegalAdminRevOps from "@/pages/legal-admin-revops";
 import Privacy from "@/pages/privacy";
 import NotFound from "@/pages/not-found";
 
@@ -15,8 +13,6 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/legal-admin-revops" component={LegalAdminRevOps} />
-      <Route path="/executive-assistants" component={ExecutiveAssistants} />
       <Route path="/custom-software" component={CustomSoftware} />
       <Route path="/ai-readiness" component={AIReadiness} />
       <Route path="/privacy" component={Privacy} />
