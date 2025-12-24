@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles } from "lucide-react";
+import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles, Clock, Receipt, UserSearch, Search, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
 
@@ -81,7 +81,7 @@ export default function Home() {
               {/* Accent Line */}
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-1 bg-parchment rounded-full" />
-                <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Native Legal</span>
+                <span className="text-futura-text text-sm font-medium uppercase tracking-widest">AI Native Growth Engine</span>
               </div>
 
               {/* Main Headline */}
@@ -90,7 +90,7 @@ export default function Home() {
                 style={{ fontFamily: 'var(--font-karl)' }}
                 data-testid="text-headline"
               >
-                Modern tools for family law firms
+                modErn Tools for laW FIrms
               </h1>
               
               <p 
@@ -167,78 +167,70 @@ export default function Home() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
               data-testid="text-services-headline"
             >
-              Four ways we help your firm thrive
+              Grow Revenues. Not Overhead.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-testid="grid-services-showcase">
-            {/* Service 1: Legal Admin & RevOps */}
-            <Link 
-              href="/legal-admin-revops"
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6" data-testid="grid-services-showcase">
+            {/* Service 1: Reimagine Intake */}
+            <div 
               className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
               data-testid="card-service-showcase-0"
             >
               <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                <Briefcase className="w-6 h-6 text-parchment" />
+                <Clock className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Legal Admin & RevOps</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Scale operations without compromising your margin</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
-                Learn more
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
+              <h3 className="text-lg font-semibold text-white mb-2">Reimagine Intake</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Convert new clients 24/7, 365.</p>
+            </div>
 
-            {/* Service 2: Executive Assistants */}
-            <Link 
-              href="/executive-assistants"
+            {/* Service 2: Streamline Billing */}
+            <div 
               className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
               data-testid="card-service-showcase-1"
             >
               <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                <UserCog className="w-6 h-6 text-parchment" />
+                <Receipt className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Executive Assistants</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">AI-powered context capture and orchestration</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
-                Learn more
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
+              <h3 className="text-lg font-semibold text-white mb-2">Streamline Billing</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Automate proactive client comms.</p>
+            </div>
 
-            {/* Service 3: Custom Software */}
-            <Link 
-              href="/custom-software"
+            {/* Service 3: Rethink Recruiting */}
+            <div 
               className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
               data-testid="card-service-showcase-2"
             >
               <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                <Code className="w-6 h-6 text-parchment" />
+                <UserSearch className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Custom Software</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Tools built for your practice that you own outright</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
-                Learn more
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
+              <h3 className="text-lg font-semibold text-white mb-2">Rethink Recruiting</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Put your recruiting on auto-pilot.</p>
+            </div>
 
-            {/* Service 4: AI Readiness */}
-            <Link 
-              href="/ai-readiness"
+            {/* Service 4: Future-proof SEO */}
+            <div 
               className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
               data-testid="card-service-showcase-3"
             >
               <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                <Sparkles className="w-6 h-6 text-parchment" />
+                <Search className="w-6 h-6 text-parchment" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">AI Readiness</h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">Prepare your firm for the AI era</p>
-              <div className="mt-4 flex items-center text-parchment text-sm font-medium">
-                Learn more
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              <h3 className="text-lg font-semibold text-white mb-2">Future-proof SEO</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Unlock Local and LLM Search.</p>
+            </div>
+
+            {/* Service 5: Measure Results */}
+            <div 
+              className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group block"
+              data-testid="card-service-showcase-4"
+            >
+              <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
+                <BarChart3 className="w-6 h-6 text-parchment" />
               </div>
-            </Link>
+              <h3 className="text-lg font-semibold text-white mb-2">Measure Results</h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">Understand how spend translates to revenue.</p>
+            </div>
           </div>
         </div>
       </section>
