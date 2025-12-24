@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles, Search, Target } from "lucide-react";
+import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
 
@@ -191,7 +191,7 @@ export default function Home() {
                 <Briefcase className="w-5 h-5 text-futura-bg" />
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Revenue Operations</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Unify sales, marketing, service strategy with a modern CRM</p>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Evolve your intake and service strategy with a modern CRM that understands and streamlines your business.</p>
               <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -209,7 +209,7 @@ export default function Home() {
                 <UserCog className="w-5 h-5 text-futura-bg" />
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Strategic Initiatives</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Drive strategic initiatives forward without losing focus</p>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Drive strategic initiatives forward without losing focus. We own discovery with minimal business intervention.</p>
               <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -227,7 +227,7 @@ export default function Home() {
                 <Code className="w-5 h-5 text-futura-bg" />
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Custom Software</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">We build software for your practice that you own outright</p>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Bring your IP to life with our inexpensive rapid prototyping. Build software for your practice that you own outright.</p>
               <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -245,37 +245,24 @@ export default function Home() {
                 <Sparkles className="w-5 h-5 text-futura-bg" />
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">AI Readiness</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Secure your competitive edge with strong foundations</p>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Secure your competitive edge with strong foundations and alignment at the nexus of people, data, and systems.</p>
               <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
                 Learn more
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
 
-            {/* Service 5: Future-proof SEO */}
+            {/* Service 5: Growth Marketing */}
             <div 
               className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block rotate-1 hover:rotate-0"
               style={{ fontFamily: 'Caveat, cursive' }}
               data-testid="card-service-showcase-4"
             >
               <div className="w-10 h-10 bg-futura-bg/10 rounded-full flex items-center justify-center mb-3">
-                <Search className="w-5 h-5 text-futura-bg" />
+                <TrendingUp className="w-5 h-5 text-futura-bg" />
               </div>
-              <h3 className="text-2xl font-semibold text-futura-bg mb-2">Future-proof SEO</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Unlock Local and LLM Search</p>
-            </div>
-
-            {/* Service 6: Paid Ads */}
-            <div 
-              className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block -rotate-1 hover:rotate-0"
-              style={{ fontFamily: 'Caveat, cursive' }}
-              data-testid="card-service-showcase-5"
-            >
-              <div className="w-10 h-10 bg-futura-bg/10 rounded-full flex items-center justify-center mb-3">
-                <Target className="w-5 h-5 text-futura-bg" />
-              </div>
-              <h3 className="text-2xl font-semibold text-futura-bg mb-2">Paid Ads</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Deploy and measure your spend strategically</p>
+              <h3 className="text-2xl font-semibold text-futura-bg mb-2">Growth Marketing</h3>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Future-proof your growth with a cost effective local and LLM search strategy. Pay for ads when you need to buy momentum.</p>
             </div>
           </div>
         </div>
