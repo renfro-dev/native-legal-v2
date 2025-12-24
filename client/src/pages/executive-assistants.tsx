@@ -59,11 +59,11 @@ export default function ExecutiveAssistants() {
           <div className="flex items-center justify-end gap-6 flex-wrap">
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
-                href="/#services" 
+                href="/legal-admin-ops" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
-                data-testid="link-services"
+                data-testid="link-legal-admin-ops"
               >
-                Service Areas
+                Legal Admin & Ops
               </Link>
               <Link 
                 href="/executive-assistants" 

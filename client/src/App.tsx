@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import CustomSoftware from "@/pages/custom-software";
 import AIReadiness from "@/pages/ai-readiness";
 import ExecutiveAssistants from "@/pages/executive-assistants";
+import LegalAdminOps from "@/pages/legal-admin-ops";
 import Privacy from "@/pages/privacy";
 import NotFound from "@/pages/not-found";
 
@@ -14,6 +15,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/legal-admin-ops" component={LegalAdminOps} />
       <Route path="/executive-assistants" component={ExecutiveAssistants} />
       <Route path="/custom-software" component={CustomSoftware} />
       <Route path="/ai-readiness" component={AIReadiness} />

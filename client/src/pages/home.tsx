@@ -1,35 +1,6 @@
 import { Link } from "wouter";
-import { Database, Users, ArrowRight, Scale, Clock, FileText, UserPlus, Search, BarChart3 } from "lucide-react";
+import { Database, Users, ArrowRight, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const serviceAreas = [
-  {
-    title: "Reimagine Intake",
-    description: "Convert new clients 24/7, 365.",
-    icon: Clock,
-  },
-  {
-    title: "Streamline Billing",
-    description: "Automate proactive client comms.",
-    icon: FileText,
-  },
-  {
-    title: "Rethink Recruiting",
-    description: "Put your recruiting on auto-pilot.",
-    icon: UserPlus,
-  },
-  {
-    title: "Future-proof SEO",
-    description: "Unlock Local and LLM Search.",
-    icon: Search,
-  },
-  {
-    title: "Measure Results",
-    description: "Understand how spend translates to revenue.",
-    icon: BarChart3,
-  },
-];
-
 
 const caseStudies = [
   {
@@ -86,13 +57,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex items-center justify-end gap-6 flex-wrap">
             <nav className="flex items-center gap-6 flex-wrap">
-              <a 
-                href="#services" 
+              <Link 
+                href="/legal-admin-ops" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
-                data-testid="link-services"
+                data-testid="link-legal-admin-ops"
               >
-                Service Areas
-              </a>
+                Legal Admin & Ops
+              </Link>
               <Link 
                 href="/executive-assistants" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
@@ -196,46 +167,6 @@ export default function Home() {
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-futura-border to-transparent" />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Areas Section */}
-      <section id="services" className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-service-areas-label">
-              Service Areas
-            </p>
-            <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4"
-              data-testid="text-service-areas-headline"
-            >
-              Scale Legal Admin and Operations Without Compromising Your Margin
-            </h2>
-            <p className="text-futura-text-secondary text-lg max-w-2xl mx-auto">
-              We partner with law firms that want to focus on what they do best. We do the rest.
-            </p>
-          </div>
-
-          {/* Service Areas Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-service-areas">
-            {serviceAreas.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <div 
-                  key={service.title}
-                  className="p-6 border border-futura-border rounded-sm bg-futura-card hover-elevate transition-all group"
-                  data-testid={`card-service-area-${index}`}
-                >
-                  <div className="w-12 h-12 bg-futura-border rounded-sm flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{service.title}</h3>
-                  <p className="text-futura-text-secondary text-sm leading-relaxed">{service.description}</p>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>
