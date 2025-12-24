@@ -222,7 +222,7 @@ export default function Home() {
       <section className="relative z-10 py-12 lg:py-16 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-parchment text-sm font-medium tracking-widest" data-testid="text-services-label">
+            <p className="text-parchment text-sm font-light tracking-widest" style={{ fontFamily: 'var(--font-karl)' }} data-testid="text-services-label">
               Prepare your firm for the future
             </p>
           </div>
