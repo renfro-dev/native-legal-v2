@@ -90,7 +90,7 @@ export default function RevenueOperations() {
                 className="text-white text-sm transition-colors"
                 data-testid="link-revenue-operations"
               >
-                Revenue Operations
+                RevOps
               </Link>
               <Link 
                 href="/custom-software" 

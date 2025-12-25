@@ -77,7 +77,7 @@ export default function CustomSoftware() {
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-revenue-operations"
               >
-                Revenue Operations
+                RevOps
               </Link>
               <Link 
                 href="/custom-software" 
