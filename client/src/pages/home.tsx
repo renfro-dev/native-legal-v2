@@ -177,20 +177,7 @@ export default function Home() {
                 <Briefcase className="w-5 h-5 text-futura-bg" />
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Revenue Operations</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Evolve your intake and service strategy with a modern CRM that understands and streamlines your business.</p>
-            </div>
-
-            {/* Service 2: Strategic Initiatives */}
-            <div 
-              className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block -rotate-1 hover:rotate-0"
-              style={{ fontFamily: 'Caveat, cursive' }}
-              data-testid="card-service-showcase-1"
-            >
-              <div className="w-10 h-10 bg-futura-bg/10 rounded-full flex items-center justify-center mb-3">
-                <UserCog className="w-5 h-5 text-futura-bg" />
-              </div>
-              <h3 className="text-2xl font-semibold text-futura-bg mb-2">Strategic Initiatives</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Drive strategic initiatives forward without losing focus. We own discovery with minimal business intervention.</p>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Evolve your intake and service strategy with a modern CRM that understands and streamlines your business. We also support strategic initiatives, growth marketing, and recruiting to help you scale.</p>
             </div>
 
             {/* Service 3: Custom Software */}
@@ -228,32 +215,6 @@ export default function Home() {
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
-
-            {/* Service 5: Growth Marketing */}
-            <div 
-              className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block rotate-1 hover:rotate-0"
-              style={{ fontFamily: 'Caveat, cursive' }}
-              data-testid="card-service-showcase-4"
-            >
-              <div className="w-10 h-10 bg-futura-bg/10 rounded-full flex items-center justify-center mb-3">
-                <TrendingUp className="w-5 h-5 text-futura-bg" />
-              </div>
-              <h3 className="text-2xl font-semibold text-futura-bg mb-2">Growth Marketing</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Future-proof your growth with a cost effective local and LLM search strategy. Pay for ads when you need to buy momentum.</p>
-            </div>
-
-            {/* Service 6: Recruiting */}
-            <div 
-              className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block -rotate-1 hover:rotate-0"
-              style={{ fontFamily: 'Caveat, cursive' }}
-              data-testid="card-service-showcase-5"
-            >
-              <div className="w-10 h-10 bg-futura-bg/10 rounded-full flex items-center justify-center mb-3">
-                <Users className="w-5 h-5 text-futura-bg" />
-              </div>
-              <h3 className="text-2xl font-semibold text-futura-bg mb-2">Recruiting</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Put your recruiting on auto-pilot and start growing where you need it most.</p>
-            </div>
           </div>
         </div>
       </section>
