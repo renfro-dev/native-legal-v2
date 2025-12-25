@@ -101,6 +101,7 @@ export default function CustomSoftware() {
 
             <h1 
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8 text-white"
+              style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-headline"
             >
               Software built for your practice
@@ -135,6 +136,7 @@ export default function CustomSoftware() {
                 </p>
                 <h2 
                   className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6"
+                  style={{ fontFamily: 'var(--font-karl)' }}
                   data-testid={`text-${service.id}-headline`}
                 >
                   {service.title}
@@ -175,7 +177,7 @@ export default function CustomSoftware() {
               <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
                 Get Started
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" data-testid="text-cta-headline">
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" style={{ fontFamily: 'var(--font-karl)' }} data-testid="text-cta-headline">
                 Ready to build something custom?
               </h2>
               <p className="text-futura-text text-lg mb-8" data-testid="text-cta-body">

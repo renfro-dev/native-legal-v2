@@ -155,6 +155,7 @@ export default function Home() {
             </p>
             <h2 
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
+              style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-services-headline"
             >
               Scale Revenues<br />
@@ -268,6 +269,7 @@ export default function Home() {
             </p>
             <h2 
               className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
+              style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-case-studies-headline"
             >
               Real results<br />
@@ -387,7 +389,7 @@ export default function Home() {
       ======================================== */}
       <section className="relative z-10 py-24" data-testid="section-cta">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-karl)' }}>
             Ready to future-proof your firm?
           </h2>
           <p className="text-futura-text-secondary text-lg mb-8 max-w-2xl mx-auto">
