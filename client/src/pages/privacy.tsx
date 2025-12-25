@@ -29,6 +29,13 @@ export default function Privacy() {
                 Home
               </Link>
               <Link 
+                href="/revenue-operations" 
+                className="text-futura-text-secondary text-sm transition-colors hover:text-white"
+                data-testid="link-revenue-operations"
+              >
+                Revenue Operations
+              </Link>
+              <Link 
                 href="/custom-software" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
                 data-testid="link-custom-software"
