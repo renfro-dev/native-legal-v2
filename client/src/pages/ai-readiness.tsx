@@ -116,7 +116,11 @@ export default function AIReadiness() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-headline"
             >
-              prEparE yoUr fIrm for ThE AI Era
+              <span className="relative inline-block text-parchment">
+                <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+                <span className="relative">prEparE yoUr fIrm</span>
+              </span>
+              {' '}for ThE AI Era
             </h1>
             
             <p 
