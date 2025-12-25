@@ -245,12 +245,12 @@ export default function AIReadiness() {
               </p>
             </div>
             <div className="bg-futura-card border border-futura-border rounded-sm p-8">
-              <p className="text-white font-semibold text-lg mb-6">Our work emphasizes:</p>
+              <p className="text-parchment font-semibold text-lg mb-6">Our work emphasizes:</p>
               <div className="space-y-5">
                 {peopleEmphasis.map((item, index) => (
                   <div key={index} className="flex items-center gap-4" data-testid={`text-people-emphasis-${index}`}>
-                    <div className="w-10 h-10 bg-futura-border rounded-sm flex items-center justify-center flex-shrink-0">
-                      <RefreshCw className="w-5 h-5 text-white" />
+                    <div className="w-10 h-10 bg-parchment/20 rounded-sm flex items-center justify-center flex-shrink-0">
+                      <RefreshCw className="w-5 h-5 text-parchment" />
                     </div>
                     <span className="text-white text-lg font-medium">{item}</span>
                   </div>
