@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import CustomSoftware from "@/pages/custom-software";
 import AIReadiness from "@/pages/ai-readiness";
+import RevenueOperations from "@/pages/revenue-operations";
 import Privacy from "@/pages/privacy";
 import NotFound from "@/pages/not-found";
 
@@ -13,6 +14,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/revenue-operations" component={RevenueOperations} />
       <Route path="/custom-software" component={CustomSoftware} />
       <Route path="/ai-readiness" component={AIReadiness} />
       <Route path="/privacy" component={Privacy} />

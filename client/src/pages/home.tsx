@@ -168,7 +168,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-services-showcase">
             {/* Service 1: Revenue Operations */}
-            <div 
+            <Link 
+              href="/revenue-operations"
               className="p-6 bg-parchment shadow-lg hover:shadow-xl transition-all group block rotate-1 hover:rotate-0"
               style={{ fontFamily: 'Caveat, cursive' }}
               data-testid="card-service-showcase-0"
@@ -177,8 +178,12 @@ export default function Home() {
                 <Briefcase className="w-5 h-5 text-futura-bg" />
               </div>
               <h3 className="text-2xl font-semibold text-futura-bg mb-2">Revenue Operations</h3>
-              <p className="text-futura-bg/80 text-lg leading-relaxed">Evolve your intake and service strategy with a modern CRM that understands and streamlines your business. We also support strategic initiatives, growth marketing, and recruiting to help you scale.</p>
-            </div>
+              <p className="text-futura-bg/80 text-lg leading-relaxed">Evolve your intake, marketing, recruiting, and service strategy with a modern CRM that understands and streamlines your business.</p>
+              <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
+                Learn more
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
 
             {/* Service 3: Custom Software */}
             <Link 
