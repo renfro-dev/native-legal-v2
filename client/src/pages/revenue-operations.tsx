@@ -124,12 +124,12 @@ export default function RevenueOperations() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-headline"
             >
-              scalE{' '}
+              bUIld ThE{' '}
               <span className="relative inline-block text-parchment">
                 <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
-                <span className="relative">yoUr rEVEnUE</span>
+                <span className="relative">EnginE</span>
               </span>
-              <br />noT yoUr oVErhEad
+              <br />ThAT drIVEs yoUr FIrm
             </h1>
             
             <p 
