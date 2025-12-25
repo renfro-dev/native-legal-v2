@@ -18,7 +18,7 @@ export default function Privacy() {
               data-testid="link-logo"
             >
               <AnimatedLogo size="sm" />
-              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
@@ -53,7 +53,7 @@ export default function Privacy() {
           style={{ fontFamily: 'var(--font-karl)' }}
           data-testid="text-privacy-title"
         >
-          Privacy Policy
+          prIVacy polIcy
         </h1>
         
         <p className="text-futura-text-secondary mb-8">
@@ -168,7 +168,7 @@ export default function Privacy() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <Link href="/" className="flex items-center gap-2" data-testid="link-footer-logo">
               <AnimatedLogo size="sm" />
-              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
               <Link href="/privacy" className="text-white text-sm transition-colors">Privacy Policy</Link>

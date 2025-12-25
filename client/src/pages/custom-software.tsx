@@ -6,7 +6,7 @@ import AnimatedLogo from "@/components/animated-logo";
 const services = [
   {
     id: "conflict-automation",
-    title: "Conflict Automation",
+    title: "conflIcT AUTomaTIon",
     tagline: "Increase your speed to lead.",
     icon: Zap,
     description: "Stop losing potential clients to slow conflict checks. Our custom conflict automation systems integrate with your existing practice management software to deliver instant, accurate results.",
@@ -19,7 +19,7 @@ const services = [
   },
   {
     id: "document-drafting",
-    title: "Document Drafting Platform",
+    title: "docUmEnT drafTIng plaTform",
     tagline: "Build it, don't lease it.",
     icon: FileText,
     description: "Stop paying monthly fees for document assembly tools that don't fit your practice. We build custom document drafting systems that you own outright—tailored to your forms, your workflows, and your clients.",
@@ -32,7 +32,7 @@ const services = [
   },
   {
     id: "rapid-prototyping",
-    title: "Rapid Prototyping",
+    title: "rapId proToTypIng",
     tagline: "From idea to working software in weeks, not months.",
     icon: Rocket,
     description: "Have an idea for a tool that would transform your practice? We turn your vision into a working prototype fast—so you can test, iterate, and validate before committing to full development.",
@@ -62,7 +62,7 @@ export default function CustomSoftware() {
               data-testid="link-logo"
             >
               <AnimatedLogo size="sm" />
-              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
@@ -104,7 +104,7 @@ export default function CustomSoftware() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-headline"
             >
-              Software built for your practice
+              sofTwarE bUIlT for yoUr pracTIcE
             </h1>
             
             <p 
@@ -178,7 +178,7 @@ export default function CustomSoftware() {
                 Get Started
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" style={{ fontFamily: 'var(--font-karl)' }} data-testid="text-cta-headline">
-                Ready to build something custom?
+                rEady To bUIld somEThIng cUsTom?
               </h2>
               <p className="text-futura-text text-lg mb-8" data-testid="text-cta-body">
                 Tell us about your practice and the tools you wish existed. We'll show you what's possible.
@@ -201,8 +201,8 @@ export default function CustomSoftware() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/" className="text-white font-bold text-xl tracking-tight">
-              Native Legal
+            <Link href="/" className="text-white font-bold text-xl tracking-tight" style={{ fontFamily: 'var(--font-karl)' }}>
+              NaTiVE lEgal
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
               <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>

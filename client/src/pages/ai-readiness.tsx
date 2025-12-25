@@ -74,7 +74,7 @@ export default function AIReadiness() {
               data-testid="link-logo"
             >
               <AnimatedLogo size="sm" />
-              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>Native Legal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
             </Link>
             <nav className="flex items-center gap-6 flex-wrap">
               <Link 
@@ -116,7 +116,7 @@ export default function AIReadiness() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-headline"
             >
-              Prepare your firm for the AI era
+              prEparE yoUr fIrm for ThE AI Era
             </h1>
             
             <p 
@@ -140,7 +140,7 @@ export default function AIReadiness() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-pillars-headline"
             >
-              Three Pillars of AI Readiness
+              ThrEE pIllars of AI rEadInEss
             </h2>
             <p className="text-futura-text-secondary text-lg max-w-2xl mx-auto">
               We prepare your organization across the dimensions that determine AI success.
@@ -198,7 +198,7 @@ export default function AIReadiness() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-approach-headline"
             >
-              Six steps to AI-Native practice transformation.
+              sIx sTEps To AI-NaTiVE pracTIcE TransformaTIon.
             </h2>
           </div>
 
@@ -231,7 +231,7 @@ export default function AIReadiness() {
                 style={{ fontFamily: 'var(--font-karl)' }}
                 data-testid="text-people-headline"
               >
-                AI should support people—not sideline them.
+                AI shoUld sUpporT pEoplE—noT sIdElInE ThEm.
               </h2>
               <p className="text-lg text-futura-text leading-relaxed mb-8" data-testid="text-people-body">
                 We believe business transformation starts with people. AI should reduce cognitive load, improve decision quality, and create space for human judgment—not remove it.
@@ -265,7 +265,7 @@ export default function AIReadiness() {
                 Get Started
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" style={{ fontFamily: 'var(--font-karl)' }} data-testid="text-cta-headline">
-                Ready to assess your AI readiness?
+                rEady To assEss yoUr AI rEadInEss?
               </h2>
               <p className="text-futura-text text-lg mb-4" data-testid="text-cta-body">
                 Let us help you evaluate your current systems and build a roadmap to AI-native operations.
@@ -293,8 +293,8 @@ export default function AIReadiness() {
       <footer className="relative z-10 border-t border-futura-border py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/" className="text-white font-bold text-xl tracking-tight">
-              Native Legal
+            <Link href="/" className="text-white font-bold text-xl tracking-tight" style={{ fontFamily: 'var(--font-karl)' }}>
+              NaTiVE lEgal
             </Link>
             <div className="flex items-center gap-6 flex-wrap">
               <Link href="/privacy" className="text-futura-text-secondary text-sm transition-colors hover:text-white">Privacy Policy</Link>
