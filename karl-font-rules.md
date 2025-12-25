@@ -13,6 +13,8 @@ These letters should **always** be capitalized when they appear:
 - **E** - The most consistently capitalized letter
 - **U** - Almost always uppercase
 - **V** - Uppercase in most cases
+- **W** - Always uppercase
+- **F** - Always uppercase
 
 ### Usually Uppercase  
 These letters are **often** capitalized, especially mid-word:
@@ -22,7 +24,6 @@ These letters are **often** capitalized, especially mid-word:
 
 ### Start of Important Words
 The first letter of key/emphasized words may be uppercase:
-- **F** - For, Firm, Future
 - **T** - Tools, To
 - **N** - Native
 
@@ -54,12 +55,14 @@ NaTiVE lEgal
 | Standard Text | Karl Font Style |
 |---------------|-----------------|
 | Modern Tools | modErn Tools |
-| For Law Firms | For laW fIrms |
+| For Law Firms | For laW FIrms |
 | Scale Revenue | scalE rEVEnUE |
-| Not Overhead | Not oVErhEad |
+| Not Overhead | noT oVErhEad |
 | Real Results | rEAl rEsUlTs |
-| From Real Firms | from rEal fIrms |
-| Ready To Future-proof Your Firm? | rEady To FUTUrE-proof yoUr FIrm? |
+| From Real Firms | From rEal FIrms |
+| Ready To Future-proof Your Firm? | rEady To FUTUrE-prooF yoUr FIrm? |
+| Software Built For Your Practice | soFTWarE bUIlT For yoUr pracTIcE |
+| Prepare Your Firm For The AI Era | prEparE yoUr FIrm For ThE AI Era |
 
 ## Quick Reference
 
@@ -68,9 +71,11 @@ When writing text for Karl font headers:
 1. **Start with lowercase** for most words (except proper nouns or emphasis)
 2. **Capitalize all E's** - This is the signature element
 3. **Capitalize all U's** - Creates visual consistency  
-4. **Capitalize V's** - Adds angular visual interest
-5. **Capitalize T's and I's** selectively for rhythm
-6. **First letter of emphasized words** can be uppercase (F, T, N)
+4. **Capitalize all V's** - Adds angular visual interest
+5. **Capitalize all W's** - Always uppercase
+6. **Capitalize all F's** - Always uppercase
+7. **Capitalize T's and I's** selectively for rhythm
+8. **First letter of emphasized words** can be uppercase (T, N)
 
 ## Usage Context
 

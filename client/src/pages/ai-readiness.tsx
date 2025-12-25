@@ -118,9 +118,9 @@ export default function AIReadiness() {
             >
               <span className="relative inline-block text-parchment">
                 <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
-                <span className="relative">prEparE yoUr fIrm</span>
+                <span className="relative">prEparE yoUr FIrm</span>
               </span>
-              {' '}for ThE AI Era
+              {' '}For ThE AI Era
             </h1>
             
             <p 
@@ -144,7 +144,7 @@ export default function AIReadiness() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-pillars-headline"
             >
-              ThrEE pIllars of AI rEadInEss
+              ThrEE pIllars oF AI rEadInEss
             </h2>
             <p className="text-futura-text-secondary text-lg max-w-2xl mx-auto">
               We prepare your organization across the dimensions that determine AI success.
@@ -202,7 +202,7 @@ export default function AIReadiness() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-approach-headline"
             >
-              sIx sTEps To AI-NaTiVE pracTIcE TransformaTIon.
+              sIx sTEps To AI-NaTiVE pracTIcE TransFormaTIon.
             </h2>
           </div>
 

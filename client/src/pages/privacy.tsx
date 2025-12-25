@@ -62,14 +62,14 @@ export default function Privacy() {
 
         <div className="space-y-8 text-futura-text-secondary">
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Introduction</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>IntrodUcTIon</h2>
             <p>
               Native Legal LLC ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Information We Collect</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>InFormaTIon WE collEcT</h2>
             <p className="mb-4">We may collect information about you in a variety of ways, including:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong className="text-white">Personal Data:</strong> Name, email address, phone number, and other contact information you voluntarily provide when contacting us or signing up for our services.</li>
@@ -79,7 +79,7 @@ export default function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>How We Use Your Information</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>HoW WE UsE yoUr InFormaTIon</h2>
             <p className="mb-4">We use the information we collect to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Provide, operate, and maintain our website and services</li>
@@ -91,7 +91,7 @@ export default function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>California Privacy Rights (CCPA/CPRA)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>calIFornIa prIVacy rIghTs (ccpa/cpra)</h2>
             <p className="mb-4">
               If you are a California resident, you have specific rights regarding your personal information under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA):
             </p>
@@ -109,49 +109,49 @@ export default function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Do Not Track Signals</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>do noT Track sIgnals</h2>
             <p>
               Some browsers have a "Do Not Track" feature that signals to websites that you do not want to have your online activity tracked. We currently do not respond to "Do Not Track" signals.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Data Retention</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>daTa rETEnTIon</h2>
             <p>
               We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including to satisfy any legal, accounting, or reporting requirements.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Data Security</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>daTa sEcUrITy</h2>
             <p>
               We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Third-Party Services</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>ThIrd-parTy sErVIcEs</h2>
             <p>
               Our website may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review the privacy policies of any third-party sites you visit.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Children's Privacy</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>chIldrEn's prIVacy</h2>
             <p>
               Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children under 16. If we become aware that we have collected personal information from a child under 16, we will take steps to delete such information.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Changes to This Privacy Policy</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>changEs To ThIs prIVacy polIcy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>Contact Us</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'var(--font-karl)' }}>conTacT Us</h2>
             <p>
               If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact us at:
             </p>

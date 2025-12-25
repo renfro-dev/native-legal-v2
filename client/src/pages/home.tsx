@@ -79,7 +79,7 @@ export default function Home() {
                 modErn Tools<br />
                 <span className="relative inline-block text-parchment">
                   <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
-                  <span className="relative">For laW fIrms</span>
+                  <span className="relative">For laW FIrms</span>
                 </span>
               </h1>
               

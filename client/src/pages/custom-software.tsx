@@ -19,7 +19,7 @@ const services = [
   },
   {
     id: "document-drafting",
-    title: "docUmEnT drafTIng plaTform",
+    title: "docUmEnT draFTIng plaTForm",
     tagline: "Build it, don't lease it.",
     icon: FileText,
     description: "Stop paying monthly fees for document assembly tools that don't fit your practice. We build custom document drafting systems that you own outright—tailored to your forms, your workflows, and your clients.",
@@ -104,7 +104,7 @@ export default function CustomSoftware() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-headline"
             >
-              sofTwarE bUIlT for{' '}
+              soFTWarE bUIlT For{' '}
               <span className="relative inline-block text-parchment">
                 <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
                 <span className="relative">yoUr pracTIcE</span>
