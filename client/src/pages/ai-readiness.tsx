@@ -61,8 +61,8 @@ export default function AIReadiness() {
   return (
     <div className="min-h-screen bg-futura-bg">
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
-        <div className="absolute top-20 left-20 w-96 h-96 rounded-full glow-amber opacity-20" />
-        <div className="absolute bottom-40 right-20 w-80 h-80 rounded-full glow-copper opacity-15" />
+        <div className="absolute top-20 left-20 w-96 h-96 rounded-full glow-mint" />
+        <div className="absolute bottom-40 right-20 w-80 h-80 rounded-full glow-blue" />
       </div>
 
       <header className="relative z-10 border-b border-futura-border">

@@ -405,6 +405,16 @@
   .glow-copper {
     box-shadow: 0 0 80px 40px rgba(217, 119, 6, 0.08);
   }
+  
+  .glow-mint {
+    background: radial-gradient(circle, rgba(152, 255, 152, 0.18) 0%, transparent 70%);
+    filter: blur(40px);
+  }
+  
+  .glow-blue {
+    background: radial-gradient(circle, rgba(65, 105, 225, 0.18) 0%, transparent 70%);
+    filter: blur(40px);
+  }
 
   /* Fade-in animation for page load */
   @keyframes fadeInUp {
