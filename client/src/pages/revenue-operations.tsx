@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { Target, Users, TrendingUp, ArrowRight, CheckCircle, BarChart3, Megaphone, UserPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
+import { ContactFormDialog } from "@/components/contact-form-dialog";
 
 const services = [
   {
@@ -59,8 +61,11 @@ const services = [
 ];
 
 export default function RevenueOperations() {
+  const [contactOpen, setContactOpen] = useState(false);
+  
   return (
     <div className="min-h-screen bg-futura-bg">
+      <ContactFormDialog open={contactOpen} onOpenChange={setContactOpen} />
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute top-20 left-20 w-96 h-96 rounded-full glow-mint" />
         <div className="absolute bottom-40 right-20 w-80 h-80 rounded-full glow-blue" />
@@ -218,6 +223,7 @@ export default function RevenueOperations() {
                   size="lg"
                   className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-final"
+                  onClick={() => setContactOpen(true)}
                 >
                   Schedule Your Assessment
                   <ArrowRight className="w-4 h-4 ml-2" />

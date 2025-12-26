@@ -1,12 +1,16 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { Database, Users, ArrowRight, Scale, Briefcase, UserCog, Code, Sparkles, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
+import { ContactFormDialog } from "@/components/contact-form-dialog";
 
 // Customize the logo text here (adjust capitalization as needed)
 const LOGO_TEXT = "NaTiVE lEgal";
 
 export default function Home() {
+  const [contactOpen, setContactOpen] = useState(false);
+  
   return (
     <div className="min-h-screen bg-futura-bg">
       {/* Subtle background glow */}
@@ -104,6 +108,7 @@ export default function Home() {
                   size="lg"
                   className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-primary"
+                  onClick={() => setContactOpen(true)}
                 >
                   Get Started
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -117,6 +122,8 @@ export default function Home() {
                   Learn More
                 </Button>
               </div>
+              
+              <ContactFormDialog open={contactOpen} onOpenChange={setContactOpen} />
             </div>
 
             {/* Right Visual Element */}
@@ -368,7 +375,12 @@ export default function Home() {
           <p className="text-futura-text-secondary text-lg mb-8 max-w-2xl mx-auto">
             Let's talk about how we can help you build the operational foundations that AI depends on.
           </p>
-          <Button size="lg" className="bg-parchment text-futura-bg font-semibold" data-testid="button-cta-contact">
+          <Button 
+            size="lg" 
+            className="bg-parchment text-futura-bg font-semibold" 
+            data-testid="button-cta-contact"
+            onClick={() => setContactOpen(true)}
+          >
             Schedule a Conversation
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>

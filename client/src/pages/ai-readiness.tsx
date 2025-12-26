@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Database, Users, ArrowRight, Settings, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "@/components/animated-logo";
+import { ContactFormDialog } from "@/components/contact-form-dialog";
 
 type PillarKey = "data" | "people" | "systems";
 
@@ -56,10 +57,12 @@ const peopleEmphasis = [
 
 export default function AIReadiness() {
   const [activePillar, setActivePillar] = useState<PillarKey>("people");
+  const [contactOpen, setContactOpen] = useState(false);
   const currentPillar = servicePillars[activePillar];
 
   return (
     <div className="min-h-screen bg-futura-bg">
+      <ContactFormDialog open={contactOpen} onOpenChange={setContactOpen} />
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute top-20 left-20 w-96 h-96 rounded-full glow-mint" />
         <div className="absolute bottom-40 right-20 w-80 h-80 rounded-full glow-blue" />
@@ -291,6 +294,7 @@ export default function AIReadiness() {
                   size="lg"
                   className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
                   data-testid="button-cta-final"
+                  onClick={() => setContactOpen(true)}
                 >
                   Schedule Your Evaluation
                   <ArrowRight className="w-4 h-4 ml-2" />
