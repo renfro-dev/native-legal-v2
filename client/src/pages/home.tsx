@@ -316,38 +316,6 @@ export default function Home() {
             {/* Case Study 4 */}
             <div
               className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
-              data-testid="card-case-study-3"
-            >
-              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Software Development
-              </p>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                Automated Prenuptial Agreements
-              </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Built a custom tool that allows consumers to draft their own prenuptial agreements, providing attorneys with lower cost leads with intake already completed
-              </p>
-            </div>
-
-            {/* Case Study 5 */}
-            <div
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
-              data-testid="card-case-study-4"
-            >
-              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Simplify Document Collection
-              </p>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                Scale your paralegal team
-              </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Make document collection an afterthought so your paralegals can spend their time on value generating activities
-              </p>
-            </div>
-
-            {/* Case Study 6 */}
-            <div
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
               data-testid="card-case-study-5"
             >
               <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
