@@ -259,7 +259,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-case-studies">
             {/* Case Study 1 */}
             <Link
-              href="/case-studies#intake"
+              href="/case-study/intake"
               className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
               data-testid="card-case-study-0"
             >
@@ -312,12 +312,12 @@ export default function Home() {
 
             {/* Case Study 4 */}
             <Link
-              href="/case-studies"
+              href="/case-study/recruiting"
               className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
               data-testid="card-case-study-5"
             >
               <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Recruiting & Intake
+                Recruiting
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
                 Hired {">"}1,000 attorneys for {"<"}25% less
@@ -326,7 +326,7 @@ export default function Home() {
                 Leverage deep industry expertise and the right tools to help you make right hires for the right price. Never pay 20% of their salary again.
               </p>
               <div className="flex items-center text-parchment text-sm font-medium">
-                View Case Studies
+                View Case Study
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
