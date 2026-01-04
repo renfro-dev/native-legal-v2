@@ -129,6 +129,15 @@ export default function CustomSoftware() {
             >
               Off-the-shelf solutions rarely fit. We build custom tools that integrate seamlessly with how you already work—and that you own outright.
             </p>
+            <Button 
+              size="lg"
+              className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
+              data-testid="button-hero-cta"
+              onClick={() => setContactOpen(true)}
+            >
+              Let's Build Together
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
         </div>
       </section>
@@ -160,13 +169,6 @@ export default function CustomSoftware() {
                 <p className="text-lg text-futura-text leading-relaxed mb-8" data-testid={`text-${service.id}-body`}>
                   {service.description}
                 </p>
-                <Button 
-                  className="bg-parchment text-futura-bg font-semibold rounded-sm"
-                  data-testid={`button-${service.id}-cta`}
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
               </div>
               <div className={`bg-futura-card border border-futura-border rounded-sm p-8 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                 <p className="text-white font-semibold text-lg mb-6">Key Benefits</p>
@@ -191,7 +193,7 @@ export default function CustomSoftware() {
           <div className="bg-futura-card border border-futura-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
               <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
-                Get Started
+                Your Vision, Our Code
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" style={{ fontFamily: 'var(--font-karl)' }} data-testid="text-cta-headline">
                 rEady To bUIld somEThIng cUsTom?
@@ -206,7 +208,7 @@ export default function CustomSoftware() {
                   data-testid="button-cta-final"
                   onClick={() => setContactOpen(true)}
                 >
-                  Schedule a Consultation
+                  Let's Build Together
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>

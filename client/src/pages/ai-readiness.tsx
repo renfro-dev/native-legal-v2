@@ -139,6 +139,15 @@ export default function AIReadiness() {
             >
               We help family law firms build the foundation for successful AI adoption—focusing on systems, people, and data.
             </p>
+            <Button 
+              size="lg"
+              className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
+              data-testid="button-hero-cta"
+              onClick={() => setContactOpen(true)}
+            >
+              Assess Your Readiness
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
         </div>
       </section>
@@ -276,7 +285,7 @@ export default function AIReadiness() {
           <div className="bg-futura-card border border-futura-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
               <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
-                Get Started
+                Begin Your Journey
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" style={{ fontFamily: 'var(--font-karl)' }} data-testid="text-cta-headline">
                 rEady To assEss yoUr AI rEadInEss?
@@ -296,7 +305,7 @@ export default function AIReadiness() {
                   data-testid="button-cta-final"
                   onClick={() => setContactOpen(true)}
                 >
-                  Schedule Your Evaluation
+                  Assess Your Readiness
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>
