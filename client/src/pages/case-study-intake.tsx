@@ -78,9 +78,9 @@ export default function CaseStudyIntake() {
         </div>
       </header>
 
-      <section className="relative z-10 py-24 lg:py-32">
+      <section className="relative z-10 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-3xl mb-8">
             <Link 
               href="/" 
               className="inline-flex items-center text-futura-text-secondary text-sm mb-8 hover:text-white transition-colors"
@@ -131,9 +131,9 @@ export default function CaseStudyIntake() {
         </div>
       </section>
 
-      <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
+      <section className="relative z-10 py-12 lg:py-16 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="bg-futura-card border border-futura-border rounded-sm p-6 mb-12">
+          <div className="bg-futura-card border border-futura-border rounded-sm p-6 mb-8">
             <div className="flex items-center gap-3 mb-4">
               <Building2 className="w-5 h-5 text-parchment" />
               <p className="text-white font-semibold">Client Profile</p>
@@ -145,7 +145,7 @@ export default function CaseStudyIntake() {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 mb-8">
             <div>
               <h2 className="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
                 <Zap className="w-6 h-6 text-parchment" />
@@ -213,11 +213,11 @@ export default function CaseStudyIntake() {
         </div>
       </section>
 
-      <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50 bg-gradient-to-b from-futura-bg to-futura-card/20">
+      <section className="relative z-10 py-12 lg:py-16 border-t border-futura-border/50 bg-gradient-to-b from-futura-bg to-futura-card/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-2xl font-semibold text-white mb-8">What We Built</h2>
-          <p className="text-futura-text mb-8">A fully systemized intake infrastructure with:</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          <h2 className="text-2xl font-semibold text-white mb-4">What We Built</h2>
+          <p className="text-futura-text mb-6">A fully systemized intake infrastructure with:</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {deliverables.map((item, index) => (
               <div key={index} className="bg-futura-card border border-futura-border rounded-sm p-4 flex items-start gap-3" data-testid={`text-deliverable-${index}`}>
                 <CheckCircle className="w-5 h-5 text-parchment flex-shrink-0 mt-0.5" />
@@ -233,10 +233,10 @@ export default function CaseStudyIntake() {
         </div>
       </section>
 
-      <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
+      <section className="relative z-10 py-12 lg:py-16 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-2xl font-semibold text-white mb-8">Results</h2>
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <h2 className="text-2xl font-semibold text-white mb-6">Results</h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             {results.map((result, index) => (
               <div key={index} className="bg-parchment/10 border border-parchment/30 rounded-sm p-8 text-center" data-testid={`text-result-${index}`}>
                 <p className="text-4xl md:text-5xl font-bold text-parchment mb-3" style={{ fontFamily: 'var(--font-karl)' }}>{result.metric}</p>
@@ -255,9 +255,9 @@ export default function CaseStudyIntake() {
         </div>
       </section>
 
-      <section className="relative z-10 py-20 lg:py-24 border-t border-futura-border/50">
+      <section className="relative z-10 py-12 lg:py-16 border-t border-futura-border/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-parchment/5 to-transparent border-l-4 border-parchment p-8 mb-12">
+          <div className="bg-gradient-to-r from-parchment/5 to-transparent border-l-4 border-parchment p-6 mb-8">
             <h2 className="text-2xl font-semibold text-white mb-6">Why It Matters</h2>
             <p className="text-futura-text leading-relaxed mb-4 text-lg">
               Most firms try to grow by hiring faster or spending more on ads. This firm grew by <span className="text-white font-medium">seeing the truth in their data</span> — and fixing the system underneath it.
@@ -267,7 +267,7 @@ export default function CaseStudyIntake() {
             </p>
           </div>
 
-          <div className="bg-futura-card border border-futura-border rounded-sm p-8 md:p-12">
+          <div className="bg-futura-card border border-futura-border rounded-sm p-6 md:p-8">
             <div className="max-w-2xl">
               <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
                 Your Turn
