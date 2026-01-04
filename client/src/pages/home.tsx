@@ -293,7 +293,7 @@ export default function Home() {
                 Increased topline revenue by 96%
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Transformed the revenue engine of a prominent law firm, and increased year over year retainer values by 95.6%
+                Transformed the revenue engine of a prominent CA law firm, increasing year over year retainer values by 95.6% and a seven figure increase in topline revenue.
               </p>
             </div>
 
@@ -354,10 +354,10 @@ export default function Home() {
                 Recruiting
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
-                Hired over 1,000 attorneys in over 22 states
+                Hired over 1,000 attorneys for {"<"}25% of industry standard
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Leverage deep industry expertise and the right tools to help you make right hires for an AI-forward future
+                Leverage deep industry expertise and the right tools to help you make right hires for the right price. Never pay 20% of their salary again.
               </p>
             </div>
           </div>
