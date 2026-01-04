@@ -287,13 +287,13 @@ export default function Home() {
               data-testid="card-case-study-1"
             >
               <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Rapid Prototyping
+                Revenue Optimization
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
-                Rethink resource guides
+                Increased topline revenue by 96%
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
-                A family law firm with four offices and over 100 staff transformed a 40+ slide powerpoint into one interactive asset
+                Transformed the revenue engine of a prominent law firm, and increased year over year retainer values by 95.6%
               </p>
             </div>
 
