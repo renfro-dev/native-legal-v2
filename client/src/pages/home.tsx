@@ -274,10 +274,10 @@ export default function Home() {
                 Streamline Intake
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
-                Improved lead converion by 42%
+                Improved lead conversion by 42%
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Built a custom CRM that automates conflict checks, client communications, streamlines admin tasks, simplifies retainer agreements, and gives full visibility into business health
+                Get to your leads quicker and always follow through by automating the boring stuff; conflict checks, email notifications, reminders, and lead creation.
               </p>
             </div>
 
@@ -303,13 +303,13 @@ export default function Home() {
               data-testid="card-case-study-2"
             >
               <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Reporting Dashboards
+                Performance Marketing
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
-                A birds eye view of your business
+                Transformed ROI by over 300%
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Eliminated manual data entry and created business intelligence to enable strategic decision making and resource allocation
+                Our team has managed millions in advertising spend in the legal category, transforming ROI for clients by over 300%
               </p>
             </div>
 
