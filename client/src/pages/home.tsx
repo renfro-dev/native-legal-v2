@@ -354,7 +354,7 @@ export default function Home() {
                 Recruiting
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
-                Transform your recruiting department
+                Hired over 1,000 attorneys in over 22 states
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
                 Leverage deep industry expertise and the right tools to help you make right hires for an AI-forward future
