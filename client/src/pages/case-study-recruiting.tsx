@@ -26,8 +26,10 @@ export default function CaseStudyRecruiting() {
 
   return (
     <div className="min-h-screen bg-futura-bg overflow-x-hidden">
-      <div className="glow-mint" aria-hidden="true" />
-      <div className="glow-blue" aria-hidden="true" />
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+        <div className="absolute top-20 left-20 w-96 h-96 rounded-full glow-mint" />
+        <div className="absolute bottom-40 right-20 w-80 h-80 rounded-full glow-blue" />
+      </div>
 
       <header className="relative z-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">

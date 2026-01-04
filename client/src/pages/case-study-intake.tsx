@@ -28,8 +28,10 @@ export default function CaseStudyIntake() {
 
   return (
     <div className="min-h-screen bg-futura-bg overflow-x-hidden">
-      <div className="glow-mint" aria-hidden="true" />
-      <div className="glow-blue" aria-hidden="true" />
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+        <div className="absolute top-20 left-20 w-96 h-96 rounded-full glow-mint" />
+        <div className="absolute bottom-40 right-20 w-80 h-80 rounded-full glow-blue" />
+      </div>
 
       <header className="relative z-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
@@ -194,7 +196,7 @@ export default function CaseStudyIntake() {
                 The Approach
               </h2>
               <p className="text-futura-text leading-relaxed mb-6">
-                Native Legal redesigned intake as a <span className="text-white font-medium">measurable revenue system</span>, not a call center.
+                Redesign intake as a <span className="text-white font-medium">measurable revenue system</span>, not a call center.
               </p>
               <p className="text-futura-text leading-relaxed mb-4">The strategy focused on:</p>
               <ul className="space-y-3 text-futura-text-secondary">
@@ -234,7 +236,7 @@ export default function CaseStudyIntake() {
           </div>
           <div className="bg-parchment/10 border border-parchment/30 rounded-sm p-6">
             <p className="text-white font-medium text-lg">
-              Critically, intake specialists never had to manually enter data to measure performance.
+              We turned guesswork and data entry into a predictable and measurable revenue engine.
             </p>
           </div>
         </div>
