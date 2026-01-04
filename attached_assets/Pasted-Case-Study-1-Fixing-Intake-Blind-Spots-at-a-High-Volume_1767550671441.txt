@@ -1,0 +1,156 @@
+Case Study 1
+Fixing Intake Blind Spots at a High-Volume Family Law Firm
+Client Profile
+
+Firm Type: Large, multi-office California family law firm
+Practice Area: Family Law
+Role: Director of Revenue Operations & Growth (in-house)
+
+The Problem
+
+Despite strong brand demand and steady inbound traffic, leadership lacked clear answers to fundamental questions:
+
+How many inquiries are we actually receiving?
+
+Where are we losing potential clients — and why?
+
+Which marketing channels generate retainers, not just leads?
+
+Are intake specialists converting at similar rates?
+
+Are we scaling staff… or masking broken systems?
+
+Intake data lived across voicemail systems, inboxes, forms, calendars, and spreadsheets — creating blind spots that made optimization impossible.
+
+The Approach
+
+Native.Legal redesigned intake as a measurable revenue system, not a call center.
+
+The strategy focused on:
+
+Eliminating manual data entry
+
+Capturing every inquiry automatically
+
+Creating visibility into both lead volume and lead quality
+
+Instrumenting the intake funnel end-to-end
+
+What We Built
+
+A fully systemized intake infrastructure with:
+
+Automated lead creation from calls, voicemails, and web forms
+
+Voicemail transcription logged directly to the CRM
+
+Dynamic form routing based on matter type
+
+Automated conflict checks to remove intake bottlenecks
+
+Compliant call recording with centralized access
+
+Automated follow-up tasks for staff and prospects
+
+Consult confirmation workflows via email automation
+
+Personalized follow-ups based on why a prospect didn’t move forward
+
+Marketing attribution tied directly to retained revenue — not vanity metrics
+
+Critically, intake specialists never had to manually enter data to measure performance.
+
+Results
+
+>200% increase in revenue per intake specialist
+
++42% increase in conversion rate on direct traffic
+
+Significant lift in paid ads lead volume
+
+>300% increase in paid ads ROI
+
+Clear visibility into when to scale staff vs. cut spend
+
+Actionable insight into why prospects drop off at each stage
+
+Why It Matters
+
+Most firms try to grow by hiring faster or spending more on ads.
+This firm grew by seeing the truth in their data — and fixing the system underneath it.
+
+Native.Legal turned intake from a cost center into a predictable revenue engine.
+
+Case Study 2
+Building a Scalable, In-House Recruiting Engine for Law Firms
+Client Profile
+
+Firm Type: Multi-state law firms
+Practice Areas: Litigation, family law, support staff
+Role: In-house recruiting leadership
+
+The Problem
+
+Law firms routinely face the same hiring dilemmas:
+
+Should we pay 20% of year-one salary to recruiters?
+
+Why are qualified paralegals so hard to find?
+
+Can we hire strong talent outside our home state?
+
+Are we hiring because we need capacity — or because systems are broken?
+
+How do we know if new hires are actually paying for themselves?
+
+Most firms lacked structure, visibility, and ROI measurement in hiring decisions.
+
+The Approach
+
+Native.Legal treated recruiting like an operations problem, not a staffing one.
+
+The goal was to:
+
+Reduce reliance on external recruiters
+
+Build repeatable hiring pipelines
+
+Tie headcount decisions to real operational demand
+
+Measure ROI on every hire
+
+What We Built
+
+Across multiple firms and jurisdictions, we implemented:
+
+Structured candidate pipelines with defined stages
+
+Hiring manager workflows to reduce interview drag
+
+Out-of-state talent sourcing for cost efficiency
+
+Role clarity frameworks to reduce mis-hires
+
+Onboarding systems aligned with real job success
+
+Headcount justification models (hire vs. automate vs. defer)
+
+Post-hire performance tracking tied to business outcomes
+
+Results
+
+1,000+ legal hires supported across 20+ states
+
+Reduced dependency on external recruiting firms
+
+Faster time-to-hire with higher role alignment
+
+Improved retention through better enablement
+
+Clear insight into when technology beats headcount
+
+Why It Matters
+
+Hiring is one of the most expensive decisions a law firm makes — and most firms make it blind.
+
+Native.Legal gives firms the systems and clarity to scale intelligently, without over-hiring or over-paying.
