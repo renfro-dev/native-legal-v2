@@ -143,6 +143,15 @@ export default function RevenueOperations() {
             >
               Modern law firms need modern revenue operations. We help you build the systems, processes, and team that turn leads into clients and clients into advocates.
             </p>
+            <Button 
+              size="lg"
+              className="bg-parchment text-futura-bg font-semibold rounded-sm px-8"
+              data-testid="button-hero-cta"
+              onClick={() => setContactOpen(true)}
+            >
+              Start Growing Today
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
         </div>
       </section>
@@ -174,13 +183,6 @@ export default function RevenueOperations() {
                 <p className="text-lg text-futura-text leading-relaxed mb-8" data-testid={`text-${service.id}-body`}>
                   {service.description}
                 </p>
-                <Button 
-                  className="bg-parchment text-futura-bg font-semibold rounded-sm"
-                  data-testid={`button-${service.id}-cta`}
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
               </div>
               <div className={`bg-futura-card border border-futura-border rounded-sm p-8 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                 <p className="text-parchment font-semibold text-lg mb-6">Key Benefits</p>
@@ -205,7 +207,7 @@ export default function RevenueOperations() {
           <div className="bg-futura-card border border-futura-border rounded-sm p-8 md:p-12">
             <div className="max-w-2xl">
               <p className="text-futura-text text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-cta-label">
-                Get Started
+                Take the First Step
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4" style={{ fontFamily: 'var(--font-karl)' }} data-testid="text-cta-headline">
                 rEady To groW?

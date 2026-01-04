@@ -110,16 +110,8 @@ export default function Home() {
                   data-testid="button-cta-primary"
                   onClick={() => setContactOpen(true)}
                 >
-                  Get Started
+                  Schedule a Discovery Session
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="border-futura-border text-white rounded-sm"
-                  data-testid="button-cta-secondary"
-                >
-                  Learn More
                 </Button>
               </div>
               
@@ -322,7 +314,7 @@ export default function Home() {
                 Recruiting
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
-                Hired {">"} 1,000 attorneys for {"<"}25% less
+                Hired {">"}1,000 attorneys for {"<"}25% less
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
                 Leverage deep industry expertise and the right tools to help you make right hires for the right price. Never pay 20% of their salary again.
