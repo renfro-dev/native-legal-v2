@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft, TrendingUp, Users, CheckCircle, Target, Zap, BarChart3, UserCheck, Building2 } from "lucide-react";
-import { AnimatedLogo } from "@/components/animated-logo";
+import AnimatedLogo from "@/components/animated-logo";
 import { ContactFormDialog } from "@/components/contact-form-dialog";
 
 export default function CaseStudies() {

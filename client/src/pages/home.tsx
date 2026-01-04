@@ -258,8 +258,9 @@ export default function Home() {
           {/* Case Studies Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-case-studies">
             {/* Case Study 1 */}
-            <div
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+            <Link
+              href="/case-studies#intake"
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
               data-testid="card-case-study-0"
             >
               <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
@@ -268,10 +269,14 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-white mb-3">
                 Improved lead conversion by 42%
               </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">
+              <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
                 Get to your leads quicker and always follow through by automating the boring stuff; conflict checks, email notifications, reminders, and lead creation.
               </p>
-            </div>
+              <div className="flex items-center text-parchment text-sm font-medium">
+                View Case Study
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
 
             {/* Case Study 2 */}
             <div
@@ -306,20 +311,25 @@ export default function Home() {
             </div>
 
             {/* Case Study 4 */}
-            <div
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+            <Link
+              href="/case-studies"
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
               data-testid="card-case-study-5"
             >
               <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Recruiting
+                Recruiting & Intake
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
                 Hired {">"}1,000 attorneys for {"<"}25% less
               </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">
+              <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
                 Leverage deep industry expertise and the right tools to help you make right hires for the right price. Never pay 20% of their salary again.
               </p>
-            </div>
+              <div className="flex items-center text-parchment text-sm font-medium">
+                View Case Studies
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
