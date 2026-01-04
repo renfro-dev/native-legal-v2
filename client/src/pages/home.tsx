@@ -322,7 +322,7 @@ export default function Home() {
                 Recruiting
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
-                Hired over 1,000 attorneys for {"<"}25% of industry standard
+                Hired {">"} 1,000 attorneys for {"<"}25% less
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed">
                 Leverage deep industry expertise and the right tools to help you make right hires for the right price. Never pay 20% of their salary again.
