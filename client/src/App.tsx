@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import CustomSoftware from "@/pages/custom-software";
 import AIReadiness from "@/pages/ai-readiness";
 import RevenueOperations from "@/pages/revenue-operations";
+import CaseStudies from "@/pages/case-studies";
 import Privacy from "@/pages/privacy";
 import NotFound from "@/pages/not-found";
 
@@ -30,6 +31,7 @@ function Router() {
         <Route path="/revenue-operations" component={RevenueOperations} />
         <Route path="/custom-software" component={CustomSoftware} />
         <Route path="/ai-readiness" component={AIReadiness} />
+        <Route path="/case-studies" component={CaseStudies} />
         <Route path="/privacy" component={Privacy} />
         <Route component={NotFound} />
       </Switch>
