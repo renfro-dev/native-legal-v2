@@ -151,6 +151,110 @@ export default function Home() {
       </section>
 
       {/* ========================================
+          CASE STUDIES SECTION
+      ======================================== */}
+      <section id="case-studies" className="relative z-10 py-20 lg:py-24 bg-gradient-to-b from-futura-bg to-futura-card/20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-left mb-12">
+            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
+              Case Studies
+            </p>
+            <h2 
+              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
+              style={{ fontFamily: 'var(--font-karl)' }}
+              data-testid="text-case-studies-headline"
+            >
+              rEAl rEsUlTs<br />
+              <span className="relative inline-block text-parchment">
+                <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+                <span className="relative">From rEAl FIrms</span>
+              </span>
+            </h2>
+            <p className="text-futura-text-secondary text-lg max-w-2xl">
+              See how law firms are transforming their practice with AI-native tools.
+            </p>
+          </div>
+
+          {/* Case Studies Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-case-studies">
+            {/* Case Study 1 */}
+            <Link
+              href="/case-study/intake"
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
+              data-testid="card-case-study-0"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Modern Intake Systems
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Improved lead conversion by 42%
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
+                Automated the boring stuff, allowing a large CA law firm get to their leads quicker, and to never forget to follow through or follow up. Manual conflict checks, email notifications, reminders, lead creation, and data entry is a thing of the past.
+              </p>
+              <div className="flex items-center text-parchment text-sm font-medium">
+                View Case Study
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            {/* Case Study 2 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-1"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Revenue Optimization
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Increased topline revenue by 96%
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                Increased year over year retainer growth by seven figures (a 95.6% increase) by rebuilding intake, SEO, paid marketing, lifecycle marketing, brand marketing, collections, and recruiting strategies and systems from the ground up. 
+              </p>
+            </div>
+
+            {/* Case Study 3 */}
+            <div
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
+              data-testid="card-case-study-2"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Performance Marketing
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Transformed ROI by over 300%
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed">
+                Our team has managed millions in paid advertising spend in the legal category, and have deep expertise in the nuances of legal marketing. We believe, however, that building long-term value requires more than just paid ads.
+              </p>
+            </div>
+
+            {/* Case Study 4 */}
+            <Link
+              href="/case-study/recruiting"
+              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
+              data-testid="card-case-study-5"
+            >
+              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
+                Recruiting
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Hired {">"}1,000 attorneys for {"<"}25% less
+              </h3>
+              <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
+                We helped a large consumer law firm launch their immigration, bankruptcy, employment, and family law practice in over 20 states. Deep industry expertise and modern tools will help you make right hires for the right price. 
+              </p>
+              <div className="flex items-center text-parchment text-sm font-medium">
+                View Case Study
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================
           SERVICES SHOWCASE SECTION
       ======================================== */}
       <section className="relative z-10 py-20 lg:py-24">
@@ -223,110 +327,6 @@ export default function Home() {
               <p className="text-futura-bg/80 text-lg leading-relaxed">Secure your competitive edge with strong foundations and alignment at the nexus of people, data, and systems.</p>
               <div className="mt-4 flex items-center text-futura-bg text-lg font-medium">
                 Learn more
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ========================================
-          CASE STUDIES SECTION
-      ======================================== */}
-      <section id="case-studies" className="relative z-10 py-20 lg:py-24 bg-gradient-to-b from-futura-bg to-futura-card/20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-left mb-12">
-            <p className="text-parchment text-xs font-medium uppercase tracking-widest mb-4" data-testid="text-case-studies-label">
-              Case Studies
-            </p>
-            <h2 
-              className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4"
-              style={{ fontFamily: 'var(--font-karl)' }}
-              data-testid="text-case-studies-headline"
-            >
-              rEAl rEsUlTs<br />
-              <span className="relative inline-block text-parchment">
-                <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
-                <span className="relative">From rEAl FIrms</span>
-              </span>
-            </h2>
-            <p className="text-futura-text-secondary text-lg max-w-2xl">
-              See how law firms are transforming their practice with AI-native tools.
-            </p>
-          </div>
-
-          {/* Case Studies Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="grid-case-studies">
-            {/* Case Study 1 */}
-            <Link
-              href="/case-study/intake"
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
-              data-testid="card-case-study-0"
-            >
-              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Modern Intake Systems
-              </p>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                Improved lead conversion by 42%
-              </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
-                Get to your leads quicker and always follow through by automating the boring stuff; conflict checks, email notifications, reminders, and lead creation.
-              </p>
-              <div className="flex items-center text-parchment text-sm font-medium">
-                View Case Study
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-
-            {/* Case Study 2 */}
-            <div
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
-              data-testid="card-case-study-1"
-            >
-              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Revenue Optimization
-              </p>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                Increased topline revenue by 96%
-              </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Transformed the revenue engine of a prominent CA law firm, increasing year over year retainer values by 95.6% and a seven figure increase in topline revenue.
-              </p>
-            </div>
-
-            {/* Case Study 3 */}
-            <div
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group"
-              data-testid="card-case-study-2"
-            >
-              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Performance Marketing
-              </p>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                Transformed ROI by over 300%
-              </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed">
-                Our team has managed millions in advertising spend in the legal category, transforming ROI for clients by over 300%
-              </p>
-            </div>
-
-            {/* Case Study 4 */}
-            <Link
-              href="/case-study/recruiting"
-              className="bg-futura-card border border-futura-border rounded-sm p-6 hover-elevate transition-all group block"
-              data-testid="card-case-study-5"
-            >
-              <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Recruiting
-              </p>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                Hired {">"}1,000 attorneys for {"<"}25% less
-              </h3>
-              <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
-                Leverage deep industry expertise and the right tools to help you make right hires for the right price. Never pay 20% of their salary again.
-              </p>
-              <div className="flex items-center text-parchment text-sm font-medium">
-                View Case Study
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
