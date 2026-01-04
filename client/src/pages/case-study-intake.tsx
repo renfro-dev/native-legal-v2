@@ -128,15 +128,6 @@ export default function CaseStudyIntake() {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-testid="grid-hero-metrics">
-            {results.map((result, index) => (
-              <div key={index} className="bg-futura-card border border-futura-border rounded-sm p-6 text-center">
-                <p className="text-4xl md:text-5xl font-bold text-parchment mb-2" style={{ fontFamily: 'var(--font-karl)' }}>{result.metric}</p>
-                <p className="text-futura-text-secondary text-sm">{result.label}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
