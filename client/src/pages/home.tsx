@@ -251,7 +251,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-futura-text-secondary text-lg max-w-2xl">
-              See how family law firms are transforming their practice with AI-native tools.
+              See how law firms are transforming their practice with AI-native tools.
             </p>
           </div>
 
@@ -264,7 +264,7 @@ export default function Home() {
               data-testid="card-case-study-0"
             >
               <p className="text-xs font-medium uppercase tracking-widest mb-3 text-parchment">
-                Streamline Intake
+                Modern Intake Systems
               </p>
               <h3 className="text-lg font-semibold text-white mb-3">
                 Improved lead conversion by 42%

@@ -31,14 +31,18 @@ export default function CaseStudyIntake() {
       <div className="glow-mint" aria-hidden="true" />
       <div className="glow-blue" aria-hidden="true" />
 
-      <header className="relative z-20 py-6">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-4">
-            <Link href="/" className="flex items-center gap-2">
+      <header className="relative z-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+          <div className="flex items-center justify-between gap-6 flex-wrap">
+            <Link 
+              href="/" 
+              className="flex items-center gap-2"
+              data-testid="link-logo"
+            >
               <AnimatedLogo size="sm" />
-              <span className="text-white text-lg font-bold" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
             </Link>
-            <nav className="hidden md:flex items-center gap-6 flex-wrap" data-testid="nav-main">
+            <nav className="flex items-center gap-6 flex-wrap" data-testid="nav-main">
               <Link 
                 href="/" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
@@ -89,7 +93,7 @@ export default function CaseStudyIntake() {
               </div>
               <div>
                 <p className="text-parchment text-xs font-medium uppercase tracking-widest">Case Study</p>
-                <span className="text-futura-text text-sm">High-Volume Family Law Firm</span>
+                <span className="text-futura-text text-sm">High-Volume Law Firm</span>
               </div>
             </div>
 
@@ -109,7 +113,7 @@ export default function CaseStudyIntake() {
               className="text-lg leading-relaxed mb-10 max-w-xl text-futura-text"
               data-testid="text-hero-description"
             >
-              How we transformed intake from a cost center into a predictable revenue engine for a large California family law firm.
+              How we transformed intake from a cost center into a predictable revenue engine for a large California law firm.
             </p>
 
             <Button 
@@ -142,8 +146,8 @@ export default function CaseStudyIntake() {
               <p className="text-white font-semibold">Client Profile</p>
             </div>
             <div className="grid md:grid-cols-3 gap-4 text-futura-text-secondary text-sm">
-              <div><span className="text-futura-text">Firm Type:</span> Large, multi-office California family law firm</div>
-              <div><span className="text-futura-text">Practice Area:</span> Family Law</div>
+              <div><span className="text-futura-text">Firm Type:</span> Large, multi-office California law firm</div>
+              <div><span className="text-futura-text">Practice Area:</span> Litigation</div>
               <div><span className="text-futura-text">Role:</span> Director of Revenue Operations & Growth</div>
             </div>
           </div>

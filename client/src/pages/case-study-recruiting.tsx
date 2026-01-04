@@ -29,14 +29,18 @@ export default function CaseStudyRecruiting() {
       <div className="glow-mint" aria-hidden="true" />
       <div className="glow-blue" aria-hidden="true" />
 
-      <header className="relative z-20 py-6">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-4">
-            <Link href="/" className="flex items-center gap-2">
+      <header className="relative z-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+          <div className="flex items-center justify-between gap-6 flex-wrap">
+            <Link 
+              href="/" 
+              className="flex items-center gap-2"
+              data-testid="link-logo"
+            >
               <AnimatedLogo size="sm" />
-              <span className="text-white text-lg font-bold" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
+              <span className="text-white text-xl font-bold tracking-wide" style={{ fontFamily: 'var(--font-karl)' }}>NaTiVE lEgal</span>
             </Link>
-            <nav className="hidden md:flex items-center gap-6 flex-wrap" data-testid="nav-main">
+            <nav className="flex items-center gap-6 flex-wrap" data-testid="nav-main">
               <Link 
                 href="/" 
                 className="text-futura-text-secondary text-sm transition-colors hover:text-white"
@@ -141,7 +145,7 @@ export default function CaseStudyRecruiting() {
             </div>
             <div className="grid md:grid-cols-3 gap-4 text-futura-text-secondary text-sm">
               <div><span className="text-futura-text">Firm Type:</span> Multi-state law firms</div>
-              <div><span className="text-futura-text">Practice Areas:</span> Litigation, family law, support staff</div>
+              <div><span className="text-futura-text">Practice Areas:</span> Litigation, corporate law, support staff</div>
               <div><span className="text-futura-text">Role:</span> In-house recruiting leadership</div>
             </div>
           </div>

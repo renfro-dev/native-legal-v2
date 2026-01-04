@@ -137,7 +137,7 @@ export default function AIReadiness() {
               className="text-lg leading-relaxed mb-10 max-w-xl text-futura-text"
               data-testid="text-hero-description"
             >
-              We help family law firms build the foundation for successful AI adoption—focusing on systems, people, and data.
+              We help law firms build the foundation for successful AI adoption—focusing on systems, people, and data.
             </p>
             <Button 
               size="lg"
