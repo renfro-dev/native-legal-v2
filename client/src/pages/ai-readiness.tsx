@@ -221,7 +221,11 @@ export default function AIReadiness() {
               style={{ fontFamily: 'var(--font-karl)' }}
               data-testid="text-approach-headline"
             >
-              sIx sTEps To AI-NaTiVE pracTIcE TransFormaTIon.
+              sIx sTEps To{" "}
+              <span className="relative inline-block text-parchment">
+                <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+                <span className="relative">AI-NaTiVE pracTIcE TransFormaTIon</span>
+              </span>.
             </h2>
           </div>
 
@@ -254,7 +258,11 @@ export default function AIReadiness() {
                 style={{ fontFamily: 'var(--font-karl)' }}
                 data-testid="text-people-headline"
               >
-                AI shoUld sUpporT pEoplE—noT sIdElInE ThEm.
+                AI shoUld{" "}
+                <span className="relative inline-block text-parchment">
+                  <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+                  <span className="relative">sUpporT pEoplE</span>
+                </span>—noT sIdElInE ThEm.
               </h2>
               <p className="text-lg text-futura-text leading-relaxed mb-8" data-testid="text-people-body">
                 We believe business transformation starts with people. AI should reduce cognitive load, improve decision quality, and create space for human judgment—not remove it.
