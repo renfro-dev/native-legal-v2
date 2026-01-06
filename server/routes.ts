@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactLeadSchema } from "@shared/schema";
+import { sendContactNotification } from "./resend";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -17,9 +18,13 @@ export async function registerRoutes(
       
       const lead = await storage.createContactLead(result.data);
       
-      // TODO: Add email notification when Resend is configured
-      // For now, just log the submission
-      console.log("New contact lead received:", lead);
+      // Send email notification to joshua@native.legal
+      try {
+        await sendContactNotification(lead);
+        console.log("Email notification sent for lead:", lead.id);
+      } catch (emailError) {
+        console.error("Failed to send email notification:", emailError);
+      }
       
       return res.status(201).json({ success: true, id: lead.id });
     } catch (error) {
