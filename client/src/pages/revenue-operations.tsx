@@ -13,7 +13,7 @@ const services = [
     icon: Target,
     description: "Evolve your intake and service strategy with a modern CRM that understands your business. We implement and optimize systems that capture leads, nurture relationships, and convert prospects into clients.",
     features: [
-      "CRM selection and implementation tailored to law firms",
+      "CRM selection and implementation tailored to family law firms",
       "Automated lead nurturing and follow-up sequences",
       "Integration with your website, phone, and email systems",
       "Custom dashboards for pipeline visibility",
@@ -141,7 +141,7 @@ export default function RevenueOperations() {
               className="text-lg leading-relaxed mb-10 max-w-xl text-futura-text"
               data-testid="text-hero-description"
             >
-              Modern law firms need modern revenue operations. We help you build the systems, processes, and team that turn leads into clients and clients into advocates.
+              Modern family law firms need modern revenue operations. We help you build the systems, processes, and team that turn leads into clients and clients into advocates.
             </p>
             <Button 
               size="lg"

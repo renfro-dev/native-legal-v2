@@ -90,7 +90,7 @@ export default function Home() {
                 modErn Tools<br />
                 <span className="relative inline-block text-parchment">
                   <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
-                  <span className="relative">For laW fIrms</span>
+                  <span className="relative">For FAmIly laW fIrms</span>
                 </span>
               </h1>
               
@@ -171,7 +171,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-futura-text-secondary text-lg max-w-2xl">
-              See how law firms are transforming their practice with AI-native tools.
+              See how family law firms are transforming their practice with AI-native tools.
             </p>
           </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
                 Improved lead conversion by 42%
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
-                Automated the boring stuff, allowing a large CA law firm get to their leads quicker, and to never forget to follow through or follow up. Manual conflict checks, email notifications, reminders, lead creation, and data entry is a thing of the past.
+                Automated the boring stuff, allowing a large CA family law firm get to their leads quicker, and to never forget to follow through or follow up. Manual conflict checks, email notifications, reminders, lead creation, and data entry is a thing of the past.
               </p>
               <div className="flex items-center text-parchment text-sm font-medium">
                 View Case Study
@@ -243,7 +243,7 @@ export default function Home() {
                 Hired {">"}1,000 attorneys for {"<"}25% less
               </h3>
               <p className="text-futura-text-secondary text-sm leading-relaxed mb-4">
-                We helped a large consumer law firm launch their immigration, bankruptcy, employment, and family law practice in over 20 states. Deep industry expertise and modern tools will help you make right hires for the right price. 
+                We helped a large consumer family law firm launch their immigration, bankruptcy, employment, and family law practice in over 20 states. Deep industry expertise and modern tools will help you make right hires for the right price. 
               </p>
               <div className="flex items-center text-parchment text-sm font-medium">
                 View Case Study

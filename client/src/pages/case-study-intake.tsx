@@ -95,7 +95,7 @@ export default function CaseStudyIntake() {
               </div>
               <div>
                 <p className="text-parchment text-xs font-medium uppercase tracking-widest">Case Study</p>
-                <span className="text-futura-text text-sm">High-Volume Law Firm</span>
+                <span className="text-futura-text text-sm">High-Volume Family Law Firm</span>
               </div>
             </div>
 
@@ -115,7 +115,7 @@ export default function CaseStudyIntake() {
               className="text-lg leading-relaxed mb-10 max-w-xl text-futura-text"
               data-testid="text-hero-description"
             >
-              How we transformed intake from a cost center into a predictable revenue engine for a large California law firm.
+              How we transformed intake from a cost center into a predictable revenue engine for a large California family law firm.
             </p>
 
             <Button 
@@ -139,7 +139,7 @@ export default function CaseStudyIntake() {
               <p className="text-white font-semibold">Client Profile</p>
             </div>
             <div className="grid md:grid-cols-3 gap-4 text-futura-text-secondary text-sm">
-              <div><span className="text-futura-text">Firm Type:</span> Large, multi-office California law firm</div>
+              <div><span className="text-futura-text">Firm Type:</span> Large, multi-office California family law firm</div>
               <div><span className="text-futura-text">Practice Area:</span> Litigation</div>
               <div><span className="text-futura-text">Role:</span> Director of Revenue Operations & Growth</div>
             </div>

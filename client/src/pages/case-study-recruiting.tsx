@@ -93,7 +93,7 @@ export default function CaseStudyRecruiting() {
               </div>
               <div>
                 <p className="text-parchment text-xs font-medium uppercase tracking-widest">Case Study</p>
-                <span className="text-futura-text text-sm">Multi-State Law Firms</span>
+                <span className="text-futura-text text-sm">Multi-State Family Law Firms</span>
               </div>
             </div>
 
@@ -113,7 +113,7 @@ export default function CaseStudyRecruiting() {
               className="text-lg leading-relaxed mb-10 max-w-xl text-futura-text"
               data-testid="text-hero-description"
             >
-              How we helped law firms build in-house recruiting systems that reduced dependency on external recruiters and improved hiring ROI.
+              How we helped family law firms build in-house recruiting systems that reduced dependency on external recruiters and improved hiring ROI.
             </p>
 
             <Button 
@@ -137,7 +137,7 @@ export default function CaseStudyRecruiting() {
               <p className="text-white font-semibold">Client Profile</p>
             </div>
             <div className="grid md:grid-cols-3 gap-4 text-futura-text-secondary text-sm">
-              <div><span className="text-futura-text">Firm Type:</span> Multi-state law firms</div>
+              <div><span className="text-futura-text">Firm Type:</span> Multi-state family law firms</div>
               <div><span className="text-futura-text">Practice Areas:</span> Litigation, corporate law, support staff</div>
               <div><span className="text-futura-text">Role:</span> In-house recruiting leadership</div>
             </div>
@@ -150,7 +150,7 @@ export default function CaseStudyRecruiting() {
                 The Problem
               </h2>
               <p className="text-futura-text leading-relaxed mb-6">
-                Law firms routinely face the same hiring dilemmas:
+                Family law firms routinely face the same hiring dilemmas:
               </p>
               <ul className="space-y-3 text-futura-text-secondary">
                 <li className="flex items-start gap-3">
@@ -259,7 +259,7 @@ export default function CaseStudyRecruiting() {
           <div className="bg-gradient-to-r from-parchment/5 to-transparent border-l-4 border-parchment p-6 mb-8">
             <h2 className="text-2xl font-semibold text-white mb-6">Why It Matters</h2>
             <p className="text-futura-text leading-relaxed mb-4 text-lg">
-              Hiring is one of the most expensive decisions a law firm makes — and most firms make it blind.
+              Hiring is one of the most expensive decisions a family law firm makes — and most firms make it blind.
             </p>
             <p className="text-white font-semibold text-xl">
               Native Legal gives firms the systems and clarity to scale intelligently, without over-hiring or over-paying.
