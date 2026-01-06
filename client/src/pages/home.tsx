@@ -340,7 +340,12 @@ export default function Home() {
       <section className="relative z-10 py-24" data-testid="section-cta">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-karl)' }}>
-            rEady To FUTUrE-proof yoUr FIrm?
+            rEady To{" "}
+            <span className="relative inline-block text-parchment">
+              <span className="absolute inset-0 bg-parchment/20 -skew-x-3 -rotate-1 scale-x-105 rounded-sm" aria-hidden="true" />
+              <span className="relative">FUTUrE-proof</span>
+            </span>{" "}
+            yoUr FIrm?
           </h2>
           <p className="text-futura-text-secondary text-lg mb-8 max-w-2xl mx-auto">
             Let's talk about how we can help you build the operational foundations that AI depends on.
