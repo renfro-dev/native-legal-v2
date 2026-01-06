@@ -121,7 +121,7 @@ export default function RevenueOperations() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-1 bg-parchment rounded-full" />
-              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Native Legal</span>
+              <span className="text-futura-text text-sm font-medium uppercase tracking-widest">Revenue Optimization & AI Readiness</span>
             </div>
 
             <h1 
