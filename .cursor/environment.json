@@ -1,0 +1,18 @@
+{
+  "name": "native-legal-v2",
+  "user": "ubuntu",
+  "install": "npm ci",
+  "start": "bash .cursor/start.sh",
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "DATABASE_URL=postgresql://postgres:postgres@localhost:5432/native_legal npm run dev"
+    }
+  ],
+  "ports": [
+    {
+      "name": "app",
+      "port": 5000
+    }
+  ]
+}
