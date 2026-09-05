@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 # Per-boot startup for the native-legal-v2 Cloud Agent environment.
-# Brings up the local PostgreSQL cluster, ensures the app database exists,
-# and syncs the Drizzle schema. Safe to run repeatedly.
+#
+# 1. Brings the local PostgreSQL 16 cluster online (idempotent).
+# 2. Ensures the `native_legal` database and role password exist.
+# 3. Applies the Drizzle schema (`npm run db:push`).
+# 4. Runs the dev server in the foreground so it stays attached.
+#
+# Safe to run repeatedly. Intended to be used as the environment `start` command.
 set -euo pipefail
 
 # Resolve and move to the repository root so relative npm scripts work
@@ -38,4 +43,5 @@ fi
 echo "[start] Applying Drizzle schema (db:push)..."
 npm run db:push
 
-echo "[start] Environment ready. DATABASE_URL=${DATABASE_URL}"
+echo "[start] Starting dev server on port ${PORT:-5000}..."
+exec npm run dev
