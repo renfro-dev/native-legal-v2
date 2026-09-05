@@ -4,6 +4,12 @@
 # and syncs the Drizzle schema. Safe to run repeatedly.
 set -euo pipefail
 
+# Resolve and move to the repository root so relative npm scripts work
+# regardless of the caller's working directory (this is a multi-repo workspace).
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(dirname "$SCRIPT_DIR")"
+cd "$REPO_DIR"
+
 DB_NAME="native_legal"
 DB_USER="postgres"
 DB_PASS="postgres"
